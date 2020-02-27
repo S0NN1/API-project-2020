@@ -1,6 +1,8 @@
-cmake_minimum_required(VERSION 3.13)
-project(untitled C)
+cmake_minimum_required(VERSION 3.15)
+project(progetto_API_2020)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.c)
+add_executable(progetto_API_2020
+        main.c
+        README.md)

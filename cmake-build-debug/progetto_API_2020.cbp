@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="progetto_API_2020">
-				<Option output="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/progetto_API_2020" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/progetto_API_2020" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 progetto_API_2020"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 progetto_API_2020"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="progetto_API_2020/fast">
-				<Option output="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/progetto_API_2020" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/Progetti/progetto_API_2020/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/progetto_API_2020" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,20 +75,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 progetto_API_2020/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 progetto_API_2020/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Sonny/Desktop/projects/progetto-API/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/Progetti/progetto_API_2020/README.md">
+		<Unit filename="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/README.md">
 			<Option target="progetto_API_2020"/>
 		</Unit>
-		<Unit filename="/mnt/d/Progetti/progetto_API_2020/main.c">
+		<Unit filename="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/main.c">
 			<Option target="progetto_API_2020"/>
 		</Unit>
-		<Unit filename="/mnt/d/Progetti/progetto_API_2020/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/Sonny/Desktop/projects/progetto-API/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

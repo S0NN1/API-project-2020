@@ -1,0 +1,37 @@
+1,1c
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+.
+1,10p
+1,2c
+23. To understand a program you must become both the machine and the program.
+118. If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
+.
+1,1c
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+.
+1,10p
+1,1c
+49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
+.
+1,2c
+45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+1,1c
+53. So many good ideas are never heard from again once they embark in a voyage on the semantic gulf.
+.
+1,10p
+1,2c
+62. In computing, invariants are ephemeral.
+114. Within a computer natural language is unnatural.
+.
+1,2c
+69. In a 5 year period we get one superb programming language. Only we can't control when the 5 year period will be.
+39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
+.
+1,10p
+1,1d
+1,1c
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.
+.
+q

@@ -4,11 +4,11 @@
 #include "string.h"
 #include "math.h"
 
-typedef struct array {
+struct array {
     char *data;
     struct array *prev;
     struct array *next;
-} array;
+};
 
 void divideaddr(int *ind1, int *ind2, char *cmd, int length);
 
@@ -16,18 +16,19 @@ void printstr(char **strings, int length, int addr1, int addr2);
 
 void getinput(char **strings, int addr1, int addr2);
 
-void changestr(char **strings, int addr1, int addr2, int *length, int len, array **commands);
+void changestr(char **strings, int addr1, int addr2, int *length, int len, struct array *commands, char*cmd);
 
-void delstr();
+bool isempty(struct array *commands);
+//void delstr();
 
-void undo();
+//void undo();
 
-void redo();
+//void redo();
 
 
 int main() {
-    array *commands;
-    commands = (array*)malloc(sizeof(array));
+    struct array *commands;
+    commands = (struct array*)malloc(sizeof(struct array));
     commands->next = NULL;
     commands->prev = NULL;
     commands->data= NULL;
@@ -38,6 +39,7 @@ int main() {
     int *length;
     char **strings = (char **) calloc(1, sizeof(char *));
     int stringslength = 1;
+    strings[0]="kek";
     char *cmd = NULL;
     char c;
     int index = 0;
@@ -74,19 +76,21 @@ int main() {
                 index = 0;
                 break;
             case ('d'):
-                delstr();
+                //delstr();
                 printf("delete");
                 break;
             case ('c'):
-                changestr(strings,addr1, addr2,length, stringslength, &commands);
+                changestr(strings,addr1, addr2,length, stringslength, commands, cmd);
+                for (int i = 0; i < length; ++i) {
+                }
                 printf("change");
                 break;
             case ('r'):
-                redo();
+                //redo();
                 printf("redo");
                 break;
             case ('u'):
-                undo();
+                //undo();
                 printf("undo");
                 break;
             case ('q'):
@@ -136,14 +140,14 @@ void printstr(char **strings, int length, int addr1, int addr2) {
         for (int i = addr1; i <= addr2; ++i) {
             printf(".\n");
         }
-    } else {
+    } else {/*
         if (addr1 == 0 && addr2 == 0) {
             printf(".\n");
             return;
         } else if (addr1 == 0) {
             printf(".\n");
             addr1++;
-        }
+        }*/
         for (int i = addr1; i <= addr2; ++i) {
             if (i > length) {
                 printf(".\n");
@@ -154,13 +158,16 @@ void printstr(char **strings, int length, int addr1, int addr2) {
     }
 }
 
-void changestr(char **strings, int addr1, int addr2, int *length, int len, array **commands) {
+
+bool isempty(struct array* commands){ return commands->next==NULL && commands->prev==NULL;}
+
+void changestr(char **strings, int addr1, int addr2, int *length, int len, struct array *commands, char*cmd) {
     int templen=0;
     char c;
     char **strings1 = (char **) malloc(sizeof(char *));
     int index = 0;
     //receive input and store in a temp strings1
-    for (int i = 0; i <= addr2 - addr1 + 1; ++i) {
+    for (int i = 0; i < addr2 - addr1 + 1; ++i) {
         index = 0;
         if (i != 0) {
             strings1 = realloc(strings1, (i + 1) * sizeof(char *));
@@ -174,9 +181,29 @@ void changestr(char **strings, int addr1, int addr2, int *length, int len, array
             strings1[i][index] = c;
             index++;
         } while (c != '\n');
-    templen++;
+    templen=templen+(index+1);
     }
-    for (int j = 0; j < templen; ++j) {
-        printf("%s", strings1[j]);
+    //change strings
+    int k;
+    int j=0;
+    for ( k = addr1; k <=addr2 ; ++k) {
+        if(k>=len){
+            strings = (char **)realloc(strings, k*sizeof(char *));
+            strings[k-1]= strings1[j];
+        } else{
+            free(strings[k]);
+            strings[k-1]=strings1[j];
+        }
+        j++;
+    }
+    if(addr2>len){
+        *length=addr2;
+    }
+    if(isempty(commands)){
+        commands->data=cmd;
+        commands->data=(char *)realloc(commands->data, templen*sizeof(char));
+        for (int i = 0; i < addr2-addr1+1; ++i) {
+            strcat(commands->data, strings1[i]);
+        }
     }
 }

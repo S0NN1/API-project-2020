@@ -10,15 +10,21 @@ struct array {
     struct array *next;
 };
 
-void divideaddr(int *ind1, int *ind2, char *cmd, int length);
+struct saved_commands {
+    struct array *commands;
+    struct saved_commands *next;
+};
 
-void printstr(char **strings, int length, int addr1, int addr2);
+void divide_addr(int *ind1, int *ind2, char *cmd, int length);
 
-void getinput(char **strings, int addr1, int addr2);
+void print_str(char **strings, int length, int addr1, int addr2);
 
-void changestr(char **strings, int addr1, int addr2, int *length, int len, struct array *commands, char*cmd);
 
-bool isempty(struct array *commands);
+void change_str(char ***strings, int addr1, int addr2, int *length, int len, struct saved_commands **undo,
+                struct saved_commands **redo, char *cmd);
+
+
+
 //void delstr();
 
 //void undo();
@@ -27,25 +33,21 @@ bool isempty(struct array *commands);
 
 
 int main() {
-    struct array *commands;
-    commands = (struct array*)malloc(sizeof(struct array));
-    commands->next = NULL;
-    commands->prev = NULL;
-    commands->data= NULL;
+    struct saved_commands *redo = NULL;
+    struct saved_commands *undo = NULL;
     int addr1 = 0, addr2 = 0;
-    int cmdlength = 0;
+    int cmd_length = 0;
     int *ind1;
     int *ind2;
     int *length;
-    char **strings = (char **) calloc(1, sizeof(char *));
-    int stringslength = 1;
-    strings[0]="kek";
+    char **strings = (char **) malloc(sizeof(char *));
+    int strings_length = 1;
     char *cmd = NULL;
     char c;
     int index = 0;
     ind1 = &addr1;
     ind2 = &addr2;
-    length = &stringslength;
+    length = &strings_length;
     while (true) {
         do {
             c = getchar_unlocked();
@@ -54,8 +56,9 @@ int main() {
                 cmd[0] = c;
                 index++;
             } else {
-                if (index >= cmdlength) {
-                    cmd = realloc(cmd, (index + 2) * sizeof(char));
+                if (index >= cmd_length) {
+                    cmd = realloc(cmd, ((index + 2) * 2) * sizeof(char));
+                    cmd_length = ((index + 2) * 2);
                     cmd[index] = c;
                     index++;
                 } else {
@@ -64,45 +67,56 @@ int main() {
                 }
             }
         } while (c != '\n');
-        if (index <= cmdlength) {
-            cmd[index] = '\0';
+        if (index < cmd_length) {
+            cmd = (char *) realloc(cmd, index * sizeof(char));
         }
-        cmdlength = strlen(cmd);
-        c = cmd[cmdlength - 2];
-        divideaddr(ind1, ind2, cmd, cmdlength);
+        cmd_length = index;
+        c = cmd[cmd_length - 2];
+        divide_addr(ind1, ind2, cmd, cmd_length);
         switch (c) {
             case ('p'):
-                printstr(strings, stringslength, addr1, addr2);
+                print_str(strings, strings_length, addr1, addr2);
                 index = 0;
+                cmd_length = 0;
+                cmd = NULL;
                 break;
             case ('d'):
                 //delstr();
-                printf("delete");
+                printf("delete\n");
                 break;
             case ('c'):
-                changestr(strings,addr1, addr2,length, stringslength, commands, cmd);
-                for (int i = 0; i < length; ++i) {
-                }
-                printf("change");
+                change_str(&strings, addr1, addr2, length, strings_length, &undo, &redo, cmd);
+                //printf("change\n");
+                index = 0;
+                cmd_length = 0;
+                cmd = NULL;
                 break;
             case ('r'):
                 //redo();
-                printf("redo");
+                //printf("redo\n");
                 break;
             case ('u'):
                 //undo();
-                printf("undo");
+                printf("undo\n");
                 break;
             case ('q'):
+                free(cmd);
+                for (int i = 0; i < strings_length; ++i) {
+                    free(strings[i]);
+                }
+                free(strings);
                 return 0;
-            default:
-                printf("default");
+            case ('.'):
+                //printf("punto\n");
+                index = 0;
+                cmd_length = 0;
+                cmd = NULL;
                 break;
         }
     }
 }
 
-void divideaddr(int *ind1, int *ind2, char *cmd, int length) {
+void divide_addr(int *ind1, int *ind2, char *cmd, int length) {
     int addr1 = 0, addr2 = 0;
     int num = 0;
     int check = 0;
@@ -135,19 +149,19 @@ void divideaddr(int *ind1, int *ind2, char *cmd, int length) {
     *ind2 = addr2;
 }
 
-void printstr(char **strings, int length, int addr1, int addr2) {
+void print_str(char **strings, int length, int addr1, int addr2) {
     if (strings[0] == NULL) {
         for (int i = addr1; i <= addr2; ++i) {
             printf(".\n");
         }
-    } else {/*
+    } else {
         if (addr1 == 0 && addr2 == 0) {
             printf(".\n");
             return;
         } else if (addr1 == 0) {
             printf(".\n");
             addr1++;
-        }*/
+        }
         for (int i = addr1; i <= addr2; ++i) {
             if (i > length) {
                 printf(".\n");
@@ -159,51 +173,87 @@ void printstr(char **strings, int length, int addr1, int addr2) {
 }
 
 
-bool isempty(struct array* commands){ return commands->next==NULL && commands->prev==NULL;}
+void change_str(char ***strings, int addr1, int addr2, int *length, int len, struct saved_commands **undo,
+                struct saved_commands **redo, char *cmd) {
+    struct saved_commands *undo_node = (struct saved_commands *) malloc(sizeof(struct saved_commands));
+    undo_node->next = *undo;
+    (*undo) = undo_node;
+    undo_node->commands = (struct array *) malloc(sizeof(struct array));
+    undo_node->commands->data = cmd;
+    undo_node->commands->prev = NULL;
+    struct array *first_string_undo = (struct array *) malloc(sizeof(struct array));
+    struct array *string_undo = (struct array *) malloc(sizeof(struct array));
 
-void changestr(char **strings, int addr1, int addr2, int *length, int len, struct array *commands, char*cmd) {
-    int templen=0;
-    char c;
-    char **strings1 = (char **) malloc(sizeof(char *));
+
+    //fill redo structure
+    struct saved_commands *redo_node = (struct saved_commands *) malloc(sizeof(struct saved_commands));
+    redo_node->next = *redo;
+    (*redo) = redo_node;
+    redo_node->commands = (struct array *) malloc(sizeof(struct array));
+    redo_node->commands->data = cmd;
+    redo_node->commands->prev = NULL;
+    struct array *first_string_redo = (struct array *) malloc(sizeof(struct array));
+    struct array *string_redo = (struct array *) malloc(sizeof(struct array));;
     int index = 0;
-    //receive input and store in a temp strings1
+    char d;
     for (int i = 0; i < addr2 - addr1 + 1; ++i) {
         index = 0;
-        if (i != 0) {
-            strings1 = realloc(strings1, (i + 1) * sizeof(char *));
-        }
-        strings1[i] = (char *) malloc(sizeof(char));
+        string_redo->next = NULL;
         do {
-            c = getchar_unlocked();
-            if (index != 0) {
-                strings1[i] = realloc(strings1[i], (index + 1) * sizeof(char));
+            d = getchar_unlocked();
+            if (index == 0) {
+                string_redo->data = (char *) malloc(1025 * sizeof(char));//TODO EFFICIENCY
             }
-            strings1[i][index] = c;
+            string_redo->data[index] = d;
             index++;
-        } while (c != '\n');
-    templen=templen+(index+1);
+        } while (d != '\n');
+        string_redo->data = (char *) realloc(string_redo->data, strlen(string_redo->data) * sizeof(char));
+        if (i == 0) {
+            first_string_redo = string_redo;
+        }
+        string_redo->next = (struct array *) malloc(sizeof(struct array));;
+        string_redo = string_redo->next;
     }
-    //change strings
+    string_redo->next = NULL;
+    redo_node->commands->next = first_string_redo;
+    first_string_redo->prev = redo_node->commands;
+    struct array *p;
+    p = first_string_redo;
+    //copy to array and fill
+
     int k;
-    int j=0;
-    for ( k = addr1; k <=addr2 ; ++k) {
-        if(k>=len){
-            strings = (char **)realloc(strings, k*sizeof(char *));
-            strings[k-1]= strings1[j];
-        } else{
-            free(strings[k]);
-            strings[k-1]=strings1[j];
+    int j = 0;
+    for (k = addr1; k <= addr2; ++k) {
+        string_undo->next = NULL;
+        if (k > len) {
+            (*strings)[k - 1] = (char *) malloc(strlen(p->data) * sizeof(char));
+            //TODO FILL UNDO
+            string_undo->data = (char *) malloc(2 * sizeof(char));
+            string_undo->data = ".\n";
+            strcpy((*strings)[k - 1], p->data);
+        } else {
+            (*strings)[k - 1] = (char *) realloc((*strings)[k - 1], strlen(p->data));
+            //TODO FILL UNDO
+            if (strlen(*strings[k - 1])== 0) {
+                string_undo->data = (char *) malloc(2 * sizeof(char));
+                string_undo->data = ".\n";
+            } else {
+                string_undo->data = (char *) malloc(strlen((*strings[k - 1])) * sizeof(char));
+                strcpy(string_undo->data, (*strings[k - 1]));
+            }
+            strcpy((*strings[k - 1]), p->data);
         }
-        j++;
-    }
-    if(addr2>len){
-        *length=addr2;
-    }
-    if(isempty(commands)){
-        commands->data=cmd;
-        commands->data=(char *)realloc(commands->data, templen*sizeof(char));
-        for (int i = 0; i < addr2-addr1+1; ++i) {
-            strcat(commands->data, strings1[i]);
+        if (k == addr1) {
+            first_string_undo = string_undo;
         }
+        string_undo->next = (struct array *) malloc(sizeof(struct array));
+        string_undo = string_undo->next;
+        p = p->next;
+    }
+    string_undo->next = NULL;
+    undo_node->commands->next = first_string_undo;
+    first_string_undo->prev = undo_node->commands;
+    if (addr2 > len) {
+        *length = addr2;
     }
 }

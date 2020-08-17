@@ -1,134 +1,512 @@
-- Why is this here?
-- For people. We eat it.
-You don't have
-enough food of your own?
-- Well, yes.
-- Why is this here?
-- For people. We eat it.
-You don't have
-enough food of your own?
-- Well, yes.
-The human species?
-So if there's no more pollination,
-it could all just go south here,
-couldn't it?
-I know this is also partly my fault.
-How about a suicide pact?
-How do we do it?
-- I'll sting you, you step on me.
-to start thinking bee, my friend.
-- Maybe I'll try that.
-The human species?
-So if there's no more pollination,
-it could all just go south here,
-couldn't it?
-I know this is also partly my fault.
-How about a suicide pact?
-How do we do it?
-- I'll sting you, you step on me.
-to start thinking bee, my friend.
-in 27 million years.
-So you'll just work us to death?
-We'll sure try.
-Wow! That blew my mind!
-"What's the difference?"
-How can you say that?
-One job forever?
-That's an insane choice to have to make.
-I'm relieved. Now we only have
-to make one decision in life.
-The human species?
-So if there's no more pollination,
-it could all just go south here,
-couldn't it?
-I know this is also partly my fault.
-How about a suicide pact?
-How do we do it?
-- I'll sting you, you step on me.
-to start thinking bee, my friend.
-in 27 million years.
-So you'll just work us to death?
-We'll sure try.
-Wow! That blew my mind!
-"What's the difference?"
-How can you say that?
-One job forever?
-That's an insane choice to have to make.
-I'm relieved. Now we only have
-to make one decision in life.
-The human species?
-So if there's no more pollination,
-It's a close community.
-Not us, man. We on our own.
-I know this is also partly my fault.
-How about a suicide pact?
-How do we do it?
-- I'll sting you, you step on me.
-to start thinking bee, my friend.
-in 27 million years.
-So you'll just work us to death?
-We'll sure try.
-Wow! That blew my mind!
-"What's the difference?"
-How can you say that?
-One job forever?
-That's an insane choice to have to make.
-I'm relieved. Now we only have
-to make one decision in life.
-The human species?
-So if there's no more pollination,
-It's a close community.
-Not us, man. We on our own.
-Barry, these are cut flowers
-with no water. They'll never make it.
-I gotta get up there
-and talk to them.
-Be careful.
-Oan I get help
-So you'll just work us to death?
-We'll sure try.
-Wow! That blew my mind!
-"What's the difference?"
-How can you say that?
-One job forever?
-That's an insane choice to have to make.
-I'm relieved. Now we only have
-to make one decision in life.
-The human species?
-So if there's no more pollination,
-It's a close community.
-Not us, man. We on our own.
-Barry, these are cut flowers
-with no water. They'll never make it.
-I gotta get up there
-and talk to them.
-Be careful.
-Oan I get help
-So you'll just work us to death?
-We'll sure try.
-Wow! That blew my mind!
-"What's the difference?"
-How can you say that?
-One job forever?
-That's an insane choice to have to make.
-I'm relieved. Now we only have
-to make one decision in life.
-The human species?
-So if there's no more pollination,
-It's a close community.
-Not us, man. We on our own.
-- OK.
-You got a rain advisory today,
-Are there other bugs in your life?
-bees cannot fly in rain.
-So be careful. As always,
-watch your brooms,
-hockey sticks, dogs,
-We'll sure try.
-Wow! That blew my mind!
-"What's the difference?"
-How can you say that?
-One job forever?
-That's an insane choice to have to make.
-I'm relieved. Now we only have
-to make one decision in life.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.

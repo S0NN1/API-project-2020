@@ -47,7 +47,9 @@ void push(commands **state, char *string, int index);
 //push
 int main() {
     //struct storing current strings and relative length
-    current_state *state = (current_state *) calloc(1,sizeof(current_state));
+    current_state *state = (current_state *) malloc(sizeof(current_state));
+    state->length = 0;
+    state->strings = NULL;
 
     //struct storing redo and relative strings
     commands *redo_state = NULL;
@@ -234,17 +236,17 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
             char **strings = (char **) malloc(sizeof(char *));
             strings[i - 1] = get_input(&c);
             (*state)->length++;
-            (*state)->mem_len++;
+            (*state)->mem_len = 1;
             (*state)->strings = strings;
             //fill undo/redo
             push(&temp_redo, (*state)->strings[i - 1], i - addr1);
             push(&temp_undo, ".\n", i - addr1);
         } else {
             //add strings to state
-            if (i > (*state)->mem_len) {
+            if (i >= (*state)->mem_len) {
                 char *temp = get_input(&c);
                 if (temp[0] == '.' && temp[1] == '\n') break;//TODO DA TESTARE
-                (*state)->mem_len = ((*state)->mem_len+1) * 2;
+                (*state)->mem_len = (*state)->mem_len * 2;
                 (*state)->strings = (char **) realloc((*state)->strings, (*state)->mem_len * sizeof(char *));
                 (*state)->strings[i - 1] = temp;
                 (*state)->length++;
@@ -260,9 +262,6 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
                 push(&temp_undo, (*state)->strings[i - 1], i - addr1);
                 (*state)->strings[i - 1] = (char *) realloc((*state)->strings[i - 1], c * sizeof(char));
                 (*state)->strings[i - 1] = temp;
-                if(i>(*state)->length){
-                    (*state)->length++;
-                }
                 //fill redo
                 push(&temp_redo, (*state)->strings[i - 1], i - addr1);
             }

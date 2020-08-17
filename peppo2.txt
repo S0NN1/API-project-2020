@@ -1,7 +1,20 @@
-3. Syntactic sugar causes cancer of the semicolon.
-3. Syntactic sugar causes cancer of the semicolon.
-15. Everything should be built top-down, except the first time.
-8. A programming language is low level when its programs require attention to the irrelevant.
-10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
-1. One man's constant is another man's variable.
+97. When a professor insists computer science is X but not Y, have compassion for his graduate students.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+77. The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.
+77. The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.
+.
+.
+.
+.
+.
+.
+.
 .

@@ -131,7 +131,7 @@ char *get_input(size_t *input_length) {
         length++;
         i++;
     } while (c != '\n');
-    input[i + 1] = '\0';
+    input[i] = '\0';
     (*input_length) = length;
     return input;
 }
@@ -181,8 +181,7 @@ void print(current_state *state, int addr1, int addr2) {
         }
     } else {
         for (int i = addr1; i <= addr2; ++i) {
-            if (i == 0 || i > state->mem_len ||
-                state->strings[i - 1] == NULL) {//SE METTO NULL QUA FUNZIONA TESTING NEEDED
+            if (i == 0 || i > state->length || state->strings[i - 1] == NULL) {//SE METTO NULL QUA FUNZIONA TESTING NEEDED
                 printf(".\n");
             } else {
                 printf("%s", state->strings[i - 1]);
@@ -232,12 +231,12 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
         //first initialization of state
         if ((*state)->strings == NULL && i == 1) { //TODO CASO STRANO
             char **strings = (char **) malloc(sizeof(char *));
-            strings[i - 1] = get_input(&c);
+            strings[0] = get_input(&c);
             (*state)->length++;
             (*state)->mem_len++;
             (*state)->strings = strings;
             //fill undo/redo
-            push(&temp_redo, (*state)->strings[i - 1], i - addr1);
+            push(&temp_redo, (*state)->strings[0], i - addr1);
             push(&temp_undo, ".\n", i - addr1);
         } else {
             //add strings to state
@@ -257,12 +256,16 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
                 char *temp = get_input(&c);
                 if (temp[0] == '.' && temp[1] == '\n') break;//TODO DA TESTARE
                 //fill undo before strings change
-                push(&temp_undo, (*state)->strings[i - 1], i - addr1);
-                (*state)->strings[i - 1] = (char *) realloc((*state)->strings[i - 1], c * sizeof(char));
-                (*state)->strings[i - 1] = temp;
                 if(i>(*state)->length){
+                    push(&temp_undo, NULL, i - addr1);
+                    (*state)->strings[i - 1] = (char *) malloc(c * sizeof(char));
                     (*state)->length++;
+                } else{
+                    push(&temp_undo, (*state)->strings[i - 1], i - addr1);
+                    (*state)->strings[i - 1] = (char *) realloc((*state)->strings[i - 1], c * sizeof(char));
                 }
+                (*state)->strings[i - 1] = temp;
+
                 //fill redo
                 push(&temp_redo, (*state)->strings[i - 1], i - addr1);
             }
@@ -311,12 +314,12 @@ void redo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_leng
 void push(commands **state, char *string, int index) {//index i-addr1
     //modified strings uninitialized
     if ((*state)->modified_strings == NULL) {
-        (*state)->modified_strings = (char **) malloc(1025 * sizeof(char));//TODO NOT SURE VALGRIND ROMPE
+        (*state)->modified_strings = (char **) malloc(1025 * sizeof(char*));//TODO NOT SURE VALGRIND ROMPE
         (*state)->modified_strings[0] = string;
         (*state)->length = 1;
     } else {
         //modified strings resizing
-        if (index > (*state)->length) {
+        if (index >= (*state)->length) {
             (*state)->modified_strings = (char **) realloc((*state)->modified_strings,
                                                            ((*state)->length * 2) * sizeof(char *));
             if (string == NULL) {

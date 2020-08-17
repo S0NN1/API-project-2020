@@ -1,50 +1,644 @@
-49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-41. Some programming languages manage to absorb change, but withstand progress.
-106. It's difficult to extract sense from strings, but they're the only communication coin we can count on.
-.
-.
-.
-.
-.
-.
-.
-.
-different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies.
-78. If your computer speaks English, it was probably made in Japan.
-.
-.
-.
-.
-.
-.
-.
-.
-45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
-112. Computer Science is embarrassed by the computer.
-.
-.
-.
-.
-.
-.
-.
-.
-45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
-60. In seeking the unattainable, simplicity only gets in the way.
-.
-.
-.
-.
-.
-.
-.
-.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+- When will this nightmare end?!
+- Let it all go.
+- Beautiful day to fly.
+That was a little weird.
+- I'm talking with a bee.
+- Yeah.
+I'm talking to a bee.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+You do that!
+This whole parade is a fiasco!
+Let's see what this baby'll do.
+Hey, what are you doing?!
+- Barry?
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+You do that!
+This whole parade is a fiasco!
+Let's see what this baby'll do.
+Hey, what are you doing?!
+- Barry?
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+You do that!
+This whole parade is a fiasco!
+Let's see what this baby'll do.
+Hey, what are you doing?!
+- Barry?
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+You do that!
+This whole parade is a fiasco!
+Let's see what this baby'll do.
+Hey, what are you doing?!
+- Barry?
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+You do that!
+This whole parade is a fiasco!
+Let's see what this baby'll do.
+Hey, what are you doing?!
+- Barry?
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+You do that!
+flowers, more nectar, more honey for us.
+Oool.
+I'm picking up a lot of bright yellow.
+Oould be daisies. Don't we need those?
+Oopy that visual.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+We are not them! We're us.
+There's us and there's them!
+Yes, but who can deny
+the heart that is yearning?
+There's no yearning.
+Stop yearning. Listen to me!
+Oool.
+I'm picking up a lot of bright yellow.
+Oould be daisies. Don't we need those?
+Oopy that visual.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+We are not them! We're us.
+There's us and there's them!
+Yes, but who can deny
+the heart that is yearning?
+There's no yearning.
+Stop yearning. Listen to me!
+Oool.
+I'm picking up a lot of bright yellow.
+Oould be daisies. Don't we need those?
+Oopy that visual.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+We are not them! We're us.
+There's us and there's them!
+Yes, but who can deny
+the heart that is yearning?
+There's no yearning.
+Stop yearning. Listen to me!
+Oool.
+I'm picking up a lot of bright yellow.
+Oould be daisies. Don't we need those?
+Oopy that visual.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+We are not them! We're us.
+There's us and there's them!
+Yes, but who can deny
+the heart that is yearning?
+There's no yearning.
+Stop yearning. Listen to me!
+Oool.
+I'm picking up a lot of bright yellow.
+Oould be daisies. Don't we need those?
+Oopy that visual.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+I don't want to hear it!
+All right, they have the roses,
+the roses have the pollen.
+I don't eat it!
+We need to talk!
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Are there other bugs in your life?
+No, but there are other things bugging
+me in life. And you're one of them!
+- Not in this fairy tale, sweetheart.
+- I'm getting the marshal.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+I don't want to hear it!
+All right, they have the roses,
+the roses have the pollen.
+I don't eat it!
+We need to talk!
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+me in life. And you're one of them!
+- Not in this fairy tale, sweetheart.
+- I'm getting the marshal.
+It's time to fly.
+Thank you, Barry!
+That bee is living my life!
+Let it go, Kenny.
+because bees don't care
+what humans think is impossible.
+I don't want to hear it!
+All right, they have the roses,
+the roses have the pollen.
+I don't eat it!
+We need to talk!
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+me in life. And you're one of them!
+- Not in this fairy tale, sweetheart.
+- I'm getting the marshal.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+Hey, you want rum cake?
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+He's just a little bee!
+And he happens to be
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+A bee died. Makes an opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+I don't understand
+why they're not happy.
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+he won't sting you. Freeze!
+He blinked!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+What would I say?
+in 27 million years.
+So you'll just work us to death?
+We'll sure try.
+Wow! That blew my mind!
+"What's the difference?"
+How can you say that?
+One job forever?
+That's an insane choice to have to make.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+I don't understand
+why they're not happy.
+the nicest bee I've met in a long time!
+Long time? What are you talking about?!
+Make it one of your special skills.
+No, but there are other things bugging
+- He's back here!
+He's going to sting me!
+Nobody move. If you don't move,
+"You like jazz?" No, that's no good.
+Here she comes! Speak, you fool!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+What would I say?
+in 27 million years.
+So you'll just work us to death?
+We'll sure try.
+Wow! That blew my mind!
+"What's the difference?"
+How can you say that?
+One job forever?
+That's an insane choice to have to make.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+I don't understand
+why they're not happy.
+It smells good.
+Not like a flower, but I like it.
+Yeah, fuzzy.
+Ohemical-y.
+Oareful, guys. It's a little grabby.
+My sweet lord of bees!
+Oandy-brain, get off there!
+Problem!
+Here she comes! Speak, you fool!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+What would I say?
+in 27 million years.
+So you'll just work us to death?
+We'll sure try.
+Wow! That blew my mind!
+"What's the difference?"
+How can you say that?
+One job forever?
+That's an insane choice to have to make.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+I don't understand
+why they're not happy.
+It smells good.
+Not like a flower, but I like it.
+Yeah, fuzzy.
+Ohemical-y.
+Oareful, guys. It's a little grabby.
+My sweet lord of bees!
+Oandy-brain, get off there!
+Problem!
+Here she comes! Speak, you fool!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+What would I say?
+in 27 million years.
+So you'll just work us to death?
+We'll sure try.
+Wow! That blew my mind!
+"What's the difference?"
+How can you say that?
+One job forever?
+That's an insane choice to have to make.
+Another call coming in.
+And Jeanette Ohung.
+- Good evening. I'm Bob Bumble.
+- And I'm Jeanette Ohung.
+A tri-county bee, Barry Benson,
+The venom! The venom
+is coursing through my veins!
+I have been felled
+from it illegally!
+Tomorrow night on Bee Larry King,
+we'll have three former queens here in
+I don't understand
+why they're not happy.
+It smells good.
+Not like a flower, but I like it.
+Yeah, fuzzy.
+Ohemical-y.
+Oareful, guys. It's a little grabby.
+My sweet lord of bees!
+Oandy-brain, get off there!
+Problem!
+Here she comes! Speak, you fool!
+Spray him, Granny!
+What are you doing?!
+Wow... the tension level
+- Don't be ridiculous!
+- Actually, I would love a cup.
+What would I say?
+in 27 million years.
+So you'll just work us to death?
+We'll sure try.
+Wow! That blew my mind!
+"What's the difference?"
+How can you say that?
+One job forever?
+That's an insane choice to have to make.

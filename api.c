@@ -47,7 +47,7 @@ void push(commands **state, char *string, int index);
 //push
 int main() {
     //struct storing current strings and relative length
-    current_state *state = (current_state *) calloc(1,sizeof(current_state));
+    current_state *state = (current_state *) calloc(1, sizeof(current_state));
 
     //struct storing redo and relative strings
     commands *redo_state = NULL;
@@ -116,23 +116,13 @@ char *get_input(size_t *input_length) {
     char c;
 
     //input string
-    char *input = (char *) malloc(1025 * sizeof(char));//TODO EFFICIENCY
-
-    //index of the string
-    int i = 0;
-
-    //string length
-    size_t length = 0;
+    char *input = (char *) calloc(1025, sizeof(char));//TODO EFFICIENCY
 
     //scan stdin input until it reaches '\n' (included)
-    do {
-        c = (char) getchar_unlocked();
-        input[i] = c;
-        length++;
-        i++;
-    } while (c != '\n');
-    input[i] = '\0';
-    (*input_length) = length;
+    fgets(input, 1025, stdin);
+
+    (*input_length)=strlen(input);
+
     return input;
 }
 
@@ -181,7 +171,8 @@ void print(current_state *state, int addr1, int addr2) {
         }
     } else {
         for (int i = addr1; i <= addr2; ++i) {
-            if (i == 0 || i > state->length || state->strings[i - 1] == NULL) {//SE METTO NULL QUA FUNZIONA TESTING NEEDED
+            if (i == 0 || i > state->length ||
+                state->strings[i - 1] == NULL) {//SE METTO NULL QUA FUNZIONA TESTING NEEDED
                 printf(".\n");
             } else {
                 printf("%s", state->strings[i - 1]);
@@ -232,6 +223,7 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
         if ((*state)->strings == NULL && i == 1) { //TODO CASO STRANO
             char **strings = (char **) malloc(sizeof(char *));
             strings[0] = get_input(&c);
+            strings[0]=(char *)realloc(strings[0], (c+1)*sizeof(char));
             (*state)->length++;
             (*state)->mem_len++;
             (*state)->strings = strings;
@@ -242,8 +234,9 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
             //add strings to state
             if (i > (*state)->mem_len) {
                 char *temp = get_input(&c);
+                temp=(char *)realloc(temp, (c+1)*sizeof(char));
                 if (temp[0] == '.' && temp[1] == '\n') break;//TODO DA TESTARE
-                (*state)->mem_len = ((*state)->mem_len+1) * 2;
+                (*state)->mem_len = ((*state)->mem_len + 1) * 2;
                 (*state)->strings = (char **) realloc((*state)->strings, (*state)->mem_len * sizeof(char *));
                 (*state)->strings[i - 1] = temp;
                 (*state)->length++;
@@ -254,15 +247,16 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
             } //modify already existing string
             else {
                 char *temp = get_input(&c);
+                temp=(char *)realloc(temp, (c+1)*sizeof(char));
                 if (temp[0] == '.' && temp[1] == '\n') break;//TODO DA TESTARE
                 //fill undo before strings change
-                if(i>(*state)->length){
+                if (i > (*state)->length) {
                     push(&temp_undo, NULL, i - addr1);
-                    (*state)->strings[i - 1] = (char *) malloc(c * sizeof(char));
+                    (*state)->strings[i - 1] = (char *) malloc((c+1) * sizeof(char));
                     (*state)->length++;
-                } else{
+                } else {
                     push(&temp_undo, (*state)->strings[i - 1], i - addr1);
-                    (*state)->strings[i - 1] = (char *) realloc((*state)->strings[i - 1], c * sizeof(char));
+                    (*state)->strings[i - 1] = (char *) realloc((*state)->strings[i - 1], (c+1) * sizeof(char));
                 }
                 (*state)->strings[i - 1] = temp;
 
@@ -314,7 +308,7 @@ void redo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_leng
 void push(commands **state, char *string, int index) {//index i-addr1
     //modified strings uninitialized
     if ((*state)->modified_strings == NULL) {
-        (*state)->modified_strings = (char **) malloc(1025 * sizeof(char*));//TODO NOT SURE VALGRIND ROMPE
+        (*state)->modified_strings = (char **) calloc(1, sizeof(char *));//TODO NOT SURE VALGRIND ROMPE
         (*state)->modified_strings[0] = string;
         (*state)->length = 1;
     } else {

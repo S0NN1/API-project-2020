@@ -32,7 +32,7 @@ void
 change(current_state **state, int addr1, int addr2, char *cmd, char command, commands **redo, commands **undo);
 
 //delete command
-void delete(current_state **state, int addr1, int addr2, char *cmd, commands **redo, commands **undo);
+void delete(current_state **state, int addr1, int addr2, char *cmd,char command, commands **redo, commands **undo);
 
 //undo command
 void undo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_length);
@@ -245,33 +245,64 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
 }
 
 //delete current state string
-void delete(current_state **state, int addr1, int addr2, char *cmd, commands **redo, commands **undo) {
-    if (addr1 > (*state)->length) {//change le mem_len
+void delete(current_state **state, int addr1, int addr2, char *cmd,char command, commands **redo, commands **undo) {
+    //undo/redo temp nodes
+    commands *temp_redo = (commands *) malloc(sizeof(commands));
+    commands *temp_undo = (commands *) malloc(sizeof(commands));
+    //set their command
+    temp_redo->command = command;
+    temp_undo->command = command;
+    //set their addresses
+    temp_undo->addr1 = addr1;
+    temp_undo->addr2 = addr2;
+    temp_redo->addr1 = addr1;
+    temp_redo->addr2 = addr2;
+    //add them at the top of the list
+    temp_redo->next = (*redo);
+    temp_undo->next = (*undo);
+    //setting strings to NULL
+    temp_redo->modified_strings = NULL;
+    temp_undo->modified_strings = NULL;
+    //setting length
+    temp_redo->length = 0;
+    temp_undo->length = 0;
+    //invalid delete
+    if (addr1 > (*state)->length) {
         return;
     } else {
         if (addr2 >= (*state)->length) {
             for (int i = (int) (*state)->length - 1; i > addr1 - 1; --i) {
+                if (i==0) {
+                    break;
+                }
                 free((*state)->strings[i]);
+                (*state)->strings[i]= NULL;
             }
             (*state)->length = addr1 - 1;
             (*state)->mem_len = addr1 - 1;
         } else {
             for (int i = addr1; i <= addr2; ++i) {
+                if (i==0){
+                    i++;
+                }
                 (*state)->strings[i - 1] = NULL;
             }
             int k = addr1 - 1;
             int i=0;
-            for ( i = addr2; i <= (*state)->length; ++i) {
-                if ((*state)->strings[i - 1] != NULL) {
-                    char *temp = (*state)->strings[i - 1];
+            for ( i = addr2; i < (*state)->length; ++i) {
+                if ((*state)->strings[i] != NULL ) {
+                    char *temp = (*state)->strings[i];
                     (*state)->strings[k] = temp;
-                    (*state)->strings[i - 1] = NULL;
+                    (*state)->strings[i] = NULL;
+                    k++;
                 } else break;
             }
             (*state)->length = i;
             (*state)->mem_len = i;
         }
     }
+    (*undo) = temp_undo;
+    (*redo) = temp_redo;
 }
 
 //undo command

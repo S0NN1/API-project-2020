@@ -29,10 +29,10 @@ void print(current_state *state, int addr1, int addr2);
 
 //change command
 void
-change(current_state **state, int addr1, int addr2, char *cmd, char command, commands **redo, commands **undo);
+change(current_state **state, int addr1, int addr2, char command, commands **redo, commands **undo);
 
 //delete command
-void delete(current_state **state, int addr1, int addr2, char *cmd,char command, commands **redo, commands **undo);
+void delete(current_state **state, int addr1, int addr2, char command, commands **redo, commands **undo);
 
 //undo command
 void undo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_length);
@@ -80,10 +80,10 @@ int main() {
                 print(state, addr1, addr2);
                 break;
             case ('c'):
-                change(&state, addr1, addr2, cmd, c, &redo_state, &undo_state);
+                change(&state, addr1, addr2, c, &redo_state, &undo_state);
                 break;
             case ('d'):
-                delete(&state, addr1, addr2, cmd, &redo_state, &undo_state);
+                delete(&state, addr1, addr2, c, &redo_state, &undo_state);
                 break;
             case ('u'):
                 undo(state, addr1, addr2, cmd, cmd_length);
@@ -142,6 +142,7 @@ void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length) {
     (*addr2) = (int) strtol(temp, &ptr, 0);
     free(temp);
 }
+
 /*
  * print command: if state is uninitialized prints only ".\n", if address is included in current state it prints
  * relative string, otherwise it prints ".\n".
@@ -171,7 +172,7 @@ void print(current_state *state, int addr1, int addr2) {
  * change command: if state is uninitialized it creates the struct and start filling in, if index i exceeds the length
  * it resizes the struct, otherwise changes the previous string.
  */
-void change(current_state **state, int addr1, int addr2, char *cmd, char command, commands **redo, commands **undo) {
+void change(current_state **state, int addr1, int addr2, char command, commands **redo, commands **undo) {
     //undo/redo temp nodes
     commands *temp_redo = (commands *) malloc(sizeof(commands));
     commands *temp_undo = (commands *) malloc(sizeof(commands));
@@ -245,7 +246,7 @@ void change(current_state **state, int addr1, int addr2, char *cmd, char command
 }
 
 //delete current state string
-void delete(current_state **state, int addr1, int addr2, char *cmd,char command, commands **redo, commands **undo) {
+void delete(current_state **state, int addr1, int addr2, char command, commands **redo, commands **undo) {
     //undo/redo temp nodes
     commands *temp_redo = (commands *) malloc(sizeof(commands));
     commands *temp_undo = (commands *) malloc(sizeof(commands));
@@ -271,26 +272,28 @@ void delete(current_state **state, int addr1, int addr2, char *cmd,char command,
         return;
     } else {
         if (addr2 >= (*state)->length) {
-            for (int i = (int) (*state)->length - 1; i > addr1 - 1; --i) {
-                if (i==0) {
+            for (int i = addr1 - 1; i < (int) (*state)->length - 1; ++i) {
+                if (i == -1) {
                     break;
                 }
+                push(&temp_undo, (*state)->strings[i], i - addr1 + 1);
                 free((*state)->strings[i]);
-                (*state)->strings[i]= NULL;
+                (*state)->strings[i] = NULL;
             }
             (*state)->length = addr1 - 1;
             (*state)->mem_len = addr1 - 1;
         } else {
             for (int i = addr1; i <= addr2; ++i) {
-                if (i==0){
+                if (i == 0) {
                     i++;
                 }
+                push(&temp_undo, (*state)->strings[i - 1], i - addr1);
                 (*state)->strings[i - 1] = NULL;
             }
             int k = addr1 - 1;
-            int i=0;
-            for ( i = addr2; i < (*state)->length; ++i) {
-                if ((*state)->strings[i] != NULL ) {
+            int i = 0;
+            for (i = addr2; i < (*state)->length; ++i) {
+                if ((*state)->strings[i] != NULL) {
                     char *temp = (*state)->strings[i];
                     (*state)->strings[k] = temp;
                     (*state)->strings[i] = NULL;

@@ -106,7 +106,7 @@ char *get_input(size_t *input_length) {
     //input string
     char *input = (char *) calloc(1025, sizeof(char));//TODO EFFICIENCY
     //scan stdin input until it reaches '\n' (included)
-    fgets(input, 1025, stdin);
+    fgets(input, 1024, stdin);
     (*input_length) = strlen(input);
     return input;
 }
@@ -232,7 +232,6 @@ void change(current_state *state, int addr1, int addr2, char command, commands *
                     state->length++;
                 } else {
                     push(temp_undo, state->strings[i - 1], i - addr1);
-                    state->strings[i - 1] = (char *) realloc(state->strings[i - 1], (c + 1) * sizeof(char));//todo PORBLEMONE
                 }
                 state->strings[i - 1] = temp;
 
@@ -321,8 +320,12 @@ void redo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_leng
 void push(commands *state, char *string, int index) {//index i-addr1
     //modified strings uninitialized
     if (state->modified_strings == NULL) {
-        state->modified_strings = (char **) calloc(1, sizeof(char *));//TODO NOT SURE VALGRIND ROMPE
-        state->modified_strings[0] = string;
+        state->modified_strings = (char **) calloc(1, sizeof(char *));
+        if (string == NULL) {
+            state->modified_strings[0] = ".\n";
+        } else {
+            state->modified_strings[0] = string;
+        }
         state->length = 1;
     } else {
         //modified strings resizing

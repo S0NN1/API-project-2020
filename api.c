@@ -306,7 +306,7 @@ void delete(current_state *state, int addr1, int addr2, char command, commands *
 
 //undo command
 void undo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_length) {
-    char next_cmd
+    char next_cmd;
 }
 
 //redo command

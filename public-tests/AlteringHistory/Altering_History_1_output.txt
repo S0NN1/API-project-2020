@@ -1,0 +1,100 @@
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble.
+20. Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.
+.
+.
+.
+.
+.
+.
+.
+.
+43. In software systems, it is often the early bird that makes the worm.
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?
+.
+.
+.
+.
+.
+.
+.
+.
+108. Whenever two programmers meet to criticize their programs, both are silent.
+101. Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+92. The computer is the ultimate polluter: its feces are indistinguishable from the food it produces.
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
+.
+.
+.
+.
+.
+.
+.
+.
+92. The computer is the ultimate polluter: its feces are indistinguishable from the food it produces.
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
+.
+.
+.
+.
+.
+.
+.
+.
+108. Whenever two programmers meet to criticize their programs, both are silent.
+.
+.
+.
+.
+.
+.
+.
+.
+.

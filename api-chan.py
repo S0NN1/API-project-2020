@@ -4,7 +4,7 @@ from random import choice
 # Costanti
 MAXLEN = 1024
 # BRUH AGGIUNGI 'd', 'u', 'r' SE VUOI DELETE, UNDO E REDO
-letters = ['c', 'p']
+letters = ['c', 'p', 'd']
 
 maxfilelen = [0]
 

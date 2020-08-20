@@ -1,0 +1,61 @@
+1,2c
+89. One does not learn computing by using a hand calculator, but one can forget arithmetic.
+30. In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+.
+1,10p
+1,2c
+85. Though the Chinese should adore APL, it's FORTRAN they put their money on.
+87. We have the mini and the micro computer. In what semantic niche would the pico computer fall?
+.
+1,2c
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
+100. We will never run out of things to program as long as there is a single program around.
+.
+1,10p
+1,2c
+107. The debate rages on: is PL/I Bachtrian or Dromedary?
+63. When we write programs that "learn", it turns out that we do and they don't.
+.
+1,1c
+3. Syntactic sugar causes cancer of the semicolon.
+.
+1,10p
+1,1c
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+1,1c
+119. Programming is an unnatural act.
+.
+1,10p
+1,1c
+5. If a program manipulates a large amount of data, it does so in a small number of ways.
+.
+1,2c
+63. When we write programs that "learn", it turns out that we do and they don't.
+8. A programming language is low level when its programs require attention to the irrelevant.
+.
+1,10p
+1,1c
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+.
+1,1d
+1,10p
+1,2d
+1,2d
+1,10p
+1,1d
+1,2d
+1,10p
+1,1c
+112. Computer Science is embarrassed by the computer.
+.
+1,2d
+1,10p
+1,2c
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+43. In software systems, it is often the early bird that makes the worm.
+.
+1,2d
+1,10p
+1,1d
+q

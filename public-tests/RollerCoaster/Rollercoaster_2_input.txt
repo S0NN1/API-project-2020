@@ -1,0 +1,246 @@
+1,1c
+39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
+.
+1,10p
+1,1c
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+.
+1,1c
+118. If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
+.
+1,10p
+1,1c
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+1,2c
+80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+53. So many good ideas are never heard from again once they embark in a voyage on the semantic gulf.
+.
+1,10p
+1,2c
+109. Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.
+80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+.
+1,1c
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+.
+1,10p
+1,2c
+86. We kid ourselves if we think that the ratio of procedure to  data  in an active data-base system can be made arbitrarily small or even kept small.
+44.Sometimes I think the only universal in the computing field is the fetch-execute cycle.
+.
+1,2c
+115. Most people find the concept of programming obvious, but the doing impossible.
+86. We kid ourselves if we think that the ratio of procedure to  data  in an active data-base system can be made arbitrarily small or even kept small.
+.
+1,10p
+1,1c
+32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
+.
+1,2d
+1,10p
+1,2d
+1,1c
+1. One man's constant is another man's variable.
+.
+1,10p
+1,1d
+1,2d
+1,10p
+1,2d
+1,2d
+1,10p
+1,2d
+1,1d
+1,10p
+1,2d
+4u
+1,10p
+10u
+7r
+1,10p
+10r
+2r
+1,10p
+9u
+10u
+1,10p
+6u
+5u
+1,10p
+8u
+1,1d
+1,10p
+1,1d
+1,2d
+1,10p
+1,2d
+1,1c
+8. A programming language is low level when its programs require attention to the irrelevant.
+.
+1,10p
+1,1d
+1,2d
+1,10p
+1,2c
+118. If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
+12. Recursion is the root of computation since it trades description for time.
+.
+1,2d
+1,10p
+1,1c
+117. It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing  thoughts,  devoting attention to detail and learning to be self-critical?
+.
+3r
+1,10p
+4u
+2u
+1,10p
+8u
+4u
+1,10p
+3r
+2r
+1,10p
+3u
+8u
+1,10p
+5u
+1,2d
+1,10p
+1,1c
+75. Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves.
+.
+1,2d
+1,10p
+1,2c
+46. Like punning, programming is a play on words.
+81. In computing, turning the obvious into the useful is a living definition of the word "frustration".
+.
+1,1c
+8. A programming language is low level when its programs require attention to the irrelevant.
+.
+1,10p
+1,1d
+1,2d
+1,10p
+1,2d
+1,1c
+62. In computing, invariants are ephemeral.
+.
+1,10p
+1,2d
+7u
+1,10p
+2u
+10u
+1,10p
+9u
+1u
+1,10p
+8r
+5r
+1,10p
+5u
+2u
+1,10p
+2r
+1,1c
+31. Simplicity does not precede complexity, but follows it.
+.
+1,1d
+1,10p
+1,1d
+1,2d
+1,10p
+1,1d
+1,2d
+1,10p
+1,1d
+1,1d
+1,10p
+1,2d
+1,2d
+1,10p
+1,2c
+72. An adequate bootstrap is a contradiction in terms.
+98. In computing, the mean time to failure keeps getting shorter.
+.
+9r
+1,10p
+8u
+1u
+1,10p
+5u
+1u
+1,10p
+9r
+9u
+1,10p
+9u
+6r
+1,10p
+8r
+1,1d
+1,10p
+1,2d
+1,1d
+1,10p
+1,1c
+21. Optimization hinders evolution.
+.
+1,2d
+1,10p
+1,2d
+1,1d
+1,10p
+1,2d
+1,1d
+1,10p
+1,2d
+8u
+1,10p
+10u
+10u
+1,10p
+3r
+6u
+1,10p
+9u
+7u
+1,10p
+1r
+9u
+1,10p
+7u
+1,1d
+1,10p
+1,2d
+1,1d
+1,10p
+1,2d
+1,2d
+1,10p
+1,1d
+1,2d
+1,10p
+1,2d
+1,2d
+1,10p
+1,2d
+2r
+1,10p
+5u
+1u
+1,10p
+7u
+1r
+1,10p
+8u
+3u
+1,10p
+6u
+2r
+1,10p
+10r
+q

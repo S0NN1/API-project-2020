@@ -19,7 +19,7 @@ typedef struct cmds {
 } commands;
 
 //get input function
-char *get_input(size_t *input_length);
+char *get_input();
 
 //get addresses function
 void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length);
@@ -62,7 +62,9 @@ int main() {
     size_t cmd_length = 0;
     while (true) {
         //get command from stdin
-        cmd = get_input(&cmd_length);
+        cmd = get_input();
+
+        cmd_length=strlen(cmd);
         //get identifier
         c = cmd[cmd_length - 2];
         //get addresses
@@ -102,13 +104,14 @@ int main() {
     }
 }
 
-char *get_input(size_t *input_length) {
+char *get_input() {
     //input string
-    char *input = (char *) calloc(1025, sizeof(char));//TODO EFFICIENCY
+    char input[1025];
     //scan stdin input until it reaches '\n' (included)
     fgets(input, 1024, stdin);
-    (*input_length) = strlen(input);
-    return input;
+    char * ptr = malloc((strlen(input)+1)*sizeof(char));
+    strcpy(ptr, input);
+    return ptr;
 }
 
 void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length) {
@@ -199,22 +202,17 @@ void change(current_state *state, int addr1, int addr2, char command, commands *
         //first initialization of state
         if (state->strings == NULL && i == 1) {
             //initialize first node
-            char **strings = (char **) malloc(sizeof(char *));
-            strings[0] = get_input(&c);
-            //resizing to save memory
-            strings[0] = (char *) realloc(strings[0], (c + 1) * sizeof(char));
+            state->strings = (char **) malloc(sizeof(char *));
+            state->strings[0] = get_input();
             state->length++;
             state->mem_len++;
-            state->strings = strings;
             //fill undo/redo
             push(temp_redo, state->strings[0], i - addr1);
             push(temp_undo, NULL, i - addr1);
         } else {
             //index out of bound, more memory allocated needed
             if (i > state->mem_len) {
-                char *temp = get_input(&c);
-                //resizing to save memory
-                temp = (char *) realloc(temp, (c + 1) * sizeof(char));
+                char *temp = get_input();
                 state->mem_len = (state->mem_len + 1) * 2;
                 state->strings = (char **) realloc(state->strings, state->mem_len * sizeof(char *));
                 state->strings[i - 1] = temp;
@@ -224,14 +222,13 @@ void change(current_state *state, int addr1, int addr2, char command, commands *
                 push(temp_undo, NULL, i - addr1);
             } //modify already existing string
             else {
-                char *temp = get_input(&c);
-                temp = (char *) realloc(temp, (c + 1) * sizeof(char));
+                char *temp = get_input();
                 if (i > state->length) {
                     push(temp_undo, NULL, i - addr1);
-                    state->strings[i - 1] = (char *) malloc((c + 1) * sizeof(char));
                     state->length++;
                 } else {
                     push(temp_undo, state->strings[i - 1], i - addr1);
+                    //todo realloc scomparsa funzionerà?
                 }
                 state->strings[i - 1] = temp;
 
@@ -308,7 +305,9 @@ void delete(current_state *state, int addr1, int addr2, char command, commands *
 }
 
 //undo command
-void undo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_length) {}
+void undo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_length) {
+    char next_cmd
+}
 
 //redo command
 void redo(current_state *state, int addr1, int addr2, char *cmd, size_t cmd_length) {}

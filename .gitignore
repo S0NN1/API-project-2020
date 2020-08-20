@@ -26,3 +26,11 @@ _deps
 .vscode/*
 
 cmake-build-debug/*
+
+cmake-build-debug-coverage/*
+
+build/*
+
+tests/*
+
+/*.txt

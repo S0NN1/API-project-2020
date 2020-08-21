@@ -1,0 +1,44 @@
+1,2c
+110. Editing is a rewording activity.
+81. In computing, turning the obvious into the useful is a living definition of the word "frustration".
+.
+1,10p
+1,2c
+23. To understand a program you must become both the machine and the program.
+71. Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits.
+.
+1,2c
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+1,10p
+1,1c
+58. Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.
+.
+1,1c
+58. Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.
+.
+1,2d
+1,10p
+1,2c
+96. Computers don't introduce order anywhere as much as they expose opportunities.
+98. In computing, the mean time to failure keeps getting shorter.
+.
+1,2c
+34. The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+.
+1,10p
+1,2d
+1,2c
+107. The debate rages on: is PL/I Bachtrian or Dromedary?
+72. An adequate bootstrap is a contradiction in terms.
+.
+1u
+1,10p
+5r
+1u
+1,10p
+3u
+4r
+q

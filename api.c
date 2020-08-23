@@ -210,14 +210,14 @@ commands *empty(commands *state) {
     while (state != NULL) {
         commands *temp = state->next;
         for (int i = 0; i < state->length; ++i) {
-            if(state->modified_strings!=NULL){
-                state->modified_strings[i]=NULL;
+            if (state->modified_strings != NULL) {
+                state->modified_strings[i] = NULL;
             }
         }
         free(state->modified_strings);
-        state->modified_strings=NULL;
+        state->modified_strings = NULL;
         free(state);
-        state=NULL;
+        state = NULL;
         state = temp;
     }
     state = NULL;
@@ -432,10 +432,10 @@ void undo(current_state *state, int addr1, commands **undo, commands **redo, int
                 } else {
                     if ((*undo)->modified_strings != NULL) {
                         undo_delete(state, (*undo), redo);
-                    } else{
+                    } else {
                         commands *temp_redo = (commands *) malloc(sizeof(commands));
-                        initialize_node(temp_redo, redo,'d',(*undo)->addr1,(*undo)->addr2);
-                        (*redo)=temp_redo;
+                        initialize_node(temp_redo, redo, 'd', (*undo)->addr1, (*undo)->addr2);
+                        (*redo) = temp_redo;
                     }
                 }
                 (*redo_len)++;

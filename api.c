@@ -92,6 +92,7 @@ int main() {
                 redo_len = 0;
                 read = true;
                 sum = 0;
+                u_done=0;
                 break;
             case ('d'):
                 delete(state, addr1, addr2, &undo_state);
@@ -100,6 +101,7 @@ int main() {
                 redo_len = 0;
                 read = true;
                 sum = 0;
+                u_done=0;
                 break;
             case ('u'):
                 temp=undo_len;
@@ -114,7 +116,11 @@ int main() {
                 sum = 0;
                 break;
             case ('r'):
+                temp=redo_len;
                 redo(state, addr1, &undo_state, &redo_state, &undo_len, &redo_len);
+                if (redo_len==0){
+                    u_done-=temp;
+                } else u_done-=addr1;
                 u_on_hold = 0;
                 pending_undo = false;
                 sum = 0;
@@ -136,10 +142,12 @@ void input_checker(int undo_len, int *u_on_hold, int u_done, int *sum, bool *pen
         (*addr1) = (int) strtol(cmd, ptr, 10);
         (*pending_undo) = true;
         if ((*c) == 'u') {
-            if ((*addr1) <= undo_len) {
+            if ((*addr1) <= undo_len-(*u_on_hold) ) {//TODO NOT SURE //<undo_len
                 (*sum) += (*addr1);
-            } else (*sum) += undo_len;
-            (*u_on_hold) += (*addr1);
+            } else (*sum) = undo_len;
+            if (undo_len>0){
+                (*u_on_hold) += (*addr1);
+            }
         } else {
             if ((*addr1) <= u_done + (*u_on_hold)) {
                 (*sum) -= (*addr1);
@@ -150,7 +158,7 @@ void input_checker(int undo_len, int *u_on_hold, int u_done, int *sum, bool *pen
             (*u_r) = 'r';
         } else (*u_r) = 'u';
         (*c) = 'n';
-    } else if ((*c) != '.' && (*c) != 'q' && sum != 0 && (*pending_undo) == true) {
+    } else if ((*c) != '.' && (*c) != 'q' && sum != 0 && (*pending_undo)) {
         (*c) = (*u_r);
         if ((*sum) < 0) {
             (*addr1) = -(*sum);
@@ -354,9 +362,10 @@ delete(current_state *state, int addr1, int addr2, commands **undo) {
     } else {
         if (addr2 >= state->length) {
             int i;
-            for (i = addr1 - 1; i < state->length; ++i) {
+            int kek=state->length;
+            for (i = addr1 - 1; i < kek; ++i) {
                 if (i >= 0) {
-                    if (state->length != 0) {
+                    if (state->length != 0) { //TODO FA SCHIFO
                         push(temp_undo, state->strings[i], i - addr1 + 1);
                     }
                     state->strings[i] = NULL;
@@ -382,7 +391,7 @@ delete(current_state *state, int addr1, int addr2, commands **undo) {
                     k++;
                 } else break;
             }
-            state->length = i - 1;
+            state->length = i;
         }
         (*undo) = temp_undo;
     }

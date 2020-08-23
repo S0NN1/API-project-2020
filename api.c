@@ -60,7 +60,7 @@ int main() {
     commands *undo_state = NULL;
     //command range
     int addr1 = 0, addr2 = 0;
-    int undo_len = 0, redo_len = 0, u_done = 0, sum = 0, u_on_hold = 0;
+    int undo_len = 0, redo_len = 0, u_done = 0, sum = 0, u_on_hold = 0, temp=0;
     bool pending_undo = false, read = true;
     //command identifier 'p', 'c', 'd', 'r', 'u', 'q'
     char c, u_r = 0;
@@ -102,9 +102,10 @@ int main() {
                 sum = 0;
                 break;
             case ('u'):
+                temp=undo_len;
                 undo(state, addr1, &undo_state, &redo_state, &undo_len, &redo_len);
                 if (undo_len == 0) {
-                    u_done += undo_len;
+                    u_done += temp;
                 } else {
                     u_done += addr1;
                 }
@@ -203,7 +204,7 @@ char *get_input() {
 }
 
 bool is_empty(const char *string) {
-    return string[0] == '.' && string[1] == '\n';
+    return string ==NULL ||(string[0] == '.' && string[1] == '\n');
 }
 
 commands *empty(commands *state) {
@@ -355,20 +356,12 @@ delete(current_state *state, int addr1, int addr2, commands **undo) {
             int i;
             for (i = addr1 - 1; i < state->length; ++i) {
                 if (i >= 0) {
-                    if (state->length == 0) {
-                        push(temp_undo, NULL, i - addr1 + 1);
-                    }
-                        //TODO
-                    else {
+                    if (state->length != 0) {
                         push(temp_undo, state->strings[i], i - addr1 + 1);
                     }
                     state->strings[i] = NULL;
                     state->length--;
                 }
-            }
-            while (i < addr2) {
-                push(temp_undo, NULL, i - addr1 + 1);
-                i++;
             }
         } else {
             for (int i = addr1; i <= addr2; ++i) {
@@ -481,8 +474,10 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
     if (state->strings[undo->addr1 - 1] != NULL && !is_empty(undo->modified_strings[0])) {
         for (int i = undo->addr1; i <= undo->addr2; ++i) {
             char *temp = state->strings[i - 1];
-            state->strings = (char **) realloc(state->strings, (state->length + 1) * sizeof(char *));
-            state->length++;
+            if (!is_empty(state->strings[state->length - 1] )){
+                state->strings = (char **) realloc(state->strings, (state->length + 1) * sizeof(char *));
+                state->length++;
+            }
             state->strings[state->length - 1] = temp;
             state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
         }

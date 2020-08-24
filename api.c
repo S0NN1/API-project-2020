@@ -26,7 +26,7 @@ void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length);
 
 char *get_input();
 
-bool is_empty(const char *string);
+bool is_empty(char *string);
 
 commands *empty(commands *state);
 
@@ -211,7 +211,7 @@ char *get_input() {
     return ptr;
 }
 
-bool is_empty(const char *string) {
+bool is_empty(char *string) {
     return string ==NULL ||(string[0] == '.' && string[1] == '\n');
 }
 
@@ -245,7 +245,7 @@ void initialize_node(commands *temp, commands *const *main_struct, char command,
 void push(commands *state, char *string, int index) {//index i-addr1
     //modified strings uninitialized
     if (state->modified_strings == NULL) {
-        state->modified_strings = (char **) malloc(1 * sizeof(char *));
+        state->modified_strings = (char **) calloc(1 ,sizeof(char *));
         if (string == NULL) {
             state->modified_strings[0] = ".\n";
         } else {
@@ -255,14 +255,13 @@ void push(commands *state, char *string, int index) {//index i-addr1
     } else {
         //modified strings resizing
         if (index >= state->length) {
-            state->modified_strings = (char **) realloc(state->modified_strings,
-                                                        (state->length + 1) * sizeof(char *));
+            state->length++;
+            state->modified_strings = (char **) realloc(state->modified_strings,state->length * sizeof(char *));
             if (string == NULL) {
                 state->modified_strings[index] = ".\n";
             } else {
                 state->modified_strings[index] = string;
             }
-            state->length++;
         } else //filling strings
         {
             if (string == NULL) {
@@ -324,7 +323,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
                 } else {
                     temp = get_input();
                 }
-                state->mem_len = state->mem_len + 2;
+                state->mem_len++;
                 state->strings = (char **) realloc(state->strings, state->mem_len * sizeof(char *));
                 state->strings[i - 1] = temp;
                 state->length++;
@@ -391,7 +390,7 @@ delete(current_state *state, int addr1, int addr2, commands **undo) {
                     k++;
                 } else break;
             }
-            state->length = i;
+            state->length = i-2;
         }
         (*undo) = temp_undo;
     }
@@ -444,6 +443,7 @@ void undo(current_state *state, int addr1, commands **undo, commands **redo, int
                 (*undo_len)--;
                 temp = (*undo);
                 (*undo) = (*undo)->next;
+                free(temp->modified_strings);
                 free(temp);
                 i++;
             } else break;

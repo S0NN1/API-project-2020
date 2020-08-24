@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 project(api-project)
 set(CMAKE_C_STANDARD 11)
-set(GCC_COVERAGE_COMPILE_FLAGS "-DEVAL -std=gnu11 -O2 -pipe -static -s -lm")
+set(GCC_COVERAGE_COMPILE_FLAGS "-DEVAL -std=gnu11 -O2 -pipe -static -s -lm -lasan -fsanitize=address")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
 add_executable(api-project WIN32 api.c)
 target_link_libraries(api-project PRIVATE m)

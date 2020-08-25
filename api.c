@@ -247,6 +247,9 @@ void initialize_node(commands *temp, commands *const *main_struct, char command,
 
 void push(commands *state, char *string, int index) {//index i-addr1
     //modified strings uninitialized
+    if (string==NULL){
+        return;
+    }
     if (state->modified_strings == NULL) {
         state->modified_strings = (char **) calloc(1, sizeof(char *));
         state->modified_strings[0] = string;
@@ -312,7 +315,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
                 } else {
                     temp = get_input();
                 }
-                state->mem_len+=(addr2-state->mem_len);
+                state->mem_len+=(addr2-state->mem_len)+1;
                 state->strings = (char **) realloc(state->strings, state->mem_len * sizeof(char *));
                 state->strings[i - 1] = temp;
                 state->length++;
@@ -324,10 +327,10 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
                 } else {
                     temp = get_input();
                 }
-                if (i >= state->length ) {
+                if (i > state->length ) {
                     state->length++;
                 }
-                if (!is_first && state->strings[i-1]!=NULL) {
+                if (!is_first) {
                     push(temp_undo, state->strings[i - 1], i - addr1);
                 }
                 state->strings[i - 1] = temp;
@@ -495,7 +498,7 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
         }
     } else {
         for (int i = undo->addr1; i <= undo->addr2; ++i) {
-            if (i <= undo->length) {
+            if (i <= undo->length+1) {
                 push(temp_redo, state->strings[i - 1], i - undo->addr1);
                 state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
                 if (i > state->length) {

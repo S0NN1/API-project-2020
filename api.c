@@ -247,7 +247,7 @@ void initialize_node(commands *temp, commands *const *main_struct, char command,
 
 void push(commands *state, char *string, int index) {//index i-addr1
     //modified strings uninitialized
-    if (string==NULL){
+    if (string == NULL) {
         return;
     }
     if (state->modified_strings == NULL) {
@@ -315,7 +315,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
                 } else {
                     temp = get_input();
                 }
-                state->mem_len+=(addr2-state->mem_len)+1;
+                state->mem_len += (addr2 - state->mem_len) + 1;
                 state->strings = (char **) realloc(state->strings, state->mem_len * sizeof(char *));
                 state->strings[i - 1] = temp;
                 state->length++;
@@ -327,7 +327,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
                 } else {
                     temp = get_input();
                 }
-                if (i > state->length ) {
+                if (i > state->length) {
                     state->length++;
                 }
                 if (!is_first) {
@@ -344,50 +344,41 @@ void
 delete(current_state *state, int addr1, int addr2, commands **undo) {
     commands *temp_undo = (commands *) malloc(sizeof(commands));
     initialize_node(temp_undo, undo, 'd', addr1, addr2);
+    int old_len;
     //undo/redo temp nodes
-    if (addr1 > state->length || (addr1==0 && addr2==0)) {
+    if (addr1 > state->length || (addr1 == 0 && addr2 == 0)) {
         (*undo) = temp_undo;
         return;
     } else {
-        if (addr1==0){
-            addr1=1;
-            temp_undo->addr1=1;
+        if (addr1 == 0) {
+            addr1 = 1;
+            temp_undo->addr1 = 1;
         }
-        if (addr2 >= state->length) {
-            int i;
-            int kek = state->length;
-            for (i = addr1 - 1; i < kek; ++i) {
-                if (i >= 0) {
-                    if (state->length != 0) { //TODO FA SCHIFO
-                        push(temp_undo, state->strings[i], i - addr1 + 1);
-                    }
-                    state->strings[i] = NULL;
-                    state->length--;
-                }
-            }
-        } else {
-            for (int i = addr1; i <= addr2; ++i) {
-                if (i == 0) {
-                    i++;
-                } else {
-                    push(temp_undo, state->strings[i - 1], i - addr1);
-                    state->strings[i - 1] = NULL;
-                }
-            }
-            int k = addr1 - 1;
-            int i;
-            for (i = addr2; i < state->length; ++i) {
-                if (state->strings[i] != NULL) {
-                    char *temp = state->strings[i];
-                    state->strings[k] = temp;
-                    state->strings[i] = NULL;
-                    k++;
-                } else break;
-            }
-            state->length = k;
+        if (addr2 > state->length) {
+            addr2 = state->length;
+            temp_undo->addr2 = addr2;
         }
-        (*undo) = temp_undo;
+        old_len = state->length;
+        for (int i = addr1; i <= addr2; ++i) {
+            push(temp_undo, state->strings[i - 1], i - addr1);
+            state->strings[i - 1] = NULL;
+            state->length--;
+        }
+        if (addr2 == old_len) {
+            (*undo) = temp_undo;
+            return;
+        }
+        int k = addr1 - 1;
+        for (int i = addr2; i < old_len; ++i) {
+            if (state->strings[i] != NULL) {
+                char *temp = state->strings[i];
+                state->strings[k] = temp;
+                state->strings[i] = NULL;
+                k++;
+            } else break;
+        }
     }
+    (*undo) = temp_undo;
 }
 
 void redo(current_state *state, int addr1, commands **undo, commands **redo, int *undo_len, int *redo_len) {
@@ -497,13 +488,11 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
             }
         }
     } else {
-        for (int i = undo->addr1; i <= undo->addr2; ++i) {
-            if (i <= undo->length+1) {
+        int i;
+        for (i = undo->addr1; i <= undo->addr2; ++i) {
+            if (i-undo->addr1 < undo->length) {
                 push(temp_redo, state->strings[i - 1], i - undo->addr1);
                 state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
-                if (i > state->length) {
-                    state->length++;
-                }
             } else {
                 push(temp_redo, state->strings[i - 1], i - undo->addr1);
                 state->strings[i - 1] = NULL;
@@ -521,9 +510,33 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
     int i;
     initialize_node(temp_redo, redo, 'd', undo->addr1, undo->addr2);
     //shifting state strings or invalid delete
-    if (undo->addr1==0 && undo->addr2==0){
+    if (undo->modified_strings == NULL) {
+        (*redo) = temp_redo;
         return;
     }
+    int old_len=state->length;
+    for (i = undo->addr1; i <= undo->addr2; ++i) {
+        char *temp = state->strings[i - 1];
+        int j = 1;
+        while (temp != NULL) {
+            char *shifted = state->strings[i - 1 + (j - 1) * (undo->addr2 - undo->addr1 + 1)];
+            if (j == 1)
+                state->strings[i - 1 + (j - 1) * (undo->addr2 - undo->addr1 + 1)] = undo->modified_strings[i -
+                                                                                                           undo->addr1];
+            else {
+                state->strings[i - 1 + (j - 1) * (undo->addr2 - undo->addr1 + 1)] = temp;
+            }
+            temp = shifted;
+            j++;
+        }
+        if (i>old_len){
+            state->strings[i-1]=undo->modified_strings[i-undo->addr1];
+        }
+        state->length++;
+    }
+    (*redo) = temp_redo;
+}
+/*
     if (state->strings[undo->addr1 - 1] != NULL && !is_empty(undo->modified_strings[0]) && state->length != 0) {
         int old_len = state->length;
         char *temp;
@@ -554,7 +567,7 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
         }
     } else if (!is_empty(undo->modified_strings[0])) {
         for (i = undo->addr1; i <= undo->addr2; ++i) {
-            if (i > undo->length && undo->addr1 != undo->addr2) {
+            if (i > undo->length) {
                 break;
             }
             if (i > state->length) {
@@ -566,3 +579,4 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
     (*redo) = temp_redo;
 }
 
+*/

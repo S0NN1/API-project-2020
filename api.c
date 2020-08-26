@@ -26,8 +26,6 @@ void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length);
 
 char *get_input();
 
-bool is_empty(const char *string);
-
 commands *empty(commands *state);
 
 void initialize_node(commands *temp, commands *const *main_struct, char command, int addr1, int addr2);
@@ -425,47 +423,6 @@ void undo(current_state *state, int addr1, commands **undo, commands **redo, int
     }
 }
 
-/*
-void undo_change(current_state *state, commands *undo, commands **redo) {
-    commands *temp_redo = (commands *) malloc(sizeof(commands));
-    initialize_node(temp_redo, redo, 'c', undo->addr1, undo->addr2);
-    int temp = state->length;
-    for (int i = undo->addr1; i < undo->addr2; ++i) {
-        if (i <= undo->length) {
-            if (undo->modified_strings == NULL || is_empty(undo->modified_strings[i -
-                                                                                  undo->addr1])) {//change revert inizio ma undo->modified_strings non è null
-                if (i <= temp) {
-                    push(temp_redo, state->strings[i - 1], i - undo->addr1);
-                    state->strings[i - 1] = NULL;
-                    if (undo->addr2 <= temp) {
-                        state->length--;
-                    }
-                } else push(temp_redo, NULL, i - undo->addr1);
-            }
-        } else {
-            if (state->strings == NULL || i > state->length) {
-                push(temp_redo, NULL, i - undo->addr1);
-                if (!is_empty(undo->modified_strings[i - undo->addr1])) {
-                    state->length++;
-                    if (i > state->mem_len) {
-                        state->strings = realloc(state->strings, state->length * sizeof(char *));
-                    }
-                    state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
-                }
-
-            } else {
-                push(temp_redo, state->strings[i - 1], i - undo->addr1);
-                if (undo->modified_strings == NULL) {
-
-                } else {
-                    state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
-                }
-            }
-        }
-    }
-    (*redo) = temp_redo;
-}
- */
 void undo_change(current_state *state, commands *undo, commands **redo) {
     commands *temp_redo = (commands *) malloc(sizeof(commands));
     initialize_node(temp_redo, redo, 'c', undo->addr1, undo->addr2);
@@ -526,47 +483,3 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
     }
     (*redo) = temp_redo;
 }
-/*
-    if (state->strings[undo->addr1 - 1] != NULL && !is_empty(undo->modified_strings[0]) && state->length != 0) {
-        int old_len = state->length;
-        char *temp;
-        for (i = undo->addr1; i <= undo->addr2; ++i) {
-            temp = state->strings[i - 1];
-            if (i > undo->length && undo->addr1 != undo->addr2) {
-                break;
-            }
-            if (!is_empty(state->strings[state->length - 1])) {
-                state->length++;
-            }
-            state->strings[i] = temp;
-            state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
-        }
-        if (undo->length != 1) {
-            for (int j = old_len; j < state->length; ++j) {
-                temp = state->strings[i - 1];
-                state->strings[i - 1] = state->strings[j];
-                state->strings[j] = temp;
-                i++;
-            }
-        } else {
-            for (; i < state->length; ++i) {
-                temp = state->strings[state->length - 1];
-                state->strings[state->length - 1] = state->strings[i - 1];
-                state->strings[i - 1] = temp;
-            }
-        }
-    } else if (!is_empty(undo->modified_strings[0])) {
-        for (i = undo->addr1; i <= undo->addr2; ++i) {
-            if (i > undo->length) {
-                break;
-            }
-            if (i > state->length) {
-                state->length++;
-            }
-            state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
-        }
-    }
-    (*redo) = temp_redo;
-}
-
-*/

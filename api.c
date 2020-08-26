@@ -142,20 +142,20 @@ void input_checker(int undo_len, int *u_on_hold, int u_done, int *sum, bool *pen
         (*addr1) = (int) strtol(cmd, ptr, 10);
         (*pending_undo) = true;
         if ((*c) == 'u') {
-            if ((*addr1) <= undo_len - (*u_on_hold)) {//TODO NOT SURE //<undo_len
+            if ((*addr1) <= undo_len - (*sum)) {//TODO NOT SURE //<undo_len
                 (*sum) += (*addr1);
             } else (*sum) = undo_len;
-            if (undo_len > 0) {
-                (*u_on_hold) += (*addr1);
-            }
+                (*u_on_hold) += (*sum);
         } else {
-            if ((*addr1) <= u_done + (*u_on_hold)) {
+            if ((*addr1) <= u_done + (*sum)) {
                 (*sum) -= (*addr1);
             } else
-                (*sum) -= u_done + (*u_on_hold);
+                (*sum) = -u_done ;
+            (*u_on_hold) = (*sum);
         }
         if ((*sum) < 0) {
             (*u_r) = 'r';
+            (*u_on_hold)=0;
         } else (*u_r) = 'u';
         (*c) = 'n';
     } else if ((*c) != '.' && (*c) != 'q' && sum != 0 && (*pending_undo)) {
@@ -490,7 +490,7 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
     } else {
         int i;
         for (i = undo->addr1; i <= undo->addr2; ++i) {
-            if (i-undo->addr1 < undo->length) {
+            if (i - undo->addr1 < undo->length) {
                 push(temp_redo, state->strings[i - 1], i - undo->addr1);
                 state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
             } else {
@@ -514,7 +514,7 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
         (*redo) = temp_redo;
         return;
     }
-    int old_len=state->length;
+    int old_len = state->length;
     for (i = undo->addr1; i <= undo->addr2; ++i) {
         char *temp = state->strings[i - 1];
         int j = 1;
@@ -529,8 +529,8 @@ void undo_delete(current_state *state, commands *undo, commands **redo) {
             temp = shifted;
             j++;
         }
-        if (i>old_len){
-            state->strings[i-1]=undo->modified_strings[i-undo->addr1];
+        if (i > old_len) {
+            state->strings[i - 1] = undo->modified_strings[i - undo->addr1];
         }
         state->length++;
     }

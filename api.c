@@ -214,20 +214,10 @@ char *get_input() {
     }
 }
 
-bool is_empty(const char *string) {
-    return string == NULL;
-}
-
 commands *empty(commands *state) {
     while (state != NULL) {
         commands *temp = state->next;
-        for (int i = 0; i < state->length; ++i) {
-            if (state->modified_strings != NULL) {
-                state->modified_strings[i] = NULL;
-            }
-        }
         free(state->modified_strings);
-        state->modified_strings = NULL;
         free(state);
         state = NULL;
         state = temp;

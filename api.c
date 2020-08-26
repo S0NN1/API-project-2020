@@ -140,10 +140,10 @@ void input_checker(int undo_len, int *u_on_hold, int u_done, int *sum, bool *pen
         (*addr1) = (int) strtol(cmd, ptr, 10);
         (*pending_undo) = true;
         if ((*c) == 'u') {
-            if ((*addr1) <= undo_len - (*sum)) {//TODO NOT SURE //<undo_len
+            if ((*addr1) <= undo_len - (*sum)) {
                 (*sum) += (*addr1);
             } else (*sum) = undo_len;
-                (*u_on_hold) += (*sum);
+            (*u_on_hold) += (*sum);
         } else {
             if ((*addr1) <= u_done + (*sum)) {
                 (*sum) -= (*addr1);
@@ -203,7 +203,7 @@ char *get_input() {
     //input string
     char input[1025];
     //scan stdin input until it reaches '\n' (included)
-    if (fgets(input, 1025, stdin) != NULL) {
+    if (fgets(input, 1024, stdin) != NULL) {
         char *ptr = malloc((strlen(input) + 1) * sizeof(char));
         strcpy(ptr, input);
         return ptr;
@@ -428,7 +428,7 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
     initialize_node(temp_redo, redo, 'c', undo->addr1, undo->addr2);
     if (undo->modified_strings == NULL) {
         for (int i = undo->addr1; i <= undo->addr2; ++i) {
-            push(temp_redo, state->strings[i - 1], i - undo->addr1);
+             push(temp_redo, state->strings[i - 1], i - undo->addr1);
             state->strings[i - 1] = NULL;
             if (state->length > 0) {
                 state->length--;

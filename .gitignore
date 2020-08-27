@@ -26,6 +26,7 @@ cmake-build-debug/*
 cmake-build-debug-coverage/*
 build/*
 tests/*
+ProgettoAPI2020_GeneratoreTest/*
 
 ### Files ###
 /*.txt

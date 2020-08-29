@@ -13,349 +13,330 @@ n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=1
 #-----------
-time=594497495
-mem_heap_B=22314598
-mem_heap_extra_B=3244274
+time=470100482
+mem_heap_B=18353584
+mem_heap_extra_B=2667952
 mem_stacks_B=0
 heap_tree=detailed
-n3: 22314598 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 20667874 0x1097E4: get_input (api.c:215)
-  n1: 20649089 0x109BA9: change (api.c:297)
-   n0: 20649089 0x10932E: main (api.c:88)
-  n0: 18785 in 1 place, below massif's threshold (1.00%)
- n2: 1591232 0x109969: push (api.c:252)
-  n1: 909176 0x109C1B: change (api.c:303)
-   n0: 909176 0x10932E: main (api.c:88)
-  n1: 682056 0x109D5D: delete (api.c:330)
-   n0: 682056 0x10937B: main (api.c:97)
- n0: 55492 in 6 places, all below massif's threshold (1.00%)
+n3: 18353584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 16996688 0x1097E4: get_input (api.c:215)
+  n1: 16981338 0x109BA9: change (api.c:297)
+   n0: 16981338 0x10932E: main (api.c:88)
+  n0: 15350 in 1 place, below massif's threshold (1.00%)
+ n2: 1309504 0x109969: push (api.c:252)
+  n1: 733056 0x109C1B: change (api.c:303)
+   n0: 733056 0x10932E: main (api.c:88)
+  n1: 576448 0x109D6C: delete (api.c:331)
+   n0: 576448 0x10937B: main (api.c:97)
+ n0: 47392 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=2
 #-----------
-time=1039476026
-mem_heap_B=38878708
-mem_heap_extra_B=5654572
+time=1014401965
+mem_heap_B=39338040
+mem_heap_extra_B=5720992
 mem_stacks_B=0
 heap_tree=detailed
-n3: 38878708 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 36015248 0x1097E4: get_input (api.c:215)
-  n1: 35982373 0x109BA9: change (api.c:297)
-   n0: 35982373 0x10932E: main (api.c:88)
-  n0: 32875 in 1 place, below massif's threshold (1.00%)
- n2: 2773608 0x109969: push (api.c:252)
-  n1: 1574032 0x109C1B: change (api.c:303)
-   n0: 1574032 0x10932E: main (api.c:88)
-  n1: 1199576 0x109D5D: delete (api.c:330)
-   n0: 1199576 0x10937B: main (api.c:97)
- n0: 89852 in 6 places, all below massif's threshold (1.00%)
+n3: 39338040 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 36442420 0x1097E4: get_input (api.c:215)
+  n1: 36409235 0x109BA9: change (api.c:297)
+   n0: 36409235 0x10932E: main (api.c:88)
+  n0: 33185 in 1 place, below massif's threshold (1.00%)
+ n2: 2805128 0x109969: push (api.c:252)
+  n1: 1599640 0x109C1B: change (api.c:303)
+   n0: 1599640 0x10932E: main (api.c:88)
+  n1: 1205488 0x109D6C: delete (api.c:331)
+   n0: 1205488 0x10937B: main (api.c:97)
+ n0: 90492 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=3
 #-----------
-time=1540220523
-mem_heap_B=57757462
-mem_heap_extra_B=8398194
+time=1354803483
+mem_heap_B=52595816
+mem_heap_extra_B=7652360
 mem_stacks_B=0
 heap_tree=detailed
-n3: 57757462 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 53502894 0x1097E4: get_input (api.c:215)
-  n1: 53455238 0x109BA9: change (api.c:297)
-   n0: 53455238 0x10932E: main (api.c:88)
-  n0: 47656 in 1 place, below massif's threshold (1.00%)
- n2: 4128936 0x109969: push (api.c:252)
-  n1: 2393944 0x109C1B: change (api.c:303)
-   n0: 2393944 0x10932E: main (api.c:88)
-  n1: 1734992 0x109D5D: delete (api.c:330)
-   n0: 1734992 0x10937B: main (api.c:97)
- n0: 125632 in 6 places, all below massif's threshold (1.00%)
+n3: 52595816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 48723364 0x1097E4: get_input (api.c:215)
+  n1: 48679429 0x109BA9: change (api.c:297)
+   n0: 48679429 0x10932E: main (api.c:88)
+  n0: 43935 in 1 place, below massif's threshold (1.00%)
+ n2: 3756200 0x109969: push (api.c:252)
+  n1: 2176072 0x109C1B: change (api.c:303)
+   n0: 2176072 0x10932E: main (api.c:88)
+  n1: 1580128 0x109D6C: delete (api.c:331)
+   n0: 1580128 0x10937B: main (api.c:97)
+ n0: 116252 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=4
 #-----------
-time=2168780755
-mem_heap_B=81155234
-mem_heap_extra_B=11808806
+time=2135441764
+mem_heap_B=82904391
+mem_heap_extra_B=12063569
 mem_stacks_B=0
 heap_tree=detailed
-n3: 81155234 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 75180558 0x1097E4: get_input (api.c:215)
-  n1: 75113136 0x109BA9: change (api.c:297)
-   n0: 75113136 0x10932E: main (api.c:88)
-  n0: 67422 in 1 place, below massif's threshold (1.00%)
- n2: 5800424 0x109969: push (api.c:252)
-  n1: 3382760 0x109C1B: change (api.c:303)
-   n0: 3382760 0x10932E: main (api.c:88)
-  n1: 2417664 0x109D5D: delete (api.c:330)
-   n0: 2417664 0x10937B: main (api.c:97)
- n0: 174252 in 6 places, all below massif's threshold (1.00%)
+n3: 82904391 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 76802419 0x1097E4: get_input (api.c:215)
+  n1: 76733764 0x109BA9: change (api.c:297)
+   n0: 76733764 0x10932E: main (api.c:88)
+  n0: 68655 in 1 place, below massif's threshold (1.00%)
+ n2: 5924720 0x109969: push (api.c:252)
+  n1: 3474576 0x109C1B: change (api.c:303)
+   n0: 3474576 0x10932E: main (api.c:88)
+  n1: 2450144 0x109D6C: delete (api.c:331)
+   n0: 2450144 0x10937B: main (api.c:97)
+ n0: 177252 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=5
 #-----------
-time=2550839646
-mem_heap_B=95685602
-mem_heap_extra_B=13924046
+time=2645361679
+mem_heap_B=102789671
+mem_heap_extra_B=14957393
 mem_stacks_B=0
 heap_tree=detailed
-n3: 95685602 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 88646078 0x1097E4: get_input (api.c:215)
-  n1: 88567747 0x109BA9: change (api.c:297)
-   n0: 88567747 0x10932E: main (api.c:88)
-  n0: 78331 in 1 place, below massif's threshold (1.00%)
- n2: 6838272 0x109969: push (api.c:252)
-  n1: 4029752 0x109C1B: change (api.c:303)
-   n0: 4029752 0x10932E: main (api.c:88)
-  n1: 2808520 0x109D5D: delete (api.c:330)
-   n0: 2808520 0x10937B: main (api.c:97)
- n0: 201252 in 6 places, all below massif's threshold (1.00%)
+n3: 102789671 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 95224843 0x1097E4: get_input (api.c:215)
+  n1: 95139963 0x109BA9: change (api.c:297)
+   n0: 95139963 0x10932E: main (api.c:88)
+  n0: 84880 in 1 place, below massif's threshold (1.00%)
+ n2: 7347416 0x109969: push (api.c:252)
+  n1: 4295560 0x109C1B: change (api.c:303)
+   n0: 4295560 0x10932E: main (api.c:88)
+  n1: 3051856 0x109D6C: delete (api.c:331)
+   n0: 3051856 0x10937B: main (api.c:97)
+ n0: 217412 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=6
 #-----------
-time=3326656572
-mem_heap_B=124703585
-mem_heap_extra_B=18143735
+time=3145478061
+mem_heap_B=122218469
+mem_heap_extra_B=17783307
 mem_stacks_B=0
 heap_tree=detailed
-n3: 124703585 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 115527957 0x1097E4: get_input (api.c:215)
-  n1: 115425482 0x109BA9: change (api.c:297)
-   n0: 115425482 0x10932E: main (api.c:88)
-  n0: 102475 in 1 place, below massif's threshold (1.00%)
- n2: 8914536 0x109969: push (api.c:252)
-  n1: 5221248 0x109C1B: change (api.c:303)
-   n0: 5221248 0x10932E: main (api.c:88)
-  n1: 3693288 0x109D5D: delete (api.c:330)
-   n0: 3693288 0x10937B: main (api.c:97)
- n0: 261092 in 6 places, all below massif's threshold (1.00%)
+n3: 122218469 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 113220993 0x1097E4: get_input (api.c:215)
+  n1: 113120224 0x109BA9: change (api.c:297)
+   n0: 113120224 0x10932E: main (api.c:88)
+  n0: 100769 in 1 place, below massif's threshold (1.00%)
+ n2: 8741064 0x109969: push (api.c:252)
+  n1: 5118744 0x109C1B: change (api.c:303)
+   n0: 5118744 0x10932E: main (api.c:88)
+  n1: 3622320 0x109D6C: delete (api.c:331)
+   n0: 3622320 0x10937B: main (api.c:97)
+ n0: 256412 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=7
 #-----------
-time=3833911914
-mem_heap_B=143835729
-mem_heap_extra_B=20928223
+time=3514439619
+mem_heap_B=136663176
+mem_heap_extra_B=19881688
 mem_stacks_B=0
 heap_tree=detailed
-n3: 143835729 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 133252485 0x1097E4: get_input (api.c:215)
-  n1: 133135065 0x109BA9: change (api.c:297)
-   n0: 133135065 0x10932E: main (api.c:88)
-  n0: 117420 in 1 place, below massif's threshold (1.00%)
- n2: 10284672 0x109969: push (api.c:252)
-  n1: 5991944 0x109C1B: change (api.c:303)
-   n0: 5991944 0x10932E: main (api.c:88)
-  n1: 4292728 0x109D5D: delete (api.c:330)
-   n0: 4292728 0x10937B: main (api.c:97)
- n0: 298572 in 6 places, all below massif's threshold (1.00%)
+n3: 136663176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 126606540 0x1097E4: get_input (api.c:215)
+  n1: 126494933 0x109BA9: change (api.c:297)
+   n0: 126494933 0x10932E: main (api.c:88)
+  n0: 111607 in 1 place, below massif's threshold (1.00%)
+ n2: 9772464 0x109969: push (api.c:252)
+  n1: 5715080 0x109C1B: change (api.c:303)
+   n0: 5715080 0x10932E: main (api.c:88)
+  n1: 4057384 0x109D6C: delete (api.c:331)
+   n0: 4057384 0x10937B: main (api.c:97)
+ n0: 284172 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=8
 #-----------
-time=4156293823
-mem_heap_B=155974045
-mem_heap_extra_B=22694691
+time=4179094932
+mem_heap_B=162475376
+mem_heap_extra_B=23641808
 mem_stacks_B=0
 heap_tree=detailed
-n3: 155974045 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 144494809 0x1097E4: get_input (api.c:215)
-  n1: 144367332 0x109BA9: change (api.c:297)
-   n0: 144367332 0x10932E: main (api.c:88)
-  n0: 127477 in 1 place, below massif's threshold (1.00%)
- n2: 11155504 0x109969: push (api.c:252)
-  n1: 6497248 0x109C1B: change (api.c:303)
-   n0: 6497248 0x10932E: main (api.c:88)
-  n1: 4658256 0x109D5D: delete (api.c:330)
-   n0: 4658256 0x10937B: main (api.c:97)
- n0: 323732 in 6 places, all below massif's threshold (1.00%)
+n3: 162475376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 150519820 0x1097E4: get_input (api.c:215)
+  n1: 150386867 0x109BA9: change (api.c:297)
+   n0: 150386867 0x10932E: main (api.c:88)
+  n0: 132953 in 1 place, below massif's threshold (1.00%)
+ n2: 11619144 0x109969: push (api.c:252)
+  n1: 6769096 0x109C1B: change (api.c:303)
+   n0: 6769096 0x10932E: main (api.c:88)
+  n1: 4850048 0x109D6C: delete (api.c:331)
+   n0: 4850048 0x10937B: main (api.c:97)
+ n0: 336412 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=9
 #-----------
-time=4644821772
-mem_heap_B=174302890
-mem_heap_extra_B=25358742
+time=4613614988
+mem_heap_B=179479087
+mem_heap_extra_B=26110321
 mem_stacks_B=0
 heap_tree=detailed
-n3: 174302890 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 161475998 0x1097E4: get_input (api.c:215)
-  n1: 161334108 0x109BA9: change (api.c:297)
-   n0: 161334108 0x10932E: main (api.c:88)
-  n0: 141890 in 1 place, below massif's threshold (1.00%)
- n2: 12468840 0x109969: push (api.c:252)
-  n1: 7316336 0x109C1B: change (api.c:303)
-   n0: 7316336 0x10932E: main (api.c:88)
-  n1: 5152504 0x109D5D: delete (api.c:330)
-   n0: 5152504 0x10937B: main (api.c:97)
- n0: 358052 in 6 places, all below massif's threshold (1.00%)
+n3: 179479087 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 166275407 0x1097E4: get_input (api.c:215)
+  n1: 166129332 0x109BA9: change (api.c:297)
+   n0: 166129332 0x10932E: main (api.c:88)
+  n0: 146075 in 1 place, below massif's threshold (1.00%)
+ n2: 12835688 0x109969: push (api.c:252)
+  n1: 7524312 0x109C1B: change (api.c:303)
+   n0: 7524312 0x10932E: main (api.c:88)
+  n1: 5311376 0x109D6C: delete (api.c:331)
+   n0: 5311376 0x10937B: main (api.c:97)
+ n0: 367992 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=10
 #-----------
-time=5032848332
-mem_heap_B=188879076
-mem_heap_extra_B=27472828
+time=5215521309
+mem_heap_B=202767310
+mem_heap_extra_B=29491370
 mem_stacks_B=0
 heap_tree=detailed
-n3: 188879076 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 174987824 0x1097E4: get_input (api.c:215)
-  n1: 174834309 0x109BA9: change (api.c:297)
-   n0: 174834309 0x10932E: main (api.c:88)
-  n0: 153515 in 1 place, below massif's threshold (1.00%)
- n2: 13505920 0x109969: push (api.c:252)
-  n1: 7920072 0x109C1B: change (api.c:303)
-   n0: 7920072 0x10932E: main (api.c:88)
-  n1: 5585848 0x109D5D: delete (api.c:330)
-   n0: 5585848 0x10937B: main (api.c:97)
- n0: 385332 in 6 places, all below massif's threshold (1.00%)
+n3: 202767310 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 187851570 0x1097E4: get_input (api.c:215)
+  n1: 187685784 0x109BA9: change (api.c:297)
+   n0: 187685784 0x10932E: main (api.c:88)
+  n0: 165786 in 1 place, below massif's threshold (1.00%)
+ n2: 14499568 0x109969: push (api.c:252)
+  n1: 8499408 0x109C1B: change (api.c:303)
+   n0: 8499408 0x10932E: main (api.c:88)
+  n1: 6000160 0x109D6C: delete (api.c:331)
+   n0: 6000160 0x10937B: main (api.c:97)
+ n0: 416172 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=11
 #-----------
-time=5627267654
-mem_heap_B=211066080
-mem_heap_extra_B=30700336
+time=5647918515
+mem_heap_B=219604659
+mem_heap_extra_B=31940109
 mem_stacks_B=0
 heap_tree=detailed
-n3: 211066080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 195538948 0x1097E4: get_input (api.c:215)
-  n1: 195366335 0x109BA9: change (api.c:297)
-   n0: 195366335 0x10932E: main (api.c:88)
-  n0: 172613 in 1 place, below massif's threshold (1.00%)
- n2: 15094240 0x109969: push (api.c:252)
-  n1: 8858624 0x109C1B: change (api.c:303)
-   n0: 8858624 0x10932E: main (api.c:88)
-  n1: 6235616 0x109D5D: delete (api.c:330)
-   n0: 6235616 0x10937B: main (api.c:97)
- n0: 432892 in 6 places, all below massif's threshold (1.00%)
+n3: 219604659 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 203451419 0x1097E4: get_input (api.c:215)
+  n1: 203272141 0x109BA9: change (api.c:297)
+   n0: 203272141 0x10932E: main (api.c:88)
+  n0: 179278 in 1 place, below massif's threshold (1.00%)
+ n2: 15704208 0x109969: push (api.c:252)
+  n1: 9244000 0x109C1B: change (api.c:303)
+   n0: 9244000 0x10932E: main (api.c:88)
+  n1: 6460208 0x109D6C: delete (api.c:331)
+   n0: 6460208 0x10937B: main (api.c:97)
+ n0: 449032 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=12
 #-----------
-time=6159518438
-mem_heap_B=231058075
-mem_heap_extra_B=33606725
+time=6055274811
+mem_heap_B=235453428
+mem_heap_extra_B=34245588
 mem_stacks_B=0
 heap_tree=detailed
-n3: 231058075 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 214063063 0x1097E4: get_input (api.c:215)
-  n1: 213873412 0x109BA9: change (api.c:297)
-   n0: 213873412 0x10932E: main (api.c:88)
-  n0: 189651 in 1 place, below massif's threshold (1.00%)
- n2: 16520720 0x109969: push (api.c:252)
-  n1: 9689720 0x109C1B: change (api.c:303)
-   n0: 9689720 0x10932E: main (api.c:88)
-  n1: 6831000 0x109D5D: delete (api.c:330)
-   n0: 6831000 0x10937B: main (api.c:97)
- n0: 474292 in 6 places, all below massif's threshold (1.00%)
+n3: 235453428 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 218134444 0x1097E4: get_input (api.c:215)
+  n1: 217941497 0x109BA9: change (api.c:297)
+   n0: 217941497 0x10932E: main (api.c:88)
+  n0: 192947 in 1 place, below massif's threshold (1.00%)
+ n2: 16836592 0x109969: push (api.c:252)
+  n1: 9888344 0x109C1B: change (api.c:303)
+   n0: 9888344 0x10932E: main (api.c:88)
+  n1: 6948248 0x109D6C: delete (api.c:331)
+   n0: 6948248 0x10937B: main (api.c:97)
+ n0: 482392 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=13
 #-----------
-time=6542281880
-mem_heap_B=245353685
-mem_heap_extra_B=35689963
+time=6505633347
+mem_heap_B=252874928
+mem_heap_extra_B=36783184
 mem_stacks_B=0
 heap_tree=detailed
-n3: 245353685 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 227304001 0x1097E4: get_input (api.c:215)
-  n1: 227102092 0x109BA9: change (api.c:297)
-   n0: 227102092 0x10932E: main (api.c:88)
-  n0: 201909 in 1 place, below massif's threshold (1.00%)
- n2: 17545712 0x109969: push (api.c:252)
-  n1: 10321128 0x109C1B: change (api.c:303)
-   n0: 10321128 0x10932E: main (api.c:88)
-  n1: 7224584 0x109D5D: delete (api.c:330)
-   n0: 7224584 0x10937B: main (api.c:97)
- n0: 503972 in 6 places, all below massif's threshold (1.00%)
+n3: 252874928 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 234272148 0x1097E4: get_input (api.c:215)
+  n1: 234063961 0x109BA9: change (api.c:297)
+   n0: 234063961 0x10932E: main (api.c:88)
+  n0: 208187 in 1 place, below massif's threshold (1.00%)
+ n2: 18083648 0x109969: push (api.c:252)
+  n1: 10643824 0x109C1B: change (api.c:303)
+   n0: 10643824 0x10932E: main (api.c:88)
+  n1: 7439824 0x109D6C: delete (api.c:331)
+   n0: 7439824 0x10937B: main (api.c:97)
+ n0: 519132 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=14
 #-----------
-time=7019282473
-mem_heap_B=263255091
-mem_heap_extra_B=38291429
+time=7046266102
+mem_heap_B=274077490
+mem_heap_extra_B=39863350
 mem_stacks_B=0
 heap_tree=detailed
-n3: 263255091 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 243887527 0x1097E4: get_input (api.c:215)
-  n1: 243671091 0x109BA9: change (api.c:297)
-   n0: 243671091 0x10932E: main (api.c:88)
-  n0: 216436 in 1 place, below massif's threshold (1.00%)
- n2: 18827832 0x109969: push (api.c:252)
-  n1: 11078640 0x109C1B: change (api.c:303)
-   n0: 11078640 0x10932E: main (api.c:88)
-  n1: 7749192 0x109D5D: delete (api.c:330)
-   n0: 7749192 0x10937B: main (api.c:97)
- n0: 539732 in 6 places, all below massif's threshold (1.00%)
+n3: 274077490 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 253915222 0x1097E4: get_input (api.c:215)
+  n1: 253690195 0x109BA9: change (api.c:297)
+   n0: 253690195 0x10932E: main (api.c:88)
+  n0: 225027 in 1 place, below massif's threshold (1.00%)
+ n2: 19600816 0x109969: push (api.c:252)
+  n1: 11525368 0x109C1B: change (api.c:303)
+   n0: 11525368 0x10932E: main (api.c:88)
+  n1: 8075448 0x109D6C: delete (api.c:331)
+   n0: 8075448 0x10937B: main (api.c:97)
+ n0: 561452 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=15
 #-----------
-time=7599562407
-mem_heap_B=285250139
-mem_heap_extra_B=41492213
+time=7866334960
+mem_heap_B=306051750
+mem_heap_extra_B=44516258
 mem_stacks_B=0
 heap_tree=detailed
-n3: 285250139 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 264267551 0x1097E4: get_input (api.c:215)
-  n1: 264033910 0x109BA9: change (api.c:297)
-   n0: 264033910 0x10932E: main (api.c:88)
-  n0: 233641 in 1 place, below massif's threshold (1.00%)
- n2: 20400616 0x109969: push (api.c:252)
-  n1: 12029304 0x109C1B: change (api.c:303)
-   n0: 12029304 0x10932E: main (api.c:88)
-  n1: 8371312 0x109D5D: delete (api.c:330)
-   n0: 8371312 0x10937B: main (api.c:97)
- n0: 581972 in 6 places, all below massif's threshold (1.00%)
+n3: 306051750 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 283537122 0x1097E4: get_input (api.c:215)
+  n1: 283286273 0x109BA9: change (api.c:297)
+   n0: 283286273 0x10932E: main (api.c:88)
+  n0: 250849 in 1 place, below massif's threshold (1.00%)
+ n2: 21890736 0x109969: push (api.c:252)
+  n1: 12919632 0x109C1B: change (api.c:303)
+   n0: 12919632 0x10932E: main (api.c:88)
+  n1: 8971104 0x109D6C: delete (api.c:331)
+   n0: 8971104 0x10937B: main (api.c:97)
+ n0: 623892 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=16
 #-----------
-time=8233832965
-mem_heap_B=309116902
-mem_heap_extra_B=44961402
+time=8527790092
+mem_heap_B=331711429
+mem_heap_extra_B=48243451
 mem_stacks_B=0
 heap_tree=detailed
-n3: 309116902 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 286379802 0x1097E4: get_input (api.c:215)
-  n1: 286126637 0x109BA9: change (api.c:297)
-   n0: 286126637 0x10932E: main (api.c:88)
-  n0: 253165 in 1 place, below massif's threshold (1.00%)
- n2: 22107448 0x109969: push (api.c:252)
-  n1: 13047104 0x109C1B: change (api.c:303)
-   n0: 13047104 0x10932E: main (api.c:88)
-  n1: 9060344 0x109D5D: delete (api.c:330)
-   n0: 9060344 0x10937B: main (api.c:97)
- n0: 629652 in 6 places, all below massif's threshold (1.00%)
+n3: 331711429 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 307311841 0x1097E4: get_input (api.c:215)
+  n1: 307039890 0x109BA9: change (api.c:297)
+   n0: 307039890 0x10932E: main (api.c:88)
+  n0: 271951 in 1 place, below massif's threshold (1.00%)
+ n2: 23724096 0x109969: push (api.c:252)
+  n1: 14020664 0x109C1B: change (api.c:303)
+   n0: 14020664 0x10932E: main (api.c:88)
+  n1: 9703432 0x109D6C: delete (api.c:331)
+   n0: 9703432 0x10937B: main (api.c:97)
+ n0: 675492 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=17
 #-----------
-time=9006430220
-mem_heap_B=338064563
-mem_heap_extra_B=49164173
+time=9057548131
+mem_heap_B=352311461
+mem_heap_extra_B=51236083
 mem_stacks_B=0
 heap_tree=detailed
-n3: 338064563 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 313190867 0x1097E4: get_input (api.c:215)
-  n1: 312913965 0x109BA9: change (api.c:297)
-   n0: 312913965 0x10932E: main (api.c:88)
-  n0: 276902 in 1 place, below massif's threshold (1.00%)
- n2: 24185944 0x109969: push (api.c:252)
-  n1: 14297640 0x109C1B: change (api.c:303)
-   n0: 14297640 0x10932E: main (api.c:88)
-  n1: 9888304 0x109D5D: delete (api.c:330)
-   n0: 9888304 0x10937B: main (api.c:97)
- n0: 687752 in 6 places, all below massif's threshold (1.00%)
+n3: 352311461 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 326392497 0x1097E4: get_input (api.c:215)
+  n1: 326103716 0x109BA9: change (api.c:297)
+   n0: 326103716 0x10932E: main (api.c:88)
+  n0: 288781 in 1 place, below massif's threshold (1.00%)
+ n2: 25202352 0x109969: push (api.c:252)
+  n1: 14903424 0x109C1B: change (api.c:303)
+   n0: 14903424 0x10932E: main (api.c:88)
+  n1: 10298928 0x109D6C: delete (api.c:331)
+   n0: 10298928 0x10937B: main (api.c:97)
+ n0: 716612 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=18
 #-----------
-time=9772923994
-mem_heap_B=366816899
-mem_heap_extra_B=53350085
-mem_stacks_B=0
-heap_tree=detailed
-n3: 366816899 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 339834103 0x1097E4: get_input (api.c:215)
-  n1: 339532797 0x109BA9: change (api.c:297)
-   n0: 339532797 0x10932E: main (api.c:88)
-  n0: 301306 in 1 place, below massif's threshold (1.00%)
- n2: 26235464 0x109969: push (api.c:252)
-  n1: 15528176 0x109C1B: change (api.c:303)
-   n0: 15528176 0x10932E: main (api.c:88)
-  n1: 10707288 0x109D5D: delete (api.c:330)
-   n0: 10707288 0x10937B: main (api.c:97)
- n0: 747332 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=19
-#-----------
-time=10170829818
+time=9814510028
 mem_heap_B=381848490
 mem_heap_extra_B=55529150
 mem_stacks_B=0
@@ -368,89 +349,70 @@ n3: 381848490 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 27310216 0x109969: push (api.c:252)
   n1: 16179912 0x109C1B: change (api.c:303)
    n0: 16179912 0x10932E: main (api.c:88)
-  n1: 11130304 0x109D5D: delete (api.c:330)
+  n1: 11130304 0x109D6C: delete (api.c:331)
    n0: 11130304 0x10937B: main (api.c:97)
  n0: 775692 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=20
+snapshot=19
 #-----------
-time=10804035213
-mem_heap_B=405579251
-mem_heap_extra_B=58978733
+time=10637155101
+mem_heap_B=413816709
+mem_heap_extra_B=60181043
 mem_stacks_B=0
 heap_tree=detailed
-n3: 405579251 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 375747119 0x1097E4: get_input (api.c:215)
-  n1: 375415403 0x109BA9: change (api.c:297)
-   n0: 375415403 0x10932E: main (api.c:88)
-  n0: 331716 in 1 place, below massif's threshold (1.00%)
- n2: 29010480 0x109969: push (api.c:252)
-  n1: 17151856 0x109C1B: change (api.c:303)
-   n0: 17151856 0x10932E: main (api.c:88)
-  n1: 11858624 0x109D5D: delete (api.c:330)
-   n0: 11858624 0x10937B: main (api.c:97)
- n0: 821652 in 6 places, all below massif's threshold (1.00%)
+n3: 413816709 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 383379657 0x1097E4: get_input (api.c:215)
+  n1: 383041046 0x109BA9: change (api.c:297)
+   n0: 383041046 0x10932E: main (api.c:88)
+  n0: 338611 in 1 place, below massif's threshold (1.00%)
+ n2: 29598200 0x109969: push (api.c:252)
+  n1: 17510424 0x109C1B: change (api.c:303)
+   n0: 17510424 0x10932E: main (api.c:88)
+  n1: 12087776 0x109D6C: delete (api.c:331)
+   n0: 12087776 0x10937B: main (api.c:97)
+ n0: 838852 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=11075532079
+mem_heap_B=430741339
+mem_heap_extra_B=62642005
+mem_stacks_B=0
+heap_tree=detailed
+n3: 430741339 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 399059503 0x1097E4: get_input (api.c:215)
+  n1: 398706456 0x109BA9: change (api.c:297)
+   n0: 398706456 0x10932E: main (api.c:88)
+  n0: 353047 in 1 place, below massif's threshold (1.00%)
+ n2: 30809024 0x109969: push (api.c:252)
+  n1: 18231840 0x109C1B: change (api.c:303)
+   n0: 18231840 0x10932E: main (api.c:88)
+  n1: 12577184 0x109D6C: delete (api.c:331)
+   n0: 12577184 0x10937B: main (api.c:97)
+ n0: 872812 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=21
 #-----------
-time=11238783551
-mem_heap_B=421845821
-mem_heap_extra_B=61347907
+time=11531733624
+mem_heap_B=448385231
+mem_heap_extra_B=65204665
 mem_stacks_B=0
 heap_tree=detailed
-n3: 421845821 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 390816189 0x1097E4: get_input (api.c:215)
-  n1: 390470545 0x109BA9: change (api.c:297)
-   n0: 390470545 0x10932E: main (api.c:88)
-  n0: 345644 in 1 place, below massif's threshold (1.00%)
- n2: 30174440 0x109969: push (api.c:252)
-  n1: 17854352 0x109C1B: change (api.c:303)
-   n0: 17854352 0x10932E: main (api.c:88)
-  n1: 12320088 0x109D5D: delete (api.c:330)
-   n0: 12320088 0x10937B: main (api.c:97)
- n0: 855192 in 6 places, all below massif's threshold (1.00%)
+n3: 448385231 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 415407011 0x1097E4: get_input (api.c:215)
+  n1: 415038642 0x109BA9: change (api.c:297)
+   n0: 415038642 0x10932E: main (api.c:88)
+  n0: 368369 in 1 place, below massif's threshold (1.00%)
+ n2: 32068808 0x109969: push (api.c:252)
+  n1: 18911808 0x109C1B: change (api.c:303)
+   n0: 18911808 0x10932E: main (api.c:88)
+  n1: 13157000 0x109D6C: delete (api.c:331)
+   n0: 13157000 0x10937B: main (api.c:97)
+ n0: 909412 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=22
 #-----------
-time=11596637743
-mem_heap_B=435104839
-mem_heap_extra_B=63275681
-mem_stacks_B=0
-heap_tree=detailed
-n3: 435104839 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 403102283 0x1097E4: get_input (api.c:215)
-  n1: 402744978 0x109BA9: change (api.c:297)
-   n0: 402744978 0x10932E: main (api.c:88)
-  n0: 357305 in 1 place, below massif's threshold (1.00%)
- n2: 31119824 0x109969: push (api.c:252)
-  n1: 18401816 0x109C1B: change (api.c:303)
-   n0: 18401816 0x10932E: main (api.c:88)
-  n1: 12718008 0x109D5D: delete (api.c:330)
-   n0: 12718008 0x10937B: main (api.c:97)
- n0: 882732 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=23
-#-----------
-time=12057312620
-mem_heap_B=452362349
-mem_heap_extra_B=65783651
-mem_stacks_B=0
-heap_tree=detailed
-n3: 452362349 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 419092405 0x1097E4: get_input (api.c:215)
-  n1: 418721384 0x109BA9: change (api.c:297)
-   n0: 418721384 0x10932E: main (api.c:88)
-  n0: 371021 in 1 place, below massif's threshold (1.00%)
- n2: 32353752 0x109969: push (api.c:252)
-  n1: 19083840 0x109C1B: change (api.c:303)
-   n0: 19083840 0x10932E: main (api.c:88)
-  n1: 13269912 0x109D5D: delete (api.c:330)
-   n0: 13269912 0x10937B: main (api.c:97)
- n0: 916192 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=24
-#-----------
-time=12565686890
+time=12123291262
 mem_heap_B=471422780
 mem_heap_extra_B=68548732
 mem_stacks_B=0
@@ -463,32 +425,32 @@ n3: 471422780 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 33716176 0x109969: push (api.c:252)
   n1: 19926080 0x109C1B: change (api.c:303)
    n0: 19926080 0x10932E: main (api.c:88)
-  n1: 13790096 0x109D5D: delete (api.c:330)
+  n1: 13790096 0x109D6C: delete (api.c:331)
    n0: 13790096 0x10937B: main (api.c:97)
  n0: 951892 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=25
+snapshot=23
 #-----------
-time=13210355975
-mem_heap_B=495605529
-mem_heap_extra_B=72067183
+time=12607975957
+mem_heap_B=490363590
+mem_heap_extra_B=71304674
 mem_stacks_B=0
 heap_tree=detailed
-n3: 495605529 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 459158125 0x1097E4: get_input (api.c:215)
-  n1: 458751800 0x109BA9: change (api.c:297)
-   n0: 458751800 0x10932E: main (api.c:88)
-  n0: 406325 in 1 place, below massif's threshold (1.00%)
- n2: 35445512 0x109969: push (api.c:252)
-  n1: 20911072 0x109C1B: change (api.c:303)
-   n0: 20911072 0x10932E: main (api.c:88)
-  n1: 14534440 0x109D5D: delete (api.c:330)
-   n0: 14534440 0x10937B: main (api.c:97)
- n0: 1001892 in 6 places, all below massif's threshold (1.00%)
+n3: 490363590 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 454299742 0x1097E4: get_input (api.c:215)
+  n1: 453898365 0x109BA9: change (api.c:297)
+   n0: 453898365 0x10932E: main (api.c:88)
+  n0: 401377 in 1 place, below massif's threshold (1.00%)
+ n2: 35074216 0x109969: push (api.c:252)
+  n1: 20695200 0x109C1B: change (api.c:303)
+   n0: 20695200 0x10932E: main (api.c:88)
+  n1: 14379016 0x109D6C: delete (api.c:331)
+   n0: 14379016 0x10937B: main (api.c:97)
+ n0: 989632 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=26
+snapshot=24
 #-----------
-time=13749399495
+time=13264831811
 mem_heap_B=515784681
 mem_heap_extra_B=75001751
 mem_stacks_B=0
@@ -501,13 +463,13 @@ n3: 515784681 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 36890496 0x109969: push (api.c:252)
   n1: 21773224 0x109C1B: change (api.c:303)
    n0: 21773224 0x10932E: main (api.c:88)
-  n1: 15117272 0x109D5D: delete (api.c:330)
+  n1: 15117272 0x109D6C: delete (api.c:331)
    n0: 15117272 0x10937B: main (api.c:97)
  n0: 1042292 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=27
+snapshot=25
 #-----------
-time=14308666383
+time=13804735329
 mem_heap_B=536825363
 mem_heap_extra_B=78059485
 mem_stacks_B=0
@@ -520,51 +482,51 @@ n3: 536825363 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 38393976 0x109969: push (api.c:252)
   n1: 22669072 0x109C1B: change (api.c:303)
    n0: 22669072 0x10932E: main (api.c:88)
-  n1: 15724904 0x109D5D: delete (api.c:330)
+  n1: 15724904 0x109D6C: delete (api.c:331)
    n0: 15724904 0x10937B: main (api.c:97)
  n0: 1083892 in 6 places, all below massif's threshold (1.00%)
 #-----------
+snapshot=26
+#-----------
+time=14365749547
+mem_heap_B=558740117
+mem_heap_extra_B=81244563
+mem_stacks_B=0
+heap_tree=detailed
+n3: 558740117 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 517649305 0x1097E4: get_input (api.c:215)
+  n1: 517191204 0x109BA9: change (api.c:297)
+   n0: 517191204 0x10932E: main (api.c:88)
+  n0: 458101 in 1 place, below massif's threshold (1.00%)
+ n2: 39964240 0x109969: push (api.c:252)
+  n1: 23614648 0x109C1B: change (api.c:303)
+   n0: 23614648 0x10932E: main (api.c:88)
+  n1: 16349592 0x109D6C: delete (api.c:331)
+   n0: 16349592 0x10937B: main (api.c:97)
+ n0: 1126572 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=14955000808
+mem_heap_B=581540156
+mem_heap_extra_B=84560628
+mem_stacks_B=0
+heap_tree=detailed
+n3: 581540156 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 538770344 0x1097E4: get_input (api.c:215)
+  n1: 538291518 0x109BA9: change (api.c:297)
+   n0: 538291518 0x10932E: main (api.c:88)
+  n0: 478826 in 1 place, below massif's threshold (1.00%)
+ n2: 41592440 0x109969: push (api.c:252)
+  n1: 24519624 0x109C1B: change (api.c:303)
+   n0: 24519624 0x10932E: main (api.c:88)
+  n1: 17072816 0x109D6C: delete (api.c:331)
+   n0: 17072816 0x10937B: main (api.c:97)
+ n0: 1177372 in 6 places, all below massif's threshold (1.00%)
+#-----------
 snapshot=28
 #-----------
-time=15040696677
-mem_heap_B=564335997
-mem_heap_extra_B=82060491
-mem_stacks_B=0
-heap_tree=detailed
-n3: 564335997 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 522833777 0x1097E4: get_input (api.c:215)
-  n1: 522370378 0x109BA9: change (api.c:297)
-   n0: 522370378 0x10932E: main (api.c:88)
-  n0: 463399 in 1 place, below massif's threshold (1.00%)
- n2: 40363168 0x109969: push (api.c:252)
-  n1: 23829384 0x109C1B: change (api.c:303)
-   n0: 23829384 0x10932E: main (api.c:88)
-  n1: 16533784 0x109D5D: delete (api.c:330)
-   n0: 16533784 0x10937B: main (api.c:97)
- n0: 1139052 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=29
-#-----------
-time=15806269479
-mem_heap_B=593271784
-mem_heap_extra_B=86269592
-mem_stacks_B=0
-heap_tree=detailed
-n3: 593271784 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 549639060 0x1097E4: get_input (api.c:215)
-  n1: 549151472 0x109BA9: change (api.c:297)
-   n0: 549151472 0x10932E: main (api.c:88)
-  n0: 487588 in 1 place, below massif's threshold (1.00%)
- n2: 42432792 0x109969: push (api.c:252)
-  n1: 25025072 0x109C1B: change (api.c:303)
-   n0: 25025072 0x10932E: main (api.c:88)
-  n1: 17407720 0x109D5D: delete (api.c:330)
-   n0: 17407720 0x10937B: main (api.c:97)
- n0: 1199932 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=30
-#-----------
-time=16283697685
+time=15714897131
 mem_heap_B=611397662
 mem_heap_extra_B=88902914
 mem_stacks_B=0
@@ -577,70 +539,70 @@ n3: 611397662 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 43728728 0x109969: push (api.c:252)
   n1: 25790624 0x109C1B: change (api.c:303)
    n0: 25790624 0x10932E: main (api.c:88)
-  n1: 17938104 0x109D5D: delete (api.c:330)
+  n1: 17938104 0x109D6C: delete (api.c:331)
    n0: 17938104 0x10937B: main (api.c:97)
  n0: 1236092 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=31
+snapshot=29
 #-----------
-time=16608096462
-mem_heap_B=623712447
-mem_heap_extra_B=90696625
+time=16355215260
+mem_heap_B=636322416
+mem_heap_extra_B=92533664
 mem_stacks_B=0
 heap_tree=detailed
-n3: 623712447 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 577842611 0x1097E4: get_input (api.c:215)
-  n1: 577331201 0x109BA9: change (api.c:297)
-   n0: 577331201 0x10932E: main (api.c:88)
-  n0: 511410 in 1 place, below massif's threshold (1.00%)
- n2: 44610904 0x109969: push (api.c:252)
-  n1: 26330832 0x109C1B: change (api.c:303)
-   n0: 26330832 0x10932E: main (api.c:88)
-  n1: 18280072 0x109D5D: delete (api.c:330)
-   n0: 18280072 0x10937B: main (api.c:97)
- n0: 1258932 in 6 places, all below massif's threshold (1.00%)
+n3: 636322416 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 589523776 0x1097E4: get_input (api.c:215)
+  n1: 589001747 0x109BA9: change (api.c:297)
+   n0: 589001747 0x10932E: main (api.c:88)
+  n0: 522029 in 1 place, below massif's threshold (1.00%)
+ n2: 45514208 0x109969: push (api.c:252)
+  n1: 26851704 0x109C1B: change (api.c:303)
+   n0: 26851704 0x10932E: main (api.c:88)
+  n1: 18662504 0x109D6C: delete (api.c:331)
+   n0: 18662504 0x10937B: main (api.c:97)
+ n0: 1284432 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=17025213558
+mem_heap_B=662345962
+mem_heap_extra_B=96314134
+mem_stacks_B=0
+heap_tree=detailed
+n3: 662345962 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 613637446 0x1097E4: get_input (api.c:215)
+  n1: 613094526 0x109BA9: change (api.c:297)
+   n0: 613094526 0x10932E: main (api.c:88)
+  n0: 542920 in 1 place, below massif's threshold (1.00%)
+ n2: 47373744 0x109969: push (api.c:252)
+  n1: 27971752 0x109C1B: change (api.c:303)
+   n0: 27971752 0x10932E: main (api.c:88)
+  n1: 19401992 0x109D6C: delete (api.c:331)
+   n0: 19401992 0x10937B: main (api.c:97)
+ n0: 1334772 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=17533358040
+mem_heap_B=682177316
+mem_heap_extra_B=99195476
+mem_stacks_B=0
+heap_tree=detailed
+n3: 682177316 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 632010964 0x1097E4: get_input (api.c:215)
+  n1: 631452236 0x109BA9: change (api.c:297)
+   n0: 631452236 0x10932E: main (api.c:88)
+  n0: 558728 in 1 place, below massif's threshold (1.00%)
+ n2: 48793080 0x109969: push (api.c:252)
+  n1: 28779456 0x109C1B: change (api.c:303)
+   n0: 28779456 0x10932E: main (api.c:88)
+  n1: 20013624 0x109D6C: delete (api.c:331)
+   n0: 20013624 0x10937B: main (api.c:97)
+ n0: 1373272 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=32
 #-----------
-time=17112371109
-mem_heap_B=642579503
-mem_heap_extra_B=93438265
-mem_stacks_B=0
-heap_tree=detailed
-n3: 642579503 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 595324479 0x1097E4: get_input (api.c:215)
-  n1: 594797806 0x109BA9: change (api.c:297)
-   n0: 594797806 0x10932E: main (api.c:88)
-  n0: 526673 in 1 place, below massif's threshold (1.00%)
- n2: 45959152 0x109969: push (api.c:252)
-  n1: 27114704 0x109C1B: change (api.c:303)
-   n0: 27114704 0x10932E: main (api.c:88)
-  n1: 18844448 0x109D5D: delete (api.c:330)
-   n0: 18844448 0x10937B: main (api.c:97)
- n0: 1295872 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=33
-#-----------
-time=17806433993
-mem_heap_B=668621852
-mem_heap_extra_B=97224932
-mem_stacks_B=0
-heap_tree=detailed
-n3: 668621852 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 619447396 0x1097E4: get_input (api.c:215)
-  n1: 618899736 0x109BA9: change (api.c:297)
-   n0: 618899736 0x10932E: main (api.c:88)
-  n0: 547660 in 1 place, below massif's threshold (1.00%)
- n2: 47827984 0x109969: push (api.c:252)
-  n1: 28225208 0x109C1B: change (api.c:303)
-   n0: 28225208 0x10932E: main (api.c:88)
-  n1: 19602776 0x109D5D: delete (api.c:330)
-   n0: 19602776 0x10937B: main (api.c:97)
- n0: 1346472 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=34
-#-----------
-time=18547514825
+time=17900016693
 mem_heap_B=696354363
 mem_heap_extra_B=101254221
 mem_stacks_B=0
@@ -653,32 +615,32 @@ n3: 696354363 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 49807960 0x109969: push (api.c:252)
   n1: 29377368 0x109C1B: change (api.c:303)
    n0: 29377368 0x10932E: main (api.c:88)
-  n1: 20430592 0x109D5D: delete (api.c:330)
+  n1: 20430592 0x109D6C: delete (api.c:331)
    n0: 20430592 0x10937B: main (api.c:97)
  n0: 1400932 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=35
+snapshot=33
 #-----------
-time=19304479666
-mem_heap_B=724722284
-mem_heap_extra_B=105378068
+time=18608306067
+mem_heap_B=723881027
+mem_heap_extra_B=105255973
 mem_stacks_B=0
 heap_tree=detailed
-n3: 724722284 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 671426240 0x1097E4: get_input (api.c:215)
-  n1: 670831490 0x109BA9: change (api.c:297)
-   n0: 670831490 0x10932E: main (api.c:88)
-  n0: 594750 in 1 place, below massif's threshold (1.00%)
- n2: 51835712 0x109969: push (api.c:252)
-  n1: 30510648 0x109C1B: change (api.c:303)
-   n0: 30510648 0x10932E: main (api.c:88)
-  n1: 21325064 0x109D5D: delete (api.c:330)
-   n0: 21325064 0x10937B: main (api.c:97)
- n0: 1460332 in 6 places, all below massif's threshold (1.00%)
+n3: 723881027 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 670643515 0x1097E4: get_input (api.c:215)
+  n1: 670049342 0x109BA9: change (api.c:297)
+   n0: 670049342 0x10932E: main (api.c:88)
+  n0: 594173 in 1 place, below massif's threshold (1.00%)
+ n2: 51778640 0x109969: push (api.c:252)
+  n1: 30472048 0x109C1B: change (api.c:303)
+   n0: 30472048 0x10932E: main (api.c:88)
+  n1: 21306592 0x109D6C: delete (api.c:331)
+   n0: 21306592 0x10937B: main (api.c:97)
+ n0: 1458872 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=36
+snapshot=34
 #-----------
-time=19693494933
+time=19005024268
 mem_heap_B=739311664
 mem_heap_extra_B=107499832
 mem_stacks_B=0
@@ -691,32 +653,13 @@ n3: 739311664 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 52876512 0x109969: push (api.c:252)
   n1: 31167024 0x109C1B: change (api.c:303)
    n0: 31167024 0x10932E: main (api.c:88)
-  n1: 21709488 0x109D5D: delete (api.c:330)
+  n1: 21709488 0x109D6C: delete (api.c:331)
    n0: 21709488 0x10937B: main (api.c:97)
  n0: 1489892 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=37
+snapshot=35
 #-----------
-time=20092956897
-mem_heap_B=754232049
-mem_heap_extra_B=109670975
-mem_stacks_B=0
-heap_tree=detailed
-n3: 754232049 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 698769389 0x1097E4: get_input (api.c:215)
-  n1: 698150520 0x109BA9: change (api.c:297)
-   n0: 698150520 0x10932E: main (api.c:88)
-  n0: 618869 in 1 place, below massif's threshold (1.00%)
- n2: 53944328 0x109969: push (api.c:252)
-  n1: 31830464 0x109C1B: change (api.c:303)
-   n0: 31830464 0x10932E: main (api.c:88)
-  n1: 22113864 0x109D5D: delete (api.c:330)
-   n0: 22113864 0x10937B: main (api.c:97)
- n0: 1518332 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=38
-#-----------
-time=20500879212
+time=19783126028
 mem_heap_B=769446890
 mem_heap_extra_B=111879342
 mem_stacks_B=0
@@ -729,336 +672,241 @@ n3: 769446890 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 55033200 0x109969: push (api.c:252)
   n1: 32447072 0x109C1B: change (api.c:303)
    n0: 32447072 0x10932E: main (api.c:88)
-  n1: 22586128 0x109D5D: delete (api.c:330)
+  n1: 22586128 0x109D6C: delete (api.c:331)
    n0: 22586128 0x10937B: main (api.c:97)
  n0: 1549692 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=39
+snapshot=36
 #-----------
-time=20908733518
-mem_heap_B=784929989
-mem_heap_extra_B=114126051
+time=20380923457
+mem_heap_B=792783078
+mem_heap_extra_B=115264394
 mem_stacks_B=0
 heap_tree=detailed
-n3: 784929989 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 727213521 0x1097E4: get_input (api.c:215)
-  n1: 726569633 0x109BA9: change (api.c:297)
-   n0: 726569633 0x10932E: main (api.c:88)
-  n0: 643888 in 1 place, below massif's threshold (1.00%)
- n2: 56136496 0x109969: push (api.c:252)
-  n1: 33087440 0x109C1B: change (api.c:303)
-   n0: 33087440 0x10932E: main (api.c:88)
-  n1: 23049056 0x109D5D: delete (api.c:330)
-   n0: 23049056 0x10937B: main (api.c:97)
- n0: 1579972 in 6 places, all below massif's threshold (1.00%)
+n3: 792783078 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 734489914 0x1097E4: get_input (api.c:215)
+  n1: 733839476 0x109BA9: change (api.c:297)
+   n0: 733839476 0x10932E: main (api.c:88)
+  n0: 650438 in 1 place, below massif's threshold (1.00%)
+ n2: 56697112 0x109969: push (api.c:252)
+  n1: 33395136 0x109C1B: change (api.c:303)
+   n0: 33395136 0x10932E: main (api.c:88)
+  n1: 23301976 0x109D6C: delete (api.c:331)
+   n0: 23301976 0x10937B: main (api.c:97)
+ n0: 1596052 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=20788183612
+mem_heap_B=808743641
+mem_heap_extra_B=117585015
+mem_stacks_B=0
+heap_tree=detailed
+n3: 808743641 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 749274805 0x1097E4: get_input (api.c:215)
+  n1: 748611903 0x109BA9: change (api.c:297)
+   n0: 748611903 0x10932E: main (api.c:88)
+  n0: 662902 in 1 place, below massif's threshold (1.00%)
+ n2: 57842224 0x109969: push (api.c:252)
+  n1: 34042880 0x109C1B: change (api.c:303)
+   n0: 34042880 0x10932E: main (api.c:88)
+  n1: 23799344 0x109D6C: delete (api.c:331)
+   n0: 23799344 0x10937B: main (api.c:97)
+ n0: 1626612 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=21205719839
+mem_heap_B=825031914
+mem_heap_extra_B=119953198
+mem_stacks_B=0
+heap_tree=detailed
+n3: 825031914 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 764362734 0x1097E4: get_input (api.c:215)
+  n1: 763687100 0x109BA9: change (api.c:297)
+   n0: 763687100 0x10932E: main (api.c:88)
+  n0: 675634 in 1 place, below massif's threshold (1.00%)
+ n2: 59011128 0x109969: push (api.c:252)
+  n1: 34741856 0x109C1B: change (api.c:303)
+   n0: 34741856 0x10932E: main (api.c:88)
+  n1: 24269272 0x109D6C: delete (api.c:331)
+   n0: 24269272 0x10937B: main (api.c:97)
+ n0: 1658052 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=21635592907
+mem_heap_B=841711506
+mem_heap_extra_B=122380534
+mem_stacks_B=0
+heap_tree=detailed
+n3: 841711506 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 779818302 0x1097E4: get_input (api.c:215)
+  n1: 779128386 0x109BA9: change (api.c:297)
+   n0: 779128386 0x10932E: main (api.c:88)
+  n0: 689916 in 1 place, below massif's threshold (1.00%)
+ n2: 60200712 0x109969: push (api.c:252)
+  n1: 35406384 0x109C1B: change (api.c:303)
+   n0: 35406384 0x10932E: main (api.c:88)
+  n1: 24794328 0x109D6C: delete (api.c:331)
+   n0: 24794328 0x10937B: main (api.c:97)
+ n0: 1692492 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=40
 #-----------
-time=21328955995
-mem_heap_B=800623247
-mem_heap_extra_B=116405873
+time=22072101864
+mem_heap_B=858701135
+mem_heap_extra_B=124854225
 mem_stacks_B=0
 heap_tree=detailed
-n3: 800623247 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 741749167 0x1097E4: get_input (api.c:215)
-  n1: 741092525 0x109BA9: change (api.c:297)
-   n0: 741092525 0x10932E: main (api.c:88)
-  n0: 656642 in 1 place, below massif's threshold (1.00%)
- n2: 57263728 0x109969: push (api.c:252)
-  n1: 33716168 0x109C1B: change (api.c:303)
-   n0: 33716168 0x10932E: main (api.c:88)
-  n1: 23547560 0x109D5D: delete (api.c:330)
-   n0: 23547560 0x10937B: main (api.c:97)
- n0: 1610352 in 6 places, all below massif's threshold (1.00%)
+n3: 858701135 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 795557843 0x1097E4: get_input (api.c:215)
+  n1: 794854181 0x109BA9: change (api.c:297)
+   n0: 794854181 0x10932E: main (api.c:88)
+  n0: 703662 in 1 place, below massif's threshold (1.00%)
+ n2: 61417760 0x109969: push (api.c:252)
+  n1: 36139368 0x109C1B: change (api.c:303)
+   n0: 36139368 0x10932E: main (api.c:88)
+  n1: 25278392 0x109D6C: delete (api.c:331)
+   n0: 25278392 0x10937B: main (api.c:97)
+ n0: 1725532 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=41
 #-----------
-time=21753422300
-mem_heap_B=816846236
-mem_heap_extra_B=118764476
+time=22517984073
+mem_heap_B=876026727
+mem_heap_extra_B=127374889
 mem_stacks_B=0
 heap_tree=detailed
-n3: 816846236 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 756779440 0x1097E4: get_input (api.c:215)
-  n1: 756110204 0x109BA9: change (api.c:297)
-   n0: 756110204 0x10932E: main (api.c:88)
-  n0: 669236 in 1 place, below massif's threshold (1.00%)
- n2: 58424624 0x109969: push (api.c:252)
-  n1: 34409168 0x109C1B: change (api.c:303)
-   n0: 34409168 0x10932E: main (api.c:88)
-  n1: 24015456 0x109D5D: delete (api.c:330)
-   n0: 24015456 0x10937B: main (api.c:97)
- n0: 1642172 in 6 places, all below massif's threshold (1.00%)
+n3: 876026727 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 811611587 0x1097E4: get_input (api.c:215)
+  n1: 810893427 0x109BA9: change (api.c:297)
+   n0: 810893427 0x10932E: main (api.c:88)
+  n0: 718160 in 1 place, below massif's threshold (1.00%)
+ n2: 62653888 0x109969: push (api.c:252)
+  n1: 36848528 0x109C1B: change (api.c:303)
+   n0: 36848528 0x10932E: main (api.c:88)
+  n1: 25805360 0x109D6C: delete (api.c:331)
+   n0: 25805360 0x10937B: main (api.c:97)
+ n0: 1761252 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=42
 #-----------
-time=22180994504
-mem_heap_B=832899981
-mem_heap_extra_B=121100043
+time=22969789841
+mem_heap_B=893681808
+mem_heap_extra_B=129944808
 mem_stacks_B=0
 heap_tree=detailed
-n3: 832899981 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 771653309 0x1097E4: get_input (api.c:215)
-  n1: 770970888 0x109BA9: change (api.c:297)
-   n0: 770970888 0x10932E: main (api.c:88)
-  n0: 682421 in 1 place, below massif's threshold (1.00%)
- n2: 59572400 0x109969: push (api.c:252)
-  n1: 35078848 0x109C1B: change (api.c:303)
-   n0: 35078848 0x10932E: main (api.c:88)
-  n1: 24493552 0x109D5D: delete (api.c:330)
-   n0: 24493552 0x10937B: main (api.c:97)
- n0: 1674272 in 6 places, all below massif's threshold (1.00%)
+n3: 893681808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 827966804 0x1097E4: get_input (api.c:215)
+  n1: 827234037 0x109BA9: change (api.c:297)
+   n0: 827234037 0x10932E: main (api.c:88)
+  n0: 732767 in 1 place, below massif's threshold (1.00%)
+ n2: 63917312 0x109969: push (api.c:252)
+  n1: 37565384 0x109C1B: change (api.c:303)
+   n0: 37565384 0x10932E: main (api.c:88)
+  n1: 26351928 0x109D6C: delete (api.c:331)
+   n0: 26351928 0x10937B: main (api.c:97)
+ n0: 1797692 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=43
 #-----------
-time=22627121862
-mem_heap_B=849602025
-mem_heap_extra_B=123529919
+time=23432223248
+mem_heap_B=911669924
+mem_heap_extra_B=132558348
 mem_stacks_B=0
 heap_tree=detailed
-n3: 849602025 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 787127617 0x1097E4: get_input (api.c:215)
-  n1: 786431449 0x109BA9: change (api.c:297)
-   n0: 786431449 0x10932E: main (api.c:88)
-  n0: 696168 in 1 place, below massif's threshold (1.00%)
- n2: 60766816 0x109969: push (api.c:252)
-  n1: 35738040 0x109C1B: change (api.c:303)
-   n0: 35738040 0x10932E: main (api.c:88)
-  n1: 25028776 0x109D5D: delete (api.c:330)
-   n0: 25028776 0x10937B: main (api.c:97)
- n0: 1707592 in 6 places, all below massif's threshold (1.00%)
+n3: 911669924 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 844634568 0x1097E4: get_input (api.c:215)
+  n1: 843887162 0x109BA9: change (api.c:297)
+   n0: 843887162 0x10932E: main (api.c:88)
+  n0: 747406 in 1 place, below massif's threshold (1.00%)
+ n2: 65202424 0x109969: push (api.c:252)
+  n1: 38321904 0x109C1B: change (api.c:303)
+   n0: 38321904 0x10932E: main (api.c:88)
+  n1: 26880520 0x109D6C: delete (api.c:331)
+   n0: 26880520 0x10937B: main (api.c:97)
+ n0: 1832932 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=44
 #-----------
-time=23078831390
-mem_heap_B=866627393
-mem_heap_extra_B=126008623
+time=23905561537
+mem_heap_B=930034825
+mem_heap_extra_B=135235135
 mem_stacks_B=0
 heap_tree=detailed
-n3: 866627393 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 802898889 0x1097E4: get_input (api.c:215)
-  n1: 802188648 0x109BA9: change (api.c:297)
-   n0: 802188648 0x10932E: main (api.c:88)
-  n0: 710241 in 1 place, below massif's threshold (1.00%)
- n2: 61986432 0x109969: push (api.c:252)
-  n1: 36447088 0x109C1B: change (api.c:303)
-   n0: 36447088 0x10932E: main (api.c:88)
-  n1: 25539344 0x109D5D: delete (api.c:330)
-   n0: 25539344 0x10937B: main (api.c:97)
- n0: 1742072 in 6 places, all below massif's threshold (1.00%)
+n3: 930034825 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 861644693 0x1097E4: get_input (api.c:215)
+  n1: 860881866 0x109BA9: change (api.c:297)
+   n0: 860881866 0x10932E: main (api.c:88)
+  n0: 762827 in 1 place, below massif's threshold (1.00%)
+ n2: 66519720 0x109969: push (api.c:252)
+  n1: 39068776 0x109C1B: change (api.c:303)
+   n0: 39068776 0x10932E: main (api.c:88)
+  n1: 27450944 0x109D6C: delete (api.c:331)
+   n0: 27450944 0x10937B: main (api.c:97)
+ n0: 1870412 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=45
 #-----------
-time=23541068552
-mem_heap_B=883861659
-mem_heap_extra_B=128515917
+time=24374806755
+mem_heap_B=948375923
+mem_heap_extra_B=137900589
 mem_stacks_B=0
 heap_tree=detailed
-n3: 883861659 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 818864155 0x1097E4: get_input (api.c:215)
-  n1: 818138951 0x109BA9: change (api.c:297)
-   n0: 818138951 0x10932E: main (api.c:88)
-  n0: 725204 in 1 place, below massif's threshold (1.00%)
- n2: 63218912 0x109969: push (api.c:252)
-  n1: 37155424 0x109C1B: change (api.c:303)
-   n0: 37155424 0x10932E: main (api.c:88)
-  n1: 26063488 0x109D5D: delete (api.c:330)
-   n0: 26063488 0x10937B: main (api.c:97)
- n0: 1778592 in 6 places, all below massif's threshold (1.00%)
+n3: 948375923 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 878634563 0x1097E4: get_input (api.c:215)
+  n1: 877857281 0x109BA9: change (api.c:297)
+   n0: 877857281 0x10932E: main (api.c:88)
+  n0: 777282 in 1 place, below massif's threshold (1.00%)
+ n2: 67834888 0x109969: push (api.c:252)
+  n1: 39861472 0x109C1B: change (api.c:303)
+   n0: 39861472 0x10932E: main (api.c:88)
+  n1: 27973416 0x109D6C: delete (api.c:331)
+   n0: 27973416 0x10937B: main (api.c:97)
+ n0: 1906472 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=46
 #-----------
-time=24244978052
-mem_heap_B=910477541
-mem_heap_extra_B=132383315
+time=24859626770
+mem_heap_B=967268604
+mem_heap_extra_B=140648044
 mem_stacks_B=0
 heap_tree=detailed
-n3: 910477541 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 843527573 0x1097E4: get_input (api.c:215)
-  n1: 842781417 0x109BA9: change (api.c:297)
-   n0: 842781417 0x10932E: main (api.c:88)
-  n0: 746156 in 1 place, below massif's threshold (1.00%)
- n2: 65120256 0x109969: push (api.c:252)
-  n1: 38276056 0x109C1B: change (api.c:303)
-   n0: 38276056 0x10932E: main (api.c:88)
-  n1: 26844200 0x109D5D: delete (api.c:330)
-   n0: 26844200 0x10937B: main (api.c:97)
- n0: 1829712 in 6 places, all below massif's threshold (1.00%)
+n3: 967268604 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 896137748 0x1097E4: get_input (api.c:215)
+  n1: 895345660 0x109BA9: change (api.c:297)
+   n0: 895345660 0x10932E: main (api.c:88)
+  n0: 792088 in 1 place, below massif's threshold (1.00%)
+ n2: 69187304 0x109969: push (api.c:252)
+  n1: 40638736 0x109C1B: change (api.c:303)
+   n0: 40638736 0x10932E: main (api.c:88)
+  n1: 28548568 0x109D6C: delete (api.c:331)
+   n0: 28548568 0x10937B: main (api.c:97)
+ n0: 1943552 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=47
 #-----------
-time=24524466040
-mem_heap_B=920811587
-mem_heap_extra_B=133892261
+time=25354732270
+mem_heap_B=986617995
+mem_heap_extra_B=143456541
 mem_stacks_B=0
 heap_tree=detailed
-n3: 920811587 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 853101159 0x1097E4: get_input (api.c:215)
-  n1: 852345790 0x109BA9: change (api.c:297)
-   n0: 852345790 0x10932E: main (api.c:88)
-  n0: 755369 in 1 place, below massif's threshold (1.00%)
- n2: 65858696 0x109969: push (api.c:252)
-  n1: 38701832 0x109C1B: change (api.c:303)
-   n0: 38701832 0x10932E: main (api.c:88)
-  n1: 27156864 0x109D5D: delete (api.c:330)
-   n0: 27156864 0x10937B: main (api.c:97)
- n0: 1851732 in 6 places, all below massif's threshold (1.00%)
+n3: 986617995 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 914067939 0x1097E4: get_input (api.c:215)
+  n1: 913260372 0x109BA9: change (api.c:297)
+   n0: 913260372 0x10932E: main (api.c:88)
+  n0: 807567 in 1 place, below massif's threshold (1.00%)
+ n2: 70568184 0x109969: push (api.c:252)
+  n1: 41451552 0x109C1B: change (api.c:303)
+   n0: 41451552 0x10932E: main (api.c:88)
+  n1: 29116632 0x109D6C: delete (api.c:331)
+   n0: 29116632 0x10937B: main (api.c:97)
+ n0: 1981872 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=48
 #-----------
-time=25262490895
-mem_heap_B=948740346
-mem_heap_extra_B=137954670
-mem_stacks_B=0
-heap_tree=detailed
-n3: 948740346 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 878972110 0x1097E4: get_input (api.c:215)
-  n1: 878194561 0x109BA9: change (api.c:297)
-   n0: 878194561 0x10932E: main (api.c:88)
-  n0: 777549 in 1 place, below massif's threshold (1.00%)
- n2: 67860944 0x109969: push (api.c:252)
-  n1: 39874736 0x109C1B: change (api.c:303)
-   n0: 39874736 0x10932E: main (api.c:88)
-  n1: 27986208 0x109D5D: delete (api.c:330)
-   n0: 27986208 0x10937B: main (api.c:97)
- n0: 1907292 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=49
-#-----------
-time=25472300249
-mem_heap_B=956623758
-mem_heap_extra_B=139097730
-mem_stacks_B=0
-heap_tree=detailed
-n3: 956623758 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 886276438 0x1097E4: get_input (api.c:215)
-  n1: 885493053 0x109BA9: change (api.c:297)
-   n0: 885493053 0x10932E: main (api.c:88)
-  n0: 783385 in 1 place, below massif's threshold (1.00%)
- n2: 68425688 0x109969: push (api.c:252)
-  n1: 40192648 0x109C1B: change (api.c:303)
-   n0: 40192648 0x10932E: main (api.c:88)
-  n1: 28233040 0x109D5D: delete (api.c:330)
-   n0: 28233040 0x10937B: main (api.c:97)
- n0: 1921632 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=50
-#-----------
-time=25515141528
-mem_heap_B=958283651
-mem_heap_extra_B=139340445
-mem_stacks_B=0
-heap_tree=detailed
-n3: 958283651 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 887818111 0x1097E4: get_input (api.c:215)
-  n1: 887033439 0x109BA9: change (api.c:297)
-   n0: 887033439 0x10932E: main (api.c:88)
-  n0: 784672 in 1 place, below massif's threshold (1.00%)
- n2: 68540408 0x109969: push (api.c:252)
-  n1: 40262944 0x109C1B: change (api.c:303)
-   n0: 40262944 0x10932E: main (api.c:88)
-  n1: 28277464 0x109D5D: delete (api.c:330)
-   n0: 28277464 0x10937B: main (api.c:97)
- n0: 1925132 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=51
-#-----------
-time=25771543588
-mem_heap_B=967877029
-mem_heap_extra_B=140736179
-mem_stacks_B=0
-heap_tree=detailed
-n3: 967877029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 896703377 0x1097E4: get_input (api.c:215)
-  n1: 895910985 0x109BA9: change (api.c:297)
-   n0: 895910985 0x10932E: main (api.c:88)
-  n0: 792392 in 1 place, below massif's threshold (1.00%)
- n2: 69229320 0x109969: push (api.c:252)
-  n1: 40670216 0x109C1B: change (api.c:303)
-   n0: 40670216 0x10932E: main (api.c:88)
-  n1: 28559104 0x109D5D: delete (api.c:330)
-   n0: 28559104 0x10937B: main (api.c:97)
- n0: 1944332 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=52
-#-----------
-time=26027798224
-mem_heap_B=977583765
-mem_heap_extra_B=142141691
-mem_stacks_B=0
-heap_tree=detailed
-n3: 977583765 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 905700817 0x1097E4: get_input (api.c:215)
-  n1: 904900559 0x109BA9: change (api.c:297)
-   n0: 904900559 0x10932E: main (api.c:88)
-  n0: 800258 in 1 place, below massif's threshold (1.00%)
- n2: 69919016 0x109969: push (api.c:252)
-  n1: 41077856 0x109C1B: change (api.c:303)
-   n0: 41077856 0x10932E: main (api.c:88)
-  n1: 28841160 0x109D5D: delete (api.c:330)
-   n0: 28841160 0x10937B: main (api.c:97)
- n0: 1963932 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=53
-#-----------
-time=26287967875
-mem_heap_B=987371186
-mem_heap_extra_B=143565638
-mem_stacks_B=0
-heap_tree=detailed
-n3: 987371186 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 914766830 0x1097E4: get_input (api.c:215)
-  n1: 913958543 0x109BA9: change (api.c:297)
-   n0: 913958543 0x10932E: main (api.c:88)
-  n0: 808287 in 1 place, below massif's threshold (1.00%)
- n2: 70620664 0x109969: push (api.c:252)
-  n1: 41478904 0x109C1B: change (api.c:303)
-   n0: 41478904 0x10932E: main (api.c:88)
-  n1: 29141760 0x109D5D: delete (api.c:330)
-   n0: 29141760 0x10937B: main (api.c:97)
- n0: 1983692 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=54
-#-----------
-time=26550352217
-mem_heap_B=997272454
-mem_heap_extra_B=145004410
-mem_stacks_B=0
-heap_tree=detailed
-n3: 997272454 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 923941098 0x1097E4: get_input (api.c:215)
-  n1: 923125099 0x109BA9: change (api.c:297)
-   n0: 923125099 0x10932E: main (api.c:88)
-  n0: 815999 in 1 place, below massif's threshold (1.00%)
- n2: 71328784 0x109969: push (api.c:252)
-  n1: 41870256 0x109C1B: change (api.c:303)
-   n0: 41870256 0x10932E: main (api.c:88)
-  n1: 29458528 0x109D5D: delete (api.c:330)
-   n0: 29458528 0x10937B: main (api.c:97)
- n0: 2002572 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=55
-#-----------
-time=26818089338
-mem_heap_B=1007288532
-mem_heap_extra_B=146460332
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1007288532 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 933221864 0x1097E4: get_input (api.c:215)
-  n1: 932397415 0x109BA9: change (api.c:297)
-   n0: 932397415 0x10932E: main (api.c:88)
-  n0: 824449 in 1 place, below massif's threshold (1.00%)
- n2: 72043656 0x109969: push (api.c:252)
-  n1: 42286168 0x109C1B: change (api.c:303)
-   n0: 42286168 0x10932E: main (api.c:88)
-  n1: 29757488 0x109D5D: delete (api.c:330)
-   n0: 29757488 0x10937B: main (api.c:97)
- n0: 2023012 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=56
-#-----------
-time=27087896796
+time=26146607029
 mem_heap_B=1017414133
 mem_heap_extra_B=147930555
 mem_stacks_B=0
@@ -1071,51 +919,13 @@ n3: 1017414133 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 72769408 0x109969: push (api.c:252)
   n1: 42710768 0x109C1B: change (api.c:303)
    n0: 42710768 0x10932E: main (api.c:88)
-  n1: 30058640 0x109D5D: delete (api.c:330)
+  n1: 30058640 0x109D6C: delete (api.c:331)
    n0: 30058640 0x10937B: main (api.c:97)
  n0: 2043652 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=57
+snapshot=49
 #-----------
-time=27355761799
-mem_heap_B=1027632105
-mem_heap_extra_B=149417887
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1027632105 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 952068325 0x1097E4: get_input (api.c:215)
-  n1: 951227584 0x109BA9: change (api.c:297)
-   n0: 951227584 0x10932E: main (api.c:88)
-  n0: 840741 in 1 place, below massif's threshold (1.00%)
- n2: 73500608 0x109969: push (api.c:252)
-  n1: 43155064 0x109C1B: change (api.c:303)
-   n0: 43155064 0x10932E: main (api.c:88)
-  n1: 30345544 0x109D5D: delete (api.c:330)
-   n0: 30345544 0x10937B: main (api.c:97)
- n0: 2063172 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=58
-#-----------
-time=27633030650
-mem_heap_B=1037932991
-mem_heap_extra_B=150917913
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1037932991 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 961611403 0x1097E4: get_input (api.c:215)
-  n1: 960762191 0x109BA9: change (api.c:297)
-   n0: 960762191 0x10932E: main (api.c:88)
-  n0: 849212 in 1 place, below massif's threshold (1.00%)
- n2: 74238416 0x109969: push (api.c:252)
-  n1: 43596216 0x109C1B: change (api.c:303)
-   n0: 43596216 0x10932E: main (api.c:88)
-  n1: 30642200 0x109D5D: delete (api.c:330)
-   n0: 30642200 0x10937B: main (api.c:97)
- n0: 2083172 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=59
-#-----------
-time=27906659354
+time=26938178110
 mem_heap_B=1048362933
 mem_heap_extra_B=152434051
 mem_stacks_B=0
@@ -1128,32 +938,13 @@ n3: 1048362933 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 74985936 0x109969: push (api.c:252)
   n1: 44012224 0x109C1B: change (api.c:303)
    n0: 44012224 0x10932E: main (api.c:88)
-  n1: 30973712 0x109D5D: delete (api.c:330)
+  n1: 30973712 0x109D6C: delete (api.c:331)
    n0: 30973712 0x10937B: main (api.c:97)
  n0: 2103172 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=60
+snapshot=50
 #-----------
-time=28186147362
-mem_heap_B=1058823909
-mem_heap_extra_B=153954699
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1058823909 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 980965797 0x1097E4: get_input (api.c:215)
-  n1: 980100225 0x109BA9: change (api.c:297)
-   n0: 980100225 0x10932E: main (api.c:88)
-  n0: 865572 in 1 place, below massif's threshold (1.00%)
- n2: 75735240 0x109969: push (api.c:252)
-  n1: 44475744 0x109C1B: change (api.c:303)
-   n0: 44475744 0x10932E: main (api.c:88)
-  n1: 31259496 0x109D5D: delete (api.c:330)
-   n0: 31259496 0x10937B: main (api.c:97)
- n0: 2122872 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=61
-#-----------
-time=28187143118
+time=27208674868
 mem_heap_B=1058855106
 mem_heap_extra_B=153959254
 mem_stacks_B=0
@@ -1166,32 +957,13 @@ n3: 1058855106 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 75737400 0x109969: push (api.c:252)
   n1: 44477904 0x109C1B: change (api.c:303)
    n0: 44477904 0x10932E: main (api.c:88)
-  n1: 31259496 0x109D5D: delete (api.c:330)
+  n1: 31259496 0x109D6C: delete (api.c:331)
    n0: 31259496 0x10937B: main (api.c:97)
  n0: 2122932 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=62
+snapshot=51
 #-----------
-time=28466631764
-mem_heap_B=1069456044
-mem_heap_extra_B=155497628
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1069456044 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 990813604 0x1097E4: get_input (api.c:215)
-  n1: 989939557 0x109BA9: change (api.c:297)
-   n0: 989939557 0x10932E: main (api.c:88)
-  n0: 874047 in 1 place, below massif's threshold (1.00%)
- n2: 76498928 0x109969: push (api.c:252)
-  n1: 44956304 0x109C1B: change (api.c:303)
-   n0: 44956304 0x10932E: main (api.c:88)
-  n1: 31542624 0x109D5D: delete (api.c:330)
-   n0: 31542624 0x10937B: main (api.c:97)
- n0: 2143512 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=63
-#-----------
-time=28468886217
+time=27481770781
 mem_heap_B=1069542599
 mem_heap_extra_B=155510913
 mem_stacks_B=0
@@ -1204,32 +976,13 @@ n3: 1069542599 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 76498928 0x109969: push (api.c:252)
   n1: 44956304 0x109C1B: change (api.c:303)
    n0: 44956304 0x10932E: main (api.c:88)
-  n1: 31542624 0x109D5D: delete (api.c:330)
+  n1: 31542624 0x109D6C: delete (api.c:331)
    n0: 31542624 0x10937B: main (api.c:97)
  n0: 2143532 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=64
+snapshot=52
 #-----------
-time=28748377370
-mem_heap_B=1080099528
-mem_heap_extra_B=157046344
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1080099528 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1000677328 0x1097E4: get_input (api.c:215)
-  n1: 999794512 0x109BA9: change (api.c:297)
-   n0: 999794512 0x10932E: main (api.c:88)
-  n0: 882816 in 1 place, below massif's threshold (1.00%)
- n2: 77257288 0x109969: push (api.c:252)
-  n1: 45411720 0x109C1B: change (api.c:303)
-   n0: 45411720 0x10932E: main (api.c:88)
-  n1: 31845568 0x109D5D: delete (api.c:330)
-   n0: 31845568 0x10937B: main (api.c:97)
- n0: 2164912 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=65
-#-----------
-time=28752538655
+time=27756252179
 mem_heap_B=1080266368
 mem_heap_extra_B=157071040
 mem_stacks_B=0
@@ -1242,32 +995,13 @@ n3: 1080266368 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 77266776 0x109969: push (api.c:252)
   n1: 45420840 0x109C1B: change (api.c:303)
    n0: 45420840 0x10932E: main (api.c:88)
-  n1: 31845936 0x109D5D: delete (api.c:330)
+  n1: 31845936 0x109D6C: delete (api.c:331)
    n0: 31845936 0x10937B: main (api.c:97)
  n0: 2165092 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=66
+snapshot=53
 #-----------
-time=29032027829
-mem_heap_B=1090759764
-mem_heap_extra_B=158591540
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1090759764 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1010558284 0x1097E4: get_input (api.c:215)
-  n1: 1009666911 0x109BA9: change (api.c:297)
-   n0: 1009666911 0x10932E: main (api.c:88)
-  n0: 891373 in 1 place, below massif's threshold (1.00%)
- n2: 78016288 0x109969: push (api.c:252)
-  n1: 45909368 0x109C1B: change (api.c:303)
-   n0: 45909368 0x10932E: main (api.c:88)
-  n1: 32106920 0x109D5D: delete (api.c:330)
-   n0: 32106920 0x10937B: main (api.c:97)
- n0: 2185192 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=67
-#-----------
-time=29040817051
+time=28034399748
 mem_heap_B=1091076791
 mem_heap_extra_B=158638529
 mem_stacks_B=0
@@ -1280,32 +1014,13 @@ n3: 1091076791 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 78038128 0x109969: push (api.c:252)
   n1: 45923296 0x109C1B: change (api.c:303)
    n0: 45923296 0x10932E: main (api.c:88)
-  n1: 32114832 0x109D5D: delete (api.c:330)
+  n1: 32114832 0x109D6C: delete (api.c:331)
    n0: 32114832 0x10937B: main (api.c:97)
  n0: 2185852 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=68
+snapshot=54
 #-----------
-time=29320366821
-mem_heap_B=1101519407
-mem_heap_extra_B=160154345
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1101519407 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1020524439 0x1097E4: get_input (api.c:215)
-  n1: 1019624289 0x109BA9: change (api.c:297)
-   n0: 1019624289 0x10932E: main (api.c:88)
-  n0: 900150 in 1 place, below massif's threshold (1.00%)
- n2: 78788656 0x109969: push (api.c:252)
-  n1: 46352264 0x109C1B: change (api.c:303)
-   n0: 46352264 0x10932E: main (api.c:88)
-  n1: 32436392 0x109D5D: delete (api.c:330)
-   n0: 32436392 0x10937B: main (api.c:97)
- n0: 2206312 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=69
-#-----------
-time=29333819188
+time=28316536378
 mem_heap_B=1102007946
 mem_heap_extra_B=160226150
 mem_stacks_B=0
@@ -1318,32 +1033,13 @@ n3: 1102007946 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 78818224 0x109969: push (api.c:252)
   n1: 46370328 0x109C1B: change (api.c:303)
    n0: 46370328 0x10932E: main (api.c:88)
-  n1: 32447896 0x109D5D: delete (api.c:330)
+  n1: 32447896 0x109D6C: delete (api.c:331)
    n0: 32447896 0x10937B: main (api.c:97)
  n0: 2207852 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=70
+snapshot=55
 #-----------
-time=29613309086
-mem_heap_B=1112477989
-mem_heap_extra_B=161748483
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1112477989 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1030676045 0x1097E4: get_input (api.c:215)
-  n1: 1029766472 0x109BA9: change (api.c:297)
-   n0: 1029766472 0x10932E: main (api.c:88)
-  n0: 909573 in 1 place, below massif's threshold (1.00%)
- n2: 79572032 0x109969: push (api.c:252)
-  n1: 46804272 0x109C1B: change (api.c:303)
-   n0: 46804272 0x10932E: main (api.c:88)
-  n1: 32767760 0x109D5D: delete (api.c:330)
-   n0: 32767760 0x10937B: main (api.c:97)
- n0: 2229912 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=71
-#-----------
-time=29627808992
+time=28599983893
 mem_heap_B=1113032233
 mem_heap_extra_B=161829663
 mem_stacks_B=0
@@ -1356,32 +1052,13 @@ n3: 1113032233 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 79607616 0x109969: push (api.c:252)
   n1: 46826096 0x109C1B: change (api.c:303)
    n0: 46826096 0x10932E: main (api.c:88)
-  n1: 32781520 0x109D5D: delete (api.c:330)
+  n1: 32781520 0x109D6C: delete (api.c:331)
    n0: 32781520 0x10937B: main (api.c:97)
  n0: 2230852 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=72
+snapshot=56
 #-----------
-time=29907297094
-mem_heap_B=1123610716
-mem_heap_extra_B=163368636
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1123610716 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1040995100 0x1097E4: get_input (api.c:215)
-  n1: 1040077191 0x109BA9: change (api.c:297)
-   n0: 1040077191 0x10932E: main (api.c:88)
-  n0: 917909 in 1 place, below massif's threshold (1.00%)
- n2: 80365504 0x109969: push (api.c:252)
-  n1: 47295288 0x109C1B: change (api.c:303)
-   n0: 47295288 0x10932E: main (api.c:88)
-  n1: 33070216 0x109D5D: delete (api.c:330)
-   n0: 33070216 0x10937B: main (api.c:97)
- n0: 2250112 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=73
-#-----------
-time=29921832188
+time=28884351702
 mem_heap_B=1124161560
 mem_heap_extra_B=163449184
 mem_stacks_B=0
@@ -1394,32 +1071,13 @@ n3: 1124161560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 80406144 0x109969: push (api.c:252)
   n1: 47320976 0x109C1B: change (api.c:303)
    n0: 47320976 0x10932E: main (api.c:88)
-  n1: 33085168 0x109D5D: delete (api.c:330)
+  n1: 33085168 0x109D6C: delete (api.c:331)
    n0: 33085168 0x10937B: main (api.c:97)
  n0: 2251172 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=74
+snapshot=57
 #-----------
-time=30201322180
-mem_heap_B=1134671128
-mem_heap_extra_B=164979376
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1134671128 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1051239744 0x1097E4: get_input (api.c:215)
-  n1: 1050312741 0x109BA9: change (api.c:297)
-   n0: 1050312741 0x10932E: main (api.c:88)
-  n0: 927003 in 1 place, below massif's threshold (1.00%)
- n2: 81159152 0x109969: push (api.c:252)
-  n1: 47762016 0x109C1B: change (api.c:303)
-   n0: 47762016 0x10932E: main (api.c:88)
-  n1: 33397136 0x109D5D: delete (api.c:330)
-   n0: 33397136 0x10937B: main (api.c:97)
- n0: 2272232 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=75
-#-----------
-time=30220745778
+time=29172980081
 mem_heap_B=1135401093
 mem_heap_extra_B=165086083
 mem_stacks_B=0
@@ -1432,32 +1090,13 @@ n3: 1135401093 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 81207824 0x109969: push (api.c:252)
   n1: 47787048 0x109C1B: change (api.c:303)
    n0: 47787048 0x10932E: main (api.c:88)
-  n1: 33420776 0x109D5D: delete (api.c:330)
+  n1: 33420776 0x109D6C: delete (api.c:331)
    n0: 33420776 0x10937B: main (api.c:97)
  n0: 2273452 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=76
+snapshot=58
 #-----------
-time=30500235998
-mem_heap_B=1145778864
-mem_heap_extra_B=166601920
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1145778864 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1061527416 0x1097E4: get_input (api.c:215)
-  n1: 1060590728 0x109BA9: change (api.c:297)
-   n0: 1060590728 0x10932E: main (api.c:88)
-  n0: 936688 in 1 place, below massif's threshold (1.00%)
- n2: 81955496 0x109969: push (api.c:252)
-  n1: 48258472 0x109C1B: change (api.c:303)
-   n0: 48258472 0x10932E: main (api.c:88)
-  n1: 33697024 0x109D5D: delete (api.c:330)
-   n0: 33697024 0x10937B: main (api.c:97)
- n0: 2295952 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=77
-#-----------
-time=30526395059
+time=29467292454
 mem_heap_B=1146781261
 mem_heap_extra_B=166749763
 mem_stacks_B=0
@@ -1470,32 +1109,13 @@ n3: 1146781261 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 82024320 0x109969: push (api.c:252)
   n1: 48302856 0x109C1B: change (api.c:303)
    n0: 48302856 0x10932E: main (api.c:88)
-  n1: 33721464 0x109D5D: delete (api.c:330)
+  n1: 33721464 0x109D6C: delete (api.c:331)
    n0: 33721464 0x10937B: main (api.c:97)
  n0: 2297932 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=78
+snapshot=59
 #-----------
-time=30805884057
-mem_heap_B=1157317093
-mem_heap_extra_B=168282083
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1157317093 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1072217245 0x1097E4: get_input (api.c:215)
-  n1: 1071271602 0x109BA9: change (api.c:297)
-   n0: 1071271602 0x10932E: main (api.c:88)
-  n0: 945643 in 1 place, below massif's threshold (1.00%)
- n2: 82782296 0x109969: push (api.c:252)
-  n1: 48763176 0x109C1B: change (api.c:303)
-   n0: 48763176 0x10932E: main (api.c:88)
-  n1: 34019120 0x109D5D: delete (api.c:330)
-   n0: 34019120 0x10937B: main (api.c:97)
- n0: 2317552 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=79
-#-----------
-time=30831748216
+time=29762386379
 mem_heap_B=1158274066
 mem_heap_extra_B=168421622
 mem_stacks_B=0
@@ -1508,32 +1128,13 @@ n3: 1158274066 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 82846696 0x109969: push (api.c:252)
   n1: 48801552 0x109C1B: change (api.c:303)
    n0: 48801552 0x10932E: main (api.c:88)
-  n1: 34045144 0x109D5D: delete (api.c:330)
+  n1: 34045144 0x109D6C: delete (api.c:331)
    n0: 34045144 0x10937B: main (api.c:97)
  n0: 2319452 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=80
+snapshot=60
 #-----------
-time=31111263775
-mem_heap_B=1168600922
-mem_heap_extra_B=169926278
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1168600922 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1082673322 0x1097E4: get_input (api.c:215)
-  n1: 1081717585 0x109BA9: change (api.c:297)
-   n0: 1081717585 0x10932E: main (api.c:88)
-  n0: 955737 in 1 place, below massif's threshold (1.00%)
- n2: 83586488 0x109969: push (api.c:252)
-  n1: 49243544 0x109C1B: change (api.c:303)
-   n0: 49243544 0x10932E: main (api.c:88)
-  n1: 34342944 0x109D5D: delete (api.c:330)
-   n0: 34342944 0x10937B: main (api.c:97)
- n0: 2341112 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=81
-#-----------
-time=31148684781
+time=30066182704
 mem_heap_B=1169935571
 mem_heap_extra_B=170121829
 mem_stacks_B=0
@@ -1546,32 +1147,13 @@ n3: 1169935571 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 83682008 0x109969: push (api.c:252)
   n1: 49303400 0x109C1B: change (api.c:303)
    n0: 49303400 0x10932E: main (api.c:88)
-  n1: 34378608 0x109D5D: delete (api.c:330)
+  n1: 34378608 0x109D6C: delete (api.c:331)
    n0: 34378608 0x10937B: main (api.c:97)
  n0: 2343572 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=82
+snapshot=61
 #-----------
-time=31428174599
-mem_heap_B=1180345006
-mem_heap_extra_B=171634410
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1180345006 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1093550278 0x1097E4: get_input (api.c:215)
-  n1: 1092585014 0x109BA9: change (api.c:297)
-   n0: 1092585014 0x10932E: main (api.c:88)
-  n0: 965264 in 1 place, below massif's threshold (1.00%)
- n2: 84431216 0x109969: push (api.c:252)
-  n1: 49777760 0x109C1B: change (api.c:303)
-   n0: 49777760 0x10932E: main (api.c:88)
-  n1: 34653456 0x109D5D: delete (api.c:330)
-   n0: 34653456 0x10937B: main (api.c:97)
- n0: 2363512 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=83
-#-----------
-time=31463997826
+time=30369776592
 mem_heap_B=1181651691
 mem_heap_extra_B=171825277
 mem_stacks_B=0
@@ -1584,36 +1166,17 @@ n3: 1181651691 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 84520496 0x109969: push (api.c:252)
   n1: 49838824 0x109C1B: change (api.c:303)
    n0: 49838824 0x10932E: main (api.c:88)
-  n1: 34681672 0x109D5D: delete (api.c:330)
+  n1: 34681672 0x109D6C: delete (api.c:331)
    n0: 34681672 0x10937B: main (api.c:97)
  n0: 2366492 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=84
+snapshot=62
 #-----------
-time=31743485962
-mem_heap_B=1192062103
-mem_heap_extra_B=173342601
-mem_stacks_B=0
-heap_tree=detailed
-n3: 1192062103 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1104404911 0x1097E4: get_input (api.c:215)
-  n1: 1103429836 0x109BA9: change (api.c:297)
-   n0: 1103429836 0x10932E: main (api.c:88)
-  n0: 975075 in 1 place, below massif's threshold (1.00%)
- n2: 85269640 0x109969: push (api.c:252)
-  n1: 50274296 0x109C1B: change (api.c:303)
-   n0: 50274296 0x10932E: main (api.c:88)
-  n1: 34995344 0x109D5D: delete (api.c:330)
-   n0: 34995344 0x10937B: main (api.c:97)
- n0: 2387552 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=85
-#-----------
-time=31780894942
+time=30675257783
 mem_heap_B=1193519967
 mem_heap_extra_B=173554401
 mem_stacks_B=0
-heap_tree=detailed
+heap_tree=peak
 n3: 1193519967 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 1105760283 0x1097E4: get_input (api.c:215)
   n1: 1104784111 0x109BA9: change (api.c:297)
@@ -1622,137 +1185,97 @@ n3: 1193519967 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 85369152 0x109969: push (api.c:252)
   n1: 50346424 0x109C1B: change (api.c:303)
    n0: 50346424 0x10932E: main (api.c:88)
-  n1: 35022728 0x109D5D: delete (api.c:330)
+  n1: 35022728 0x109D6C: delete (api.c:331)
    n0: 35022728 0x10937B: main (api.c:97)
  n0: 2390532 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=86
+snapshot=63
 #-----------
-time=32060397848
-mem_heap_B=1204332815
-mem_heap_extra_B=175013241
+time=31015700688
+mem_heap_B=1152249064
+mem_heap_extra_B=167624136
 mem_stacks_B=0
 heap_tree=detailed
-n3: 1204332815 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1115038335 0x1097E4: get_input (api.c:215)
-  n1: 1114053946 0x109BA9: change (api.c:297)
-   n0: 1114053946 0x10932E: main (api.c:88)
-  n0: 984389 in 1 place, below massif's threshold (1.00%)
- n3: 86884288 0x109969: push (api.c:252)
-  n1: 50761224 0x109C1B: change (api.c:303)
-   n0: 50761224 0x10932E: main (api.c:88)
-  n1: 35323488 0x109D5D: delete (api.c:330)
-   n0: 35323488 0x10937B: main (api.c:97)
-  n0: 799576 in 2 places, all below massif's threshold (1.00%)
- n0: 2410192 in 9 places, all below massif's threshold (1.00%)
+n3: 1152249064 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1067511736 0x1097E4: get_input (api.c:215)
+  n1: 1066526412 0x109BA9: change (api.c:297)
+   n0: 1066526412 0x10932E: main (api.c:88)
+  n0: 985324 in 1 place, below massif's threshold (1.00%)
+ n3: 82009536 0x109969: push (api.c:252)
+  n2: 48288712 0x109C1B: change (api.c:303)
+   n0: 48288712 0x10932E: main (api.c:88)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n2: 33720824 0x109D6C: delete (api.c:331)
+   n0: 33720824 0x10937B: main (api.c:97)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 2727792 in 7 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=87
+snapshot=64
 #-----------
-time=32082686815
-mem_heap_B=1205726193
-mem_heap_extra_B=175019799
-mem_stacks_B=0
-heap_tree=peak
-n3: 1205726193 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 1115038513 0x1097E4: get_input (api.c:215)
-  n1: 1114053946 0x109BA9: change (api.c:297)
-   n0: 1114053946 0x10932E: main (api.c:88)
-  n0: 984567 in 1 place, below massif's threshold (1.00%)
- n3: 88277448 0x109969: push (api.c:252)
-  n1: 50761224 0x109C1B: change (api.c:303)
-   n0: 50761224 0x10932E: main (api.c:88)
-  n1: 35323488 0x109D5D: delete (api.c:330)
-   n0: 35323488 0x10937B: main (api.c:97)
-  n0: 2192736 in 2 places, all below massif's threshold (1.00%)
- n0: 2410232 in 9 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=88
-#-----------
-time=32362174816
-mem_heap_B=1015959919
-mem_heap_extra_B=145963377
+time=31356134673
+mem_heap_B=945281575
+mem_heap_extra_B=137832921
 mem_stacks_B=0
 heap_tree=detailed
-n3: 1015959919 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 927471647 0x1097E4: get_input (api.c:215)
-  n1: 926483423 0x109BA9: change (api.c:297)
-   n0: 926483423 0x10932E: main (api.c:88)
-  n0: 988224 in 1 place, below massif's threshold (1.00%)
- n3: 86479040 0x109969: push (api.c:252)
-  n2: 50788432 0x109C1B: change (api.c:303)
-   n0: 50761256 0x10932E: main (api.c:88)
-   n0: 27176 in 1 place, below massif's threshold (1.00%)
-  n2: 35353512 0x109D5D: delete (api.c:330)
-   n0: 35323488 0x10937B: main (api.c:97)
-   n0: 30024 in 1 place, below massif's threshold (1.00%)
-  n0: 337096 in 2 places, all below massif's threshold (1.00%)
- n0: 2009232 in 9 places, all below massif's threshold (1.00%)
+n3: 945281575 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 875728719 0x1097E4: get_input (api.c:215)
+  n1: 874739125 0x109BA9: change (api.c:297)
+   n0: 874739125 0x10932E: main (api.c:88)
+  n0: 989594 in 1 place, below massif's threshold (1.00%)
+ n3: 65316640 0x109969: push (api.c:252)
+  n2: 38380928 0x109C1B: change (api.c:303)
+   n0: 38380928 0x10932E: main (api.c:88)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n2: 26931296 0x109D6C: delete (api.c:331)
+   n0: 26931296 0x10937B: main (api.c:97)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 4416 in 1 place, below massif's threshold (1.00%)
+ n0: 4236216 in 7 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=89
+snapshot=65
 #-----------
-time=32641665116
-mem_heap_B=872040877
-mem_heap_extra_B=123381395
+time=31696536203
+mem_heap_B=713249554
+mem_heap_extra_B=104446990
 mem_stacks_B=0
 heap_tree=detailed
-n3: 872040877 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 781530045 0x1097E4: get_input (api.c:215)
-  n1: 780538386 0x109BA9: change (api.c:297)
-   n0: 780538386 0x10932E: main (api.c:88)
-  n0: 991659 in 1 place, below massif's threshold (1.00%)
- n3: 88815480 0x109969: push (api.c:252)
-  n2: 50821400 0x109C1B: change (api.c:303)
-   n0: 50761280 0x10932E: main (api.c:88)
-   n0: 60120 in 1 place, below massif's threshold (1.00%)
-  n2: 35364944 0x109D5D: delete (api.c:330)
-   n0: 35323488 0x10937B: main (api.c:97)
-   n0: 41456 in 1 place, below massif's threshold (1.00%)
-  n0: 2629136 in 2 places, all below massif's threshold (1.00%)
- n0: 1695352 in 9 places, all below massif's threshold (1.00%)
+n3: 713249554 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 660702674 0x1097E4: get_input (api.c:215)
+  n1: 659708420 0x109BA9: change (api.c:297)
+   n0: 659708420 0x10932E: main (api.c:88)
+  n0: 994254 in 1 place, below massif's threshold (1.00%)
+ n3: 49389864 0x109969: push (api.c:252)
+  n2: 29118816 0x109C1B: change (api.c:303)
+   n0: 29118816 0x10932E: main (api.c:88)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n2: 20271048 0x109D6C: delete (api.c:331)
+   n0: 20271048 0x10937B: main (api.c:97)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 3157016 in 7 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=90
+snapshot=66
 #-----------
-time=32921211446
-mem_heap_B=679305499
-mem_heap_extra_B=93951845
+time=32036941061
+mem_heap_B=536797260
+mem_heap_extra_B=79046908
 mem_stacks_B=0
 heap_tree=detailed
-n3: 679305499 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n2: 591343011 0x1097E4: get_input (api.c:215)
-  n1: 590347702 0x109BA9: change (api.c:297)
-   n0: 590347702 0x10932E: main (api.c:88)
-  n0: 995309 in 1 place, below massif's threshold (1.00%)
- n3: 86675616 0x109969: push (api.c:252)
-  n2: 50859944 0x109C1B: change (api.c:303)
-   n0: 50761312 0x10932E: main (api.c:88)
-   n0: 98632 in 1 place, below massif's threshold (1.00%)
-  n2: 35386520 0x109D5D: delete (api.c:330)
-   n0: 35323488 0x10937B: main (api.c:97)
-   n0: 63032 in 1 place, below massif's threshold (1.00%)
-  n0: 429152 in 2 places, all below massif's threshold (1.00%)
- n0: 1286872 in 9 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=91
-#-----------
-time=33200729267
-mem_heap_B=592832516
-mem_heap_extra_B=79412428
-mem_stacks_B=0
-heap_tree=detailed
-n3: 592832516 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+n4: 536797260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n2: 497199052 0x1097E4: get_input (api.c:215)
   n1: 496201753 0x109BA9: change (api.c:297)
    n0: 496201753 0x10932E: main (api.c:88)
   n0: 997299 in 1 place, below massif's threshold (1.00%)
- n4: 94550832 0x109969: push (api.c:252)
-  n2: 50869320 0x109C1B: change (api.c:303)
-   n0: 50761328 0x10932E: main (api.c:88)
-   n0: 107992 in 1 place, below massif's threshold (1.00%)
-  n2: 35394240 0x109D5D: delete (api.c:330)
-   n0: 35323488 0x10937B: main (api.c:97)
-   n0: 70752 in 1 place, below massif's threshold (1.00%)
-  n1: 8282488 0x10A26C: undo_change (api.c:421)
-   n1: 8282488 0x109FFD: undo (api.c:385)
-    n0: 8282488 0x1093DD: main (api.c:107)
+ n3: 31859584 0x109969: push (api.c:252)
+  n2: 18781184 0x109C1B: change (api.c:303)
+   n0: 18781184 0x10932E: main (api.c:88)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n2: 13073616 0x109D6C: delete (api.c:331)
+   n0: 13073616 0x10937B: main (api.c:97)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
   n0: 4784 in 1 place, below massif's threshold (1.00%)
- n0: 1082632 in 9 places, all below massif's threshold (1.00%)
+ n1: 6655992 0x10A218: undo_change (api.c:425)
+  n1: 6655992 0x10A01B: undo (api.c:387)
+   n0: 6655992 0x1093DD: main (api.c:107)
+ n0: 1082632 in 6 places, all below massif's threshold (1.00%)

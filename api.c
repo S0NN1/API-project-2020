@@ -2,7 +2,7 @@
 #include "stdbool.h"
 #include "stdlib.h"
 #include "string.h"
-#define NIGGER 2096
+#define NIGGER 4192
 typedef struct {
     char **strings;
     size_t length;
@@ -222,8 +222,8 @@ char *get_input() {
 commands *empty(commands *state) {
     while (state != NULL) {
         commands *temp = state->next;
-       if (state->modified_strings != NULL && state->modified_strings[0]!=NULL) {
-            for (int i = 0; i < state->length; ++i) {
+        if (state->modified_strings != NULL && state->modified_strings[0]!=NULL) {
+           for (int i = 0; i < state->length; ++i) {
                 free(state->modified_strings[i]);
             }
             free(state->modified_strings);
@@ -253,7 +253,7 @@ void push(commands *state, char *string, int index, int addr1, int addr2, int st
             state->mem_len = addr2 - addr1 + 1;
         } else
             state->mem_len = state_len - addr1 + 1;
-        state->modified_strings = (char **) calloc(state->mem_len, sizeof(char *));
+        state->modified_strings = (char **) malloc(state->mem_len*sizeof(char *));
         state->modified_strings[0] = string;
         state->length = 1;
     } else {
@@ -296,7 +296,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
         temp_undo->addr2 =(*redo)->addr2;
         temp_undo->length=0;
         temp_undo->mem_len = (*redo)->addr2 - (*redo)->addr1 + 1;
-        temp_undo->modified_strings = calloc(temp_undo->mem_len, sizeof(char *));
+        temp_undo->modified_strings = malloc(temp_undo->mem_len*sizeof(char *));
     }
     //string length used for resizing
     int old_len = state->length;
@@ -439,7 +439,7 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
         int old_len = temp_redo->length;
         temp_redo->length = 0;
         temp_redo->mem_len = undo->addr2 - undo->addr1 + 1;
-        temp_redo->modified_strings = calloc(temp_redo->mem_len, sizeof(char *));
+        temp_redo->modified_strings = malloc(temp_redo->mem_len*sizeof(char *));
         for (i = undo->addr1; i <= undo->addr2; ++i) {
             if (i - undo->addr1 < old_len) {
                 push(temp_redo, state->strings[i - 1], i - undo->addr1, undo->addr1, undo->addr2, undo->addr2);

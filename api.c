@@ -1,3 +1,5 @@
+#define NIGGER 250
+
 #include "stdio.h"
 #include "stdbool.h"
 #include "stdlib.h"
@@ -64,7 +66,7 @@ int main() {
     //command identifier 'p', 'c', 'd', 'r', 'u', 'q'
     char c, u_r = 0;
     //command string
-    char *cmd=NULL;
+    char *cmd = NULL;
     char *ptr; //used only for u/r
     //array length
     size_t cmd_length = 0;
@@ -77,6 +79,9 @@ int main() {
         c = cmd[cmd_length - 2];
         input_checker(undo_len, &u_on_hold, u_done, &sum, &pending_undo, &u_r, cmd, &ptr, cmd_length, &addr1, &addr2,
                       &read, &c);
+        if (read) {
+            free(cmd);
+        }
         //identify command
         switch (c) {
             case ('p'):
@@ -87,7 +92,7 @@ int main() {
             case ('c'):
                 change(state, addr1, addr2, &undo_state, &redo_state, false);
                 undo_len++;
-                if (redo_len>0){
+                if (redo_len > 0) {
                     redo_state = empty(redo_state);
                 }
                 redo_len = 0;
@@ -98,7 +103,7 @@ int main() {
             case ('d'):
                 delete(state, addr1, addr2, &undo_state);
                 undo_len++;
-                if (redo_len>0){
+                if (redo_len > 0) {
                     redo_state = empty(redo_state);
                 }
                 redo_len = 0;
@@ -204,9 +209,9 @@ void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length) {
     free(temp);
 }
 
-void get_input(char**input) {
+void get_input(char **input) {
     //input string
-    (*input)=malloc(301*sizeof(char));
+    (*input) = malloc(NIGGER * sizeof(char));
     char c;
     int len = 0;
     while ((c = getchar_unlocked()) != EOF) {
@@ -221,9 +226,6 @@ void get_input(char**input) {
 commands *empty(commands *state) {
     while (state != NULL) {
         commands *temp = state->next;
-        for (int i = 0; i < state->mem_len; ++i) {
-            free(state->modified_strings[i]);
-        }
         free(state->modified_strings);
         free(state);
         state = temp;
@@ -282,18 +284,28 @@ void print(current_state *state, int addr1, int addr2) {
 
 void
 change(current_state *state, int addr1, int addr2, commands **undo, commands **redo, bool is_redo) {
-    commands *temp_undo = (commands *) malloc(sizeof(commands));
-    initialize_node(temp_undo, undo, 'c', addr1, addr2);
+    commands *temp_undo = (*redo);
+    char **temp_strings;
+    int old_len;
+    if (!is_redo) {
+        temp_undo = (commands *) malloc(sizeof(commands));
+        initialize_node(temp_undo, undo, 'c', addr1, addr2);
+    } else {
+        temp_strings = (*redo)->modified_strings;
+        temp_undo->length = 0;
+        temp_undo->mem_len = addr2 - addr1 + 1;
+        temp_undo->modified_strings = calloc(temp_undo->mem_len, sizeof(char *));
+    }
     //string length used for resizing
-    int old_len = state->length;
+    old_len = state->length;
     if (state->mem_len < addr2) {
         state->mem_len = addr2;
         state->strings = (char **) realloc(state->strings, state->mem_len * sizeof(char *));
     }
     for (int i = addr1; i <= addr2; ++i) {
-        char *temp=NULL;
+        char *temp = NULL;
         if (is_redo) {
-            temp = (*redo)->modified_strings[i - addr1];
+            temp = temp_strings[i - addr1];
         } else {
             get_input(&temp);
         }
@@ -305,6 +317,9 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
         }
         state->strings[i - 1] = temp;
     }
+    if (is_redo) {
+       free(temp_strings);
+   }
     temp_undo->next = (*undo);
     (*undo) = temp_undo;
 }
@@ -356,8 +371,8 @@ void redo(current_state *state, int addr1, commands **undo, commands **redo, int
         return;
     } else {
         int i = 0;
-        commands *temp;
         while ((*redo) != NULL) {
+            commands *next = (*redo)->next;
             if (i != addr1) {
                 if ((*redo)->command == 'c') {
                     change(state, (*redo)->addr1, (*redo)->addr2, undo, redo, true);
@@ -366,9 +381,7 @@ void redo(current_state *state, int addr1, commands **undo, commands **redo, int
                 }
                 (*redo_len)--;
                 (*undo_len)++;
-                temp = (*redo);
-                (*redo) = (*redo)->next;
-                free(temp);
+                (*redo) = next;
                 i++;
             } else break;
         }
@@ -380,7 +393,6 @@ void undo(current_state *state, int addr1, commands **undo, commands **redo, int
         return;
     } else {
         int i = 0;
-        commands *temp;
         while ((*undo) != NULL) {
             commands *next = (*undo)->next;
             if (i != addr1) {

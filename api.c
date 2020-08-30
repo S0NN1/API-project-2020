@@ -2,7 +2,8 @@
 #include "stdbool.h"
 #include "stdlib.h"
 #include "string.h"
-#define NIGGER 4192
+#define NIGGER 32768
+int frigo_var=0;
 typedef struct {
     char **strings;
     size_t length;
@@ -39,7 +40,7 @@ void
 change(current_state *state, int addr1, int addr2, commands **undo, commands **redo, bool is_redo);
 
 void
-delete(current_state *state, int addr1, int addr2, commands **undo);
+delete(current_state *state, int addr1, int addr2, commands **undo, commands**redo, bool is_redo);
 
 void redo(current_state *state, int addr1, commands **undo, commands **redo, int *undo_len, int *redo_len);
 
@@ -96,7 +97,7 @@ int main() {
                 u_done = 0;
                 break;
             case ('d'):
-                delete(state, addr1, addr2, &undo_state);
+                delete(state, addr1, addr2, &undo_state, &redo_state, false);
                 undo_len++;
                 redo_state = empty(redo_state);
                 redo_len = 0;
@@ -174,7 +175,7 @@ void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length) {
     //index of ',' char
     int end = 0;
     //temp string
-    char *temp = (char *) malloc(20 * sizeof(char));
+    char temp[20];
     //reach ','
     for (int i = 0; i < cmd_length; ++i) {
         if (cmd[i] == ',') {
@@ -199,7 +200,6 @@ void get_addresses(int *addr1, int *addr2, const char *cmd, size_t cmd_length) {
     temp[j] = '\0';
     //assign second address
     (*addr2) = (int) strtol(temp, &ptr, 0);
-    free(temp);
 }
 
 char *get_input() {
@@ -301,7 +301,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
     //string length used for resizing
     int old_len = state->length;
     if (state->mem_len < addr2) {
-        state->mem_len = addr2;
+        state->mem_len*=2;
         state->strings = (char **) realloc(state->strings, state->mem_len * sizeof(char *));
     }
     for (int i = addr1; i <= addr2; ++i) {
@@ -327,8 +327,11 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
 }
 
 void
-delete(current_state *state, int addr1, int addr2, commands **undo) {
-    commands *temp_undo = (commands *) malloc(sizeof(commands));
+delete(current_state *state, int addr1, int addr2, commands **undo, commands **redo, bool is_redo) {
+    commands *temp_undo;
+    if (!is_redo){
+        temp_undo = (commands *) malloc(sizeof(commands));
+    } else  temp_undo= (*redo);
     initialize_node(temp_undo, undo, 'd', addr1, addr2);
     int old_len;
     //undo/redo temp nodes
@@ -380,7 +383,7 @@ void redo(current_state *state, int addr1, commands **undo, commands **redo, int
                 if ((*redo)->command == 'c') {
                     change(state, (*redo)->addr1, (*redo)->addr2, undo, redo, true);
                 } else {
-                    delete(state, (*redo)->addr1, (*redo)->addr2, undo);
+                    delete(state, (*redo)->addr1, (*redo)->addr2, undo, redo, true);
                 }
                 (*redo_len)--;
                 (*undo_len)++;

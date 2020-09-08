@@ -223,13 +223,13 @@ commands *empty(commands *state) {
     while (state != NULL) {
         commands *temp = state->next;
         if (state->modified_strings != NULL && state->modified_strings[0]!=NULL) {
-           for (int i = 0; i < state->length; ++i) {
+            for (int i = 0; i < state->length; ++i) {
                 free(state->modified_strings[i]);
             }
             free(state->modified_strings);
         } else state->modified_strings=NULL;
         free(state);
-       state = temp;
+        state = temp;
     }
     return NULL;
 }

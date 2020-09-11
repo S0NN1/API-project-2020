@@ -3,7 +3,6 @@
 #include "stdlib.h"
 #include "string.h"
 #define NIGGER 32768
-int frigo_var=0;
 typedef struct {
     char **strings;
     size_t length;
@@ -32,7 +31,7 @@ commands *empty(commands *state);
 
 void initialize_node(commands *temp, commands *const *main_struct, char command, int addr1, int addr2);
 
-void push(commands *state, char *string, int index, int addr1, int addr2, int state_len);
+void push(commands *state, char *string, int addr1, int addr2, int state_len);
 
 void print(current_state *state, int addr1, int addr2);
 
@@ -207,7 +206,7 @@ char *get_input() {
     char input[1025];
     char c;
     int len = 0;
-    while ((c = getchar_unlocked()) != EOF) {
+    while ((c = (char)getchar_unlocked()) != EOF) {
         input[len] = c;
         len++;
         if (input[len - 1] == '\n')
@@ -244,7 +243,7 @@ void initialize_node(commands *temp, commands *const *main_struct, char command,
     temp->mem_len = 0;
 }
 
-void push(commands *state, char *string, int index, int addr1, int addr2, int state_len) {
+void push(commands *state, char *string, int addr1, int addr2, int state_len) {
     if (string == NULL) {
         return;
     }
@@ -315,7 +314,7 @@ change(current_state *state, int addr1, int addr2, commands **undo, commands **r
             state->length++;
         }
         if (i <= old_len) {
-            push(temp_undo, state->strings[i - 1], i - addr1, addr1, addr2, old_len);
+            push(temp_undo, state->strings[i - 1], addr1, addr2, old_len);
         }
         state->strings[i - 1] = temp;
     }
@@ -349,7 +348,7 @@ delete(current_state *state, int addr1, int addr2, commands **undo, commands **r
         }
         old_len = state->length;
         for (int i = addr1; i <= addr2; ++i) {
-            push(temp_undo, state->strings[i - 1], i - addr1, addr1, addr2, addr2);
+            push(temp_undo, state->strings[i - 1], addr1, addr2, addr2);
             state->strings[i - 1] = NULL;
             state->length--;
         }
@@ -431,7 +430,7 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
     if (undo->modified_strings == NULL) {
         temp_redo->length = 0;
         for (int i = undo->addr1; i <= undo->addr2; ++i) {
-            push(temp_redo, state->strings[i - 1], i - undo->addr1, undo->addr1, undo->addr2, undo->addr2);
+            push(temp_redo, state->strings[i - 1], undo->addr1, undo->addr2, undo->addr2);
             state->strings[i - 1] = NULL;
             if (state->length > 0) {
                 state->length--;
@@ -445,10 +444,10 @@ void undo_change(current_state *state, commands *undo, commands **redo) {
         temp_redo->modified_strings = malloc(temp_redo->mem_len*sizeof(char *));
         for (i = undo->addr1; i <= undo->addr2; ++i) {
             if (i - undo->addr1 < old_len) {
-                push(temp_redo, state->strings[i - 1], i - undo->addr1, undo->addr1, undo->addr2, undo->addr2);
+                push(temp_redo, state->strings[i - 1], undo->addr1, undo->addr2, undo->addr2);
                 state->strings[i - 1] = temp_strings[i - undo->addr1];
             } else {
-                push(temp_redo, state->strings[i - 1], i - undo->addr1, undo->addr1, undo->addr2, undo->addr2);
+                push(temp_redo, state->strings[i - 1],  undo->addr1, undo->addr2, undo->addr2);
                 state->strings[i - 1] = NULL;
                 if (state->length > 0) {
                     state->length--;

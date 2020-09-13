@@ -1,0 +1,60 @@
+110. Editing is a rewording activity.
+81. In computing, turning the obvious into the useful is a living definition of the word "frustration".
+.
+.
+.
+.
+.
+.
+.
+.
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+34. The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.

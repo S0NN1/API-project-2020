@@ -1,0 +1,260 @@
+64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+.
+.
+.
+.
+.
+.
+.
+69. In a 5 year period we get one superb programming language. Only we can't control when the 5 year period will be.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+.
+.
+.
+.
+.
+.
+.
+51. Bringing computers into the home won't change either one, but may revitalize the corner saloon.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+.
+.
+.
+.
+.
+.
+.
+.
+15. Everything should be built top-down, except the first time.
+1. One man's constant is another man's variable.
+.
+.
+.
+.
+.
+.
+.
+.
+15. Everything should be built top-down, except the first time.
+1. One man's constant is another man's variable.
+.
+.
+.
+.
+.
+.
+.
+.
+1. One man's constant is another man's variable.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+98. In computing, the mean time to failure keeps getting shorter.
+11. If you have a procedure with ten parameters, you probably missed some.
+.
+.
+.
+.
+.
+.
+.
+.
+15. Everything should be built top-down, except the first time.
+1. One man's constant is another man's variable.
+.
+.
+.
+.
+.
+.
+.
+.
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?
+70. Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from
+.
+.
+.
+.
+.
+.
+.
+.
+17. If a listener nods his head when you're explaining your program, wake him up.
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+52. Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum - which is why we're always starting over.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+.
+.
+.
+.
+.
+.
+.
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?
+70. Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from
+.
+.
+.
+.
+.
+.
+.
+.
+98. In computing, the mean time to failure keeps getting shorter.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+.
+.
+.
+.
+.
+.
+.
+.
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+104. The proof of a system's value is its existence.
+.
+.
+.
+.
+.
+.
+.
+.
+98. In computing, the mean time to failure keeps getting shorter.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+.
+.
+.
+.
+.
+.
+.
+.
+62. In computing, invariants are ephemeral.
+52. Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum - which is why we're always starting over.
+.
+.
+.
+.
+.
+.
+.
+.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+110. Editing is a rewording activity.
+75. Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves.
+.
+.
+.
+.
+.
+.
+.
+.

@@ -1,0 +1,20 @@
+1,1c
+97. When a professor insists computer science is X but not Y, have compassion for his graduate students.
+.
+1,10p
+1,2c
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+85. Though the Chinese should adore APL, it's FORTRAN they put their money on.
+.
+1,2c
+77. The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.
+77. The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.
+.
+1,10p
+1,1c
+16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+.
+1,1c
+95. Don't have good ideas if you aren't willing to be responsible for them.
+.
+q

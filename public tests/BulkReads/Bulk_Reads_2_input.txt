@@ -1,0 +1,41 @@
+1,1c
+49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
+.
+1,10p
+1,1c
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+.
+1,2c
+41. Some programming languages manage to absorb change, but withstand progress.
+106. It's difficult to extract sense from strings, but they're the only communication coin we can count on.
+.
+1,10p
+1,1c
+115. Most people find the concept of programming obvious, but the doing impossible.
+.
+1,2c
+different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies.
+78. If your computer speaks English, it was probably made in Japan.
+.
+1,10p
+1,2c
+4. Every program is a part of some other program and rarely fits.
+112. Computer Science is embarrassed by the computer.
+.
+1,1c
+45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
+.
+1,10p
+1,2c
+15. Everything should be built top-down, except the first time.
+41. Some programming languages manage to absorb change, but withstand progress.
+.
+1,2c
+45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
+60. In seeking the unattainable, simplicity only gets in the way.
+.
+1,10p
+1,1c
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+.
+q

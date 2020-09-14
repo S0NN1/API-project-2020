@@ -1,3 +1,0 @@
-/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/CMakeFiles/api-project.dir
-/mnt/d/Progetti/progetto_API_2020/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,5 @@
+### Editors ###
+# Clion
+.idea/*
+# VSCode
+.vscode/*

@@ -1,0 +1,250 @@
+21. Optimization hinders evolution.
+60. In seeking the unattainable, simplicity only gets in the way.
+.
+.
+.
+.
+.
+.
+.
+.
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+23. To understand a program you must become both the machine and the program.
+.
+.
+.
+.
+.
+.
+.
+.
+11. If you have a procedure with ten parameters, you probably missed some.
+23. To understand a program you must become both the machine and the program.
+.
+.
+.
+.
+.
+.
+.
+.
+93. When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.
+23. To understand a program you must become both the machine and the program.
+.
+.
+.
+.
+.
+.
+.
+.
+87. We have the mini and the micro computer. In what semantic niche would the pico computer fall?
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+.
+.
+.
+.
+.
+.
+.
+90. Computation has made the tree flower.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+31. Simplicity does not precede complexity, but follows it.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+115. Most people find the concept of programming obvious, but the doing impossible.
+81. In computing, turning the obvious into the useful is a living definition of the word "frustration".
+.
+.
+.
+.
+.
+.
+.
+.
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+23. To understand a program you must become both the machine and the program.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+72. An adequate bootstrap is a contradiction in terms.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+7. It is easier to write an incorrect program than understand a correct one.
+71. Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+61. In programming, as in everything else, to be in error is to be reborn.
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?
+.
+.
+.
+.
+.
+.
+.
+.

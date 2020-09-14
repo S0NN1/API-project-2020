@@ -1,0 +1,58 @@
+1,3c
+1. One man's constant is another man's variable.
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+3. Syntactic sugar causes cancer of the semicolon.
+.
+3,3p
+4,6c
+4. Every program is a part of some other program and rarely fits.
+5. If a program manipulates a large amount of data, it does so in a small number of ways.
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.
+.
+7,9c
+7. It is easier to write an incorrect program than understand a correct one.
+8. A programming language is low level when its programs require attention to the irrelevant.
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+3,3p
+10,12c
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+11. If you have a procedure with ten parameters, you probably missed some.
+12. Recursion is the root of computation since it trades description for time.
+.
+13,15c
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+14. In the long run every program becomes rococo - then rubble.
+15. Everything should be built top-down, except the first time.
+.
+15,15p
+16,18c
+16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+17. If a listener nods his head when you're explaining your program, wake him up.
+18. A program without a loop and a structured variable isn't worth writing.
+.
+19,21c
+19. A language that doesn't affect the way you think about programming, is not worth knowing.
+20. Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.
+21. Optimization hinders evolution.
+.
+8,8p
+22,24c
+22. A good system can't have a weak command language.
+23. To understand a program you must become both the machine and the program.
+24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
+.
+25,27c
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+26. There will always be things we wish to say in our programs that in all known languages can only be said poorly.
+27. Once you understand how to write a program get someone else to write it.
+.
+10,10p
+28,30c
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+30. In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+.
+1,1p
+0,0p
+q

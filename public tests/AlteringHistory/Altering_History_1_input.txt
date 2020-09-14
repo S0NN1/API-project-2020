@@ -1,0 +1,69 @@
+1,1c
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+.
+1,10p
+1,2c
+31. Simplicity does not precede complexity, but follows it.
+19. A language that doesn't affect the way you think about programming, is not worth knowing.
+.
+1,2c
+64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble.
+20. Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.
+.
+1,10p
+1,2c
+82. We are on the verge: Today our program proved Fermat's next-to-last theorem.
+19. A language that doesn't affect the way you think about programming, is not worth knowing.
+.
+1,1c
+60. In seeking the unattainable, simplicity only gets in the way.
+.
+1,2c
+43. In software systems, it is often the early bird that makes the worm.
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?
+.
+1,10p
+1,2c
+34. The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+101. Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.
+.
+1,1c
+108. Whenever two programmers meet to criticize their programs, both are silent.
+.
+1,10p
+1,1c
+12. Recursion is the root of computation since it trades description for time.
+.
+1,2d
+4r
+1,10p
+3r
+5r
+1,10p
+3r
+1,1c
+48. The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.
+.
+2u
+1,2d
+1,10p
+1,2d
+1,2c
+92. The computer is the ultimate polluter: its feces are indistinguishable from the food it produces.
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
+.
+1,10p
+1,1d
+1,2d
+2u
+1,10p
+1u
+5r
+1,1c
+108. Whenever two programmers meet to criticize their programs, both are silent.
+.
+1,10p
+4u
+1,2d
+4u
+q

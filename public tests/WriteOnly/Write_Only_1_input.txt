@@ -1,0 +1,30 @@
+1,3c
+1. One man's constant is another man's variable.
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+3. Syntactic sugar causes cancer of the semicolon.
+.
+1,1p
+4,6c
+4. Every program is a part of some other program and rarely fits.
+5. If a program manipulates a large amount of data, it does so in a small number of ways.
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.
+.
+7,9c
+7. It is easier to write an incorrect program than understand a correct one.
+8. A programming language is low level when its programs require attention to the irrelevant.
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+7,7p
+10,12c
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+11. If you have a procedure with ten parameters, you probably missed some.
+12. Recursion is the root of computation since it trades description for time.
+.
+13,15c
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+14. In the long run every program becomes rococo - then rubble.
+15. Everything should be built top-down, except the first time.
+.
+1,1p
+0,0p
+q

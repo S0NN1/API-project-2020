@@ -1,0 +1,150 @@
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+.
+.
+.
+.
+.
+.
+.
+.
+89. One does not learn computing by using a hand calculator, but one can forget arithmetic.
+104. The proof of a system's value is its existence.
+.
+.
+.
+.
+.
+.
+.
+.
+24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
+104. The proof of a system's value is its existence.
+.
+.
+.
+.
+.
+.
+.
+.
+109. Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.
+91. The computer reminds one of Lon Chaney -- it is the machine of a thousand faces.
+.
+.
+.
+.
+.
+.
+.
+.
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+21. Optimization hinders evolution.
+.
+.
+.
+.
+.
+.
+.
+.
+21. Optimization hinders evolution.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+72. An adequate bootstrap is a contradiction in terms.
+8. A programming language is low level when its programs require attention to the irrelevant.
+.
+.
+.
+.
+.
+.
+.
+.
+108. Whenever two programmers meet to criticize their programs, both are silent.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+8. A programming language is low level when its programs require attention to the irrelevant.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+21. Optimization hinders evolution.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+21. Optimization hinders evolution.
+.
+.
+.
+.
+.
+.
+.
+.
+.

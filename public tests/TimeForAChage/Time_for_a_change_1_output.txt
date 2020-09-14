@@ -1,0 +1,40 @@
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+118. If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
+.
+.
+.
+.
+.
+.
+.
+.
+53. So many good ideas are never heard from again once they embark in a voyage on the semantic gulf.
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+.
+.
+.
+.
+.
+.
+.
+69. In a 5 year period we get one superb programming language. Only we can't control when the 5 year period will be.
+39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
+.
+.
+.
+.
+.
+.
+.
+.

@@ -1,0 +1,131 @@
+1,2c
+21. Optimization hinders evolution.
+60. In seeking the unattainable, simplicity only gets in the way.
+.
+1,10p
+1,2c
+40. There are two ways to write error-free programs; only the third one works.
+23. To understand a program you must become both the machine and the program.
+.
+1,1c
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+.
+1,10p
+1,1c
+7. It is easier to write an incorrect program than understand a correct one.
+.
+1,1c
+11. If you have a procedure with ten parameters, you probably missed some.
+.
+1,10p
+1,1c
+80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+.
+1,1c
+93. When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.
+.
+1,10p
+1,2c
+115. Most people find the concept of programming obvious, but the doing impossible.
+81. In computing, turning the obvious into the useful is a living definition of the word "frustration".
+.
+1,2c
+87. We have the mini and the micro computer. In what semantic niche would the pico computer fall?
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+.
+1,10p
+1,2c
+42. You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN.
+90. Computation has made the tree flower.
+.
+1,1d
+1,10p
+1,2d
+1,2d
+1,10p
+1,1d
+1,1c
+31. Simplicity does not precede complexity, but follows it.
+.
+1,10p
+1,2d
+1,1d
+1,10p
+1,2d
+1,1d
+1,10p
+1,1d
+3u
+1,10p
+1u
+8u
+1,10p
+1r
+1,2d
+7u
+1,10p
+10u
+3u
+1,10p
+5r
+1,1c
+8. A programming language is low level when its programs require attention to the irrelevant.
+.
+6u
+1,1d
+1,10p
+3u
+1,2d
+1,10p
+1,2d
+1,2d
+1,10p
+1,1d
+1,1c
+72. An adequate bootstrap is a contradiction in terms.
+.
+1,10p
+1,2c
+18. A program without a loop and a structured variable isn't worth writing.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+.
+1,1c
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+.
+1,10p
+1,1d
+1,2d
+1,10p
+1,2c
+7. It is easier to write an incorrect program than understand a correct one.
+71. Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits.
+.
+8r
+1,10p
+8u
+1,2c
+38. Structured Programming supports the law of the excluded middle.
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+.
+3u
+1,10p
+7r
+4r
+1,1d
+1,10p
+5r
+4u
+1,1c
+different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies.
+.
+1,10p
+1r
+1,2c
+61. In programming, as in everything else, to be in error is to be reborn.
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?
+.
+1r
+1,10p
+3r
+1,1d
+q

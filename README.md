@@ -20,7 +20,7 @@ Implementation of an editor, including basic commands:
 
 ## Test cases
 
-* **WriteOnly**: change commands only.
+* ****: change commands only.
 
 * **BulkReads**: change commands with bulk overrides.
 
@@ -34,6 +34,15 @@ Implementation of an editor, including basic commands:
 
 * **Laude**: all commands.
 
+| Task            	| Commands   	| Time Limit 	| Memory limit 	|
+|-----------------  |------------	|------------	|--------------	|
+| WriteOnly       	| c          	| 7.4 s      	| 3.00 GiB     	|
+| BulkReads       	| c          	| 1.250 s    	| 240 MiB      	|
+| TimeForAChange  	| c, d       	| 2.100 s    	| 540 MiB      	|
+| AlteringHistory 	| c, d, u    	| 2.100 s    	| 400 MiB      	|
+| RollingBack     	| c, d, u, r 	| 2.400 s    	| 550 MiB      	|
+| RollerCoaster   	| c, d, u, r 	| 2.700 s    	| 1.03 GiB     	|
+| Laude           	| c, d, u, r 	| 2.000 s    	| 340 MiB      	|       
 ## Execution example 
 
 ![kek](github/Blank%20Diagram.svg)

@@ -1,4 +1,5 @@
 # Algorithms and Principles of Computer Science Project
+[![License: MIT][license-image]][license]
 
 Final project for the Algorithm and Principles of Computer Science Course.
 
@@ -47,3 +48,6 @@ Implementation of an editor, including basic commands:
 
 - Clion;
 - Visual Studio Code.
+
+[license]: https://github.com/S0NN1/API-project/blob/master/LICENSE
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
